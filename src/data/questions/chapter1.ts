@@ -4,411 +4,316 @@ import { chapter1ExamTopics } from './chapter1-exams';
 export const chapter1CoreTopics: Topic[] = [
   {
     id: 'c1-t1',
-    title: 'Tập hợp số tự nhiên',
-    description: 'Nhận biết tập hợp số tự nhiên, cách viết, kí hiệu và thứ tự trong tập hợp số tự nhiên.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 1: Khái niệm phương trình và hệ hai phương trình bậc nhất hai ẩn',
+    description: 'Nhận biết phương trình bậc nhất hai ẩn, nghiệm của phương trình và hệ hai phương trình bậc nhất hai ẩn.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example1',
     questions: [
       {
         id: 'q1-1-1',
-        text: 'Tập hợp số tự nhiên được kí hiệu là:',
-        options: ['$\\mathbb{N}$', '$\\mathbb{Z}$', '$\\mathbb{Q}$', '$\\mathbb{R}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Tập hợp số tự nhiên được kí hiệu là $\\mathbb{N}$.'
+        text: 'Phương trình bậc nhất hai ẩn có dạng tổng quát là:',
+        options: ['ax + b = 0', 'ax + by = c', 'ax² + by = c', 'x + y + z = 0'],
+        correctAnswerIndex: 1,
+        explanation: 'Phương trình bậc nhất hai ẩn có dạng tổng quát là ax + by = c với a và b không đồng thời bằng 0.'
       },
       {
         id: 'q1-1-2',
-        text: 'Số nào sau đây thuộc tập hợp số tự nhiên?',
-        options: ['-3', '1,5', '0', '-1'],
-        correctAnswerIndex: 2,
-        explanation: 'Số 0 là một số tự nhiên.'
+        text: 'Cặp số nào sau đây là một nghiệm của phương trình x + y = 5?',
+        options: ['(1; 2)', '(2; 3)', '(0; 4)', '(5; 5)'],
+        correctAnswerIndex: 1,
+        explanation: 'Thay x = 2, y = 3 vào ta có 2 + 3 = 5 nên (2; 3) là một nghiệm.'
       },
       {
         id: 'q1-1-3',
-        text: 'Trong các số sau, số nào không thuộc tập hợp số tự nhiên?',
-        options: ['12', '0', '-5', '103'],
-        correctAnswerIndex: 2,
-        explanation: 'Số -5 là số nguyên âm nên không thuộc tập hợp số tự nhiên.'
+        text: 'Phương trình 2x - y = 1 có cặp số nào là nghiệm?',
+        options: ['(1; 1)', '(2; 1)', '(0; 1)', '(1; 0)'],
+        correctAnswerIndex: 0,
+        explanation: 'Thay x = 1, y = 1 vào ta có 2.1 - 1 = 1 nên (1; 1) là nghiệm.'
       },
       {
         id: 'q1-1-4',
-        text: 'Số tự nhiên nhỏ nhất là:',
-        options: ['0', '1', '-1', 'Không có'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong chương trình lớp 9, tập hợp số tự nhiên có chứa số 0 và 0 là số nhỏ nhất.'
+        text: 'Hệ hai phương trình bậc nhất hai ẩn là hệ gồm:',
+        options: [
+          'Một phương trình bậc hai',
+          'Hai phương trình bậc nhất cùng chứa hai ẩn',
+          'Hai phương trình bất kỳ',
+          'Một phương trình và một bất phương trình'
+        ],
+        correctAnswerIndex: 1,
+        explanation: 'Hệ hai phương trình bậc nhất hai ẩn gồm hai phương trình bậc nhất có cùng hai ẩn.'
       },
       {
         id: 'q1-1-5',
-        text: 'Cho tập hợp $A=\\{1;3;5;7\\}$. Khẳng định nào đúng?',
-        options: ['$3\\in A$', '$4\\in A$', '$7\\notin A$', '$1\\notin A$'],
+        text: 'Cặp số (2; 1) có là nghiệm của hệ { x + y = 3; x - y = 1 } không?',
+        options: ['Có', 'Không', 'Chỉ là nghiệm của phương trình đầu', 'Không xác định'],
         correctAnswerIndex: 0,
-        explanation: 'Số 3 là phần tử của tập hợp $A$.'
+        explanation: 'Ta có 2 + 1 = 3 và 2 - 1 = 1 nên (2; 1) là nghiệm của hệ.'
       },
       {
         id: 'q1-1-6',
-        text: 'Dãy số tự nhiên liên tiếp sau 8 là:',
-        options: ['7', '9', '10', '11'],
+        text: 'Trong các phương trình sau, phương trình nào là bậc nhất hai ẩn?',
+        options: ['x² + y = 3', '2x + 3y = 5', '1/x + y = 2', 'x - y² = 0'],
         correctAnswerIndex: 1,
-        explanation: 'Số tự nhiên liền sau 8 là 9.'
+        explanation: 'Phương trình 2x + 3y = 5 có các ẩn chỉ ở bậc nhất nên là phương trình bậc nhất hai ẩn.'
       },
       {
         id: 'q1-1-7',
-        text: 'Dãy số tự nhiên liên tiếp trước 20 là:',
-        options: ['18', '19', '21', '22'],
-        correctAnswerIndex: 1,
-        explanation: 'Số tự nhiên liền trước 20 là 19.'
+        text: 'Phương trình x + y = 4 có bao nhiêu nghiệm?',
+        options: ['1', '2', '3', 'Vô số'],
+        correctAnswerIndex: 3,
+        explanation: 'Có vô số cặp số (x; y) thỏa mãn x + y = 4.'
       },
       {
         id: 'q1-1-8',
-        text: 'Trong các cách viết sau, cách viết đúng là:',
-        options: ['$5 \\subset \\mathbb{N}$', '$5 \\in \\mathbb{N}$', '$\\mathbb{N} \\in 5$', '$0 \\notin \\mathbb{N}$'],
+        text: 'Nếu a = 0 và b = 0 trong phương trình ax + by = c thì:',
+        options: [
+          'Vẫn là phương trình bậc nhất hai ẩn',
+          'Không còn là phương trình bậc nhất hai ẩn',
+          'Là phương trình bậc hai',
+          'Là hệ phương trình'
+        ],
         correctAnswerIndex: 1,
-        explanation: 'Số 5 là một phần tử của tập hợp số tự nhiên nên viết $5 \\in \\mathbb{N}$.'
+        explanation: 'Trong phương trình bậc nhất hai ẩn, a và b không được đồng thời bằng 0.'
       },
-      {
-        id: 'q1-1-9',
-        text: 'Sắp xếp các số 12, 3, 25, 9 theo thứ tự tăng dần:',
-        options: ['3, 9, 12, 25', '25, 12, 9, 3', '3, 12, 9, 25', '9, 3, 12, 25'],
-        correctAnswerIndex: 0,
-        explanation: 'Thứ tự tăng dần là từ bé đến lớn: 3, 9, 12, 25.'
-      },
+{
+  id: 'q1-1-9',
+  text: 'Cặp số nào sau đây không phải là nghiệm của phương trình x - y = 2?',
+  options: ['(3; 1)', '(4; 2)', '(2; 0)', '(2; 1)'],
+  correctAnswerIndex: 3,
+  explanation: 'Với (2; 1), ta có 2 - 1 = 1 khác 2 nên đây không phải là nghiệm.'
+},
       {
         id: 'q1-1-10',
-        text: 'Số tự nhiên lớn nhất là:',
-        options: ['999', '1000000', 'Không có', '0'],
-        correctAnswerIndex: 2,
-        explanation: 'Tập hợp số tự nhiên kéo dài không giới hạn nên không có số tự nhiên lớn nhất.'
+        text: 'Một nghiệm của hệ phương trình là:',
+        options: [
+          'Một số',
+          'Một cặp số thỏa mãn cả hai phương trình',
+          'Một biểu thức',
+          'Một đường thẳng'
+        ],
+        correctAnswerIndex: 1,
+        explanation: 'Nghiệm của hệ là cặp số làm đúng đồng thời cả hai phương trình trong hệ.'
       }
     ]
   },
   {
     id: 'c1-t2',
-    title: 'Các phép tính với số tự nhiên',
-    description: 'Thực hiện phép cộng, trừ, nhân, chia và vận dụng thứ tự thực hiện phép tính.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 2: Giải hệ hai phương trình bậc nhất hai ẩn',
+    description: 'Giải hệ hai phương trình bậc nhất hai ẩn bằng phương pháp thế và phương pháp cộng đại số.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example2',
     questions: [
       {
         id: 'q1-2-1',
-        text: 'Kết quả của phép tính $27+15$ là:',
-        options: ['42', '32', '52', '41'],
+        text: 'Nghiệm của hệ { x + y = 5; x - y = 1 } là:',
+        options: ['(3; 2)', '(2; 3)', '(1; 4)', '(4; 1)'],
         correctAnswerIndex: 0,
-        explanation: '$27+15=42$.'
+        explanation: 'Cộng hai phương trình: 2x = 6 nên x = 3, thay vào x + y = 5 được y = 2.'
       },
       {
         id: 'q1-2-2',
-        text: 'Kết quả của phép tính $56-19$ là:',
-        options: ['47', '37', '27', '35'],
-        correctAnswerIndex: 1,
-        explanation: '$56-19=37$.'
+        text: 'Nghiệm của hệ { 2x + y = 7; x - y = 2 } là:',
+        options: ['(3; 1)', '(2; 3)', '(1; 5)', '(4; -1)'],
+        correctAnswerIndex: 0,
+        explanation: 'Từ x - y = 2 suy ra y = x - 2. Thay vào 2x + y = 7 được 3x = 9 nên x = 3, y = 1.'
       },
       {
         id: 'q1-2-3',
-        text: 'Kết quả của phép tính $8\\times 7$ là:',
-        options: ['54', '56', '48', '64'],
+        text: 'Phương pháp nào thường dùng để giải hệ hai phương trình bậc nhất hai ẩn?',
+        options: [
+          'Phương pháp chia đa thức',
+          'Phương pháp thế và cộng đại số',
+          'Phương pháp khai căn',
+          'Phương pháp quy đồng mẫu'
+        ],
         correctAnswerIndex: 1,
-        explanation: '$8\\times 7=56$.'
+        explanation: 'Hai phương pháp cơ bản là phương pháp thế và phương pháp cộng đại số.'
       },
       {
         id: 'q1-2-4',
-        text: 'Kết quả của phép tính $81:9$ là:',
-        options: ['8', '7', '9', '10'],
+        text: 'Hệ { x + y = 2; x + y = 3 } có:',
+        options: ['Một nghiệm duy nhất', 'Vô số nghiệm', 'Vô nghiệm', 'Hai nghiệm'],
         correctAnswerIndex: 2,
-        explanation: '$81:9=9$.'
+        explanation: 'Hai phương trình có cùng vế trái nhưng khác vế phải nên hệ vô nghiệm.'
       },
       {
         id: 'q1-2-5',
-        text: 'Giá trị của biểu thức $12+3\\times 4$ là:',
-        options: ['60', '24', '20', '18'],
+        text: 'Hệ { x + y = 4; 2x + 2y = 8 } có:',
+        options: ['Một nghiệm duy nhất', 'Vô số nghiệm', 'Vô nghiệm', 'Không xác định'],
         correctAnswerIndex: 1,
-        explanation: 'Thực hiện phép nhân trước: $3\\times 4=12$, sau đó $12+12=24$.'
+        explanation: 'Phương trình thứ hai tương đương phương trình thứ nhất nên hệ có vô số nghiệm.'
       },
       {
         id: 'q1-2-6',
-        text: 'Giá trị của biểu thức $(12+3)\\times 4$ là:',
-        options: ['48', '60', '36', '24'],
-        correctAnswerIndex: 1,
-        explanation: 'Trong ngoặc trước: $12+3=15$, rồi $15\\times 4=60$.'
+        text: 'Nghiệm của hệ { x = y + 1; x + y = 7 } là:',
+        options: ['(4; 3)', '(3; 4)', '(5; 2)', '(2; 5)'],
+        correctAnswerIndex: 0,
+        explanation: 'Thế x = y + 1 vào x + y = 7 được 2y + 1 = 7 nên y = 3, x = 4.'
       },
       {
         id: 'q1-2-7',
-        text: 'Số dư trong phép chia $29:6$ là:',
-        options: ['3', '4', '5', '2'],
-        correctAnswerIndex: 2,
-        explanation: '$29=6\\times 4+5$, nên số dư là 5.'
+        text: 'Khi dùng phương pháp cộng đại số, ta thường:',
+        options: [
+          'Nhân hai vế với 0',
+          'Cộng hoặc trừ hai phương trình để khử một ẩn',
+          'Đổi chỗ hai ẩn',
+          'Bình phương hai vế'
+        ],
+        correctAnswerIndex: 1,
+        explanation: 'Phương pháp cộng đại số nhằm khử một ẩn bằng cách cộng hoặc trừ hai phương trình.'
       },
       {
         id: 'q1-2-8',
-        text: 'Trong phép chia có dư, số dư luôn:',
-        options: [
-          'Lớn hơn số chia',
-          'Nhỏ hơn số chia',
-          'Bằng số chia',
-          'Lớn hơn hoặc bằng số chia'
-        ],
-        correctAnswerIndex: 1,
-        explanation: 'Trong phép chia có dư, số dư luôn nhỏ hơn số chia.'
+        text: 'Nghiệm của hệ { 3x + y = 11; x + y = 7 } là:',
+        options: ['(2; 5)', '(3; 4)', '(4; 3)', '(1; 6)'],
+        correctAnswerIndex: 0,
+        explanation: 'Lấy phương trình đầu trừ phương trình sau: 2x = 4 nên x = 2, suy ra y = 5.'
       },
       {
         id: 'q1-2-9',
-        text: 'Giá trị của biểu thức $50-18:3$ là:',
-        options: ['44', '32', '16', '10'],
-        correctAnswerIndex: 0,
-        explanation: 'Thực hiện phép chia trước: $18:3=6$, rồi $50-6=44$.'
+        text: 'Nếu sau khi biến đổi, ta được phương trình 0x + 0y = 0 thì hệ thường:',
+        options: ['Vô nghiệm', 'Có vô số nghiệm', 'Có một nghiệm', 'Không giải được'],
+        correctAnswerIndex: 1,
+        explanation: 'Đẳng thức đúng với mọi x, y nên hệ thường có vô số nghiệm nếu hai phương trình tương đương.'
       },
       {
         id: 'q1-2-10',
-        text: 'Tìm $x$ biết $x+25=63$.',
-        options: ['38', '88', '48', '36'],
-        correctAnswerIndex: 0,
-        explanation: 'Ta có $x=63-25=38$.'
+        text: 'Nếu sau khi biến đổi, ta được phương trình 0x + 0y = 5 thì hệ:',
+        options: ['Có một nghiệm', 'Có hai nghiệm', 'Vô nghiệm', 'Có vô số nghiệm'],
+        correctAnswerIndex: 2,
+        explanation: 'Đây là điều vô lí nên hệ vô nghiệm.'
       }
     ]
   },
   {
     id: 'c1-t3',
-    title: 'Lũy thừa với số mũ tự nhiên',
-    description: 'Nhận biết lũy thừa, cơ số, số mũ và tính giá trị các lũy thừa đơn giản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Luyện tập chung',
+    description: 'Ôn luyện khái niệm và cách giải hệ hai phương trình bậc nhất hai ẩn.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example3',
     questions: [
       {
         id: 'q1-3-1',
-        text: 'Biểu thức $2^3$ có giá trị là:',
-        options: ['5', '6', '8', '9'],
-        correctAnswerIndex: 2,
-        explanation: '$2^3=2\\times2\\times2=8$.'
+        text: 'Nghiệm của hệ { x + y = 6; x - y = 2 } là:',
+        options: ['(4; 2)', '(2; 4)', '(3; 3)', '(5; 1)'],
+        correctAnswerIndex: 0,
+        explanation: 'Cộng hai phương trình được 2x = 8 nên x = 4, suy ra y = 2.'
       },
       {
         id: 'q1-3-2',
-        text: 'Trong lũy thừa $5^2$, cơ số là:',
-        options: ['2', '5', '10', '25'],
-        correctAnswerIndex: 1,
-        explanation: 'Trong $5^2$, cơ số là 5.'
+        text: 'Cặp số nào là nghiệm của phương trình 2x + y = 8?',
+        options: ['(3; 2)', '(2; 5)', '(1; 6)', '(0; 8)'],
+        correctAnswerIndex: 0,
+        explanation: '2.3 + 2 = 8 nên (3; 2) là nghiệm.'
       },
       {
         id: 'q1-3-3',
-        text: 'Trong lũy thừa $5^2$, số mũ là:',
-        options: ['2', '5', '10', '25'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong $5^2$, số mũ là 2.'
+        text: 'Hệ { 2x + y = 5; 4x + 2y = 10 } có:',
+        options: ['Một nghiệm', 'Vô số nghiệm', 'Vô nghiệm', 'Hai nghiệm'],
+        correctAnswerIndex: 1,
+        explanation: 'Phương trình thứ hai là bội của phương trình thứ nhất nên hệ có vô số nghiệm.'
       },
       {
         id: 'q1-3-4',
-        text: 'Giá trị của $10^2$ là:',
-        options: ['20', '100', '1000', '12'],
-        correctAnswerIndex: 1,
-        explanation: '$10^2=10\\times10=100$.'
+        text: 'Hệ { x + 2y = 3; x + 2y = 5 } có:',
+        options: ['Vô số nghiệm', 'Một nghiệm', 'Vô nghiệm', 'Hai nghiệm'],
+        correctAnswerIndex: 2,
+        explanation: 'Hai phương trình có cùng vế trái nhưng khác vế phải nên hệ vô nghiệm.'
       },
       {
         id: 'q1-3-5',
-        text: 'Giá trị của $3^3$ là:',
-        options: ['6', '9', '27', '12'],
-        correctAnswerIndex: 2,
-        explanation: '$3^3=3\\times3\\times3=27$.'
-      },
-      {
-        id: 'q1-3-6',
-        text: 'Cách viết dưới dạng lũy thừa của $4\\times4\\times4$ là:',
-        options: ['$4^2$', '$4^3$', '$3^4$', '$12^4$'],
-        correctAnswerIndex: 1,
-        explanation: '$4\\times4\\times4=4^3$.'
-      },
-      {
-        id: 'q1-3-7',
-        text: 'Giá trị của biểu thức $2^2+3^2$ là:',
-        options: ['13', '25', '10', '12'],
+        text: 'Nghiệm của hệ { x - y = 3; x + y = 9 } là:',
+        options: ['(6; 3)', '(3; 6)', '(4; 5)', '(5; 4)'],
         correctAnswerIndex: 0,
-        explanation: '$2^2=4$, $3^2=9$, nên tổng là 13.'
-      },
-      {
-        id: 'q1-3-8',
-        text: 'Giá trị của biểu thức $2\\times3^2$ là:',
-        options: ['18', '12', '9', '6'],
-        correctAnswerIndex: 0,
-        explanation: 'Ta có $3^2=9$, nên $2\\times9=18$.'
-      },
-      {
-        id: 'q1-3-9',
-        text: 'Kết quả của $1^5$ là:',
-        options: ['1', '5', '0', 'Không xác định'],
-        correctAnswerIndex: 0,
-        explanation: 'Mọi lũy thừa của 1 đều bằng 1.'
-      },
-      {
-        id: 'q1-3-10',
-        text: 'Số nào sau đây bằng $2^4$?',
-        options: ['8', '12', '16', '14'],
-        correctAnswerIndex: 2,
-        explanation: '$2^4=2\\times2\\times2\\times2=16$.'
+        explanation: 'Cộng hai phương trình: 2x = 12 nên x = 6, suy ra y = 3.'
       }
     ]
   },
   {
     id: 'c1-t4',
-    title: 'Thứ tự thực hiện phép tính',
-    description: 'Thực hiện đúng thứ tự phép tính có ngoặc, lũy thừa, nhân chia, cộng trừ.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 3: Giải bài toán bằng cách lập hệ phương trình',
+    description: 'Giải các bài toán thực tế bằng cách đặt ẩn và lập hệ hai phương trình bậc nhất hai ẩn.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example4',
     questions: [
       {
         id: 'q1-4-1',
-        text: 'Trong một biểu thức không có dấu ngoặc, ta thực hiện:',
+        text: 'Khi giải bài toán bằng cách lập hệ phương trình, bước đầu tiên thường là:',
         options: [
-          'Cộng, trừ trước rồi nhân, chia sau',
-          'Nhân, chia trước rồi cộng, trừ sau',
-          'Từ trái sang phải với mọi phép tính',
-          'Lũy thừa sau cùng'
+          'Giải ngay hệ phương trình',
+          'Chọn ẩn và đặt điều kiện thích hợp',
+          'Cộng hai phương trình',
+          'Rút gọn biểu thức'
         ],
         correctAnswerIndex: 1,
-        explanation: 'Không có ngoặc thì thực hiện lũy thừa trước, rồi nhân chia, cuối cùng cộng trừ.'
+        explanation: 'Trước hết cần chọn ẩn, đặt điều kiện nếu cần rồi mới lập hệ.'
       },
       {
         id: 'q1-4-2',
-        text: 'Giá trị của $18-6\\times2$ là:',
-        options: ['24', '12', '6', '20'],
-        correctAnswerIndex: 2,
-        explanation: 'Thực hiện phép nhân trước: $6\\times2=12$, rồi $18-12=6$.'
+        text: 'Tổng của hai số là 10, hiệu của chúng là 2. Hai số đó là:',
+        options: ['6 và 4', '7 và 3', '8 và 2', '5 và 5'],
+        correctAnswerIndex: 0,
+        explanation: 'Gọi hai số là x và y, ta có hệ x + y = 10, x - y = 2. Giải ra x = 6, y = 4.'
       },
       {
         id: 'q1-4-3',
-        text: 'Giá trị của $(18-6)\\times2$ là:',
-        options: ['12', '24', '30', '6'],
-        correctAnswerIndex: 1,
-        explanation: 'Trong ngoặc trước: $18-6=12$, sau đó $12\\times2=24$.'
+        text: 'Một lớp có tổng số học sinh nam và nữ là 40, trong đó số nam ít hơn số nữ 4 bạn. Số học sinh nam là:',
+        options: ['18', '20', '22', '16'],
+        correctAnswerIndex: 0,
+        explanation: 'Gọi số nam là x, số nữ là y. Ta có x + y = 40, y - x = 4. Giải ra x = 18.'
       },
       {
         id: 'q1-4-4',
-        text: 'Giá trị của $2+3\\times4-5$ là:',
-        options: ['9', '14', '15', '5'],
+        text: 'Hai số có tổng bằng 15 và số thứ nhất gấp đôi số thứ hai. Số thứ hai là:',
+        options: ['5', '10', '6', '7'],
         correctAnswerIndex: 0,
-        explanation: '$3\\times4=12$, nên $2+12-5=9$.'
+        explanation: 'Gọi số thứ hai là y thì số thứ nhất là 2y. Ta có 2y + y = 15 nên y = 5.'
       },
       {
         id: 'q1-4-5',
-        text: 'Giá trị của $2^3+5$ là:',
-        options: ['11', '13', '15', '9'],
-        correctAnswerIndex: 1,
-        explanation: '$2^3=8$, nên $8+5=13$.'
-      },
-      {
-        id: 'q1-4-6',
-        text: 'Giá trị của $20:(3+2)$ là:',
-        options: ['4', '5', '10', '15'],
+        text: 'Trong bài toán chuyển động, công thức thường dùng là:',
+        options: ['Quãng đường = Vận tốc × Thời gian', 'Vận tốc = Quãng đường + Thời gian', 'Thời gian = Quãng đường × Vận tốc', 'Quãng đường = Vận tốc - Thời gian'],
         correctAnswerIndex: 0,
-        explanation: 'Trong ngoặc trước: $3+2=5$, rồi $20:5=4$.'
-      },
-      {
-        id: 'q1-4-7',
-        text: 'Giá trị của $36:6\\times2$ là:',
-        options: ['3', '12', '1', '18'],
-        correctAnswerIndex: 1,
-        explanation: 'Chia và nhân cùng thứ tự ưu tiên nên tính từ trái sang phải: $36:6=6$, $6\\times2=12$.'
-      },
-      {
-        id: 'q1-4-8',
-        text: 'Giá trị của $5+(12-8)\\times3$ là:',
-        options: ['17', '9', '12', '15'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong ngoặc: $12-8=4$, rồi $4\\times3=12$, cuối cùng $5+12=17$.'
-      },
-      {
-        id: 'q1-4-9',
-        text: 'Giá trị của $24-[3\\times(5-1)]$ là:',
-        options: ['9', '12', '15', '18'],
-        correctAnswerIndex: 1,
-        explanation: 'Ta có $(5-1)=4$, rồi $3\\times4=12$, cuối cùng $24-12=12$.'
-      },
-      {
-        id: 'q1-4-10',
-        text: 'Khi thực hiện phép tính, bước nào sau đây đúng?',
-        options: [
-          'Tính trong ngoặc trước',
-          'Cộng trước rồi nhân',
-          'Chia trước ngoặc',
-          'Cứ tính từ phải sang trái'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Trong biểu thức có ngoặc thì luôn ưu tiên tính trong ngoặc trước.'
+        explanation: 'Công thức cơ bản là s = v × t.'
       }
     ]
   },
   {
     id: 'c1-t5',
-    title: 'Ôn tập chương Số tự nhiên',
-    description: 'Củng cố kiến thức về tập hợp số tự nhiên, phép tính, lũy thừa và thứ tự thực hiện phép tính.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài tập cuối chương 1',
+    description: 'Tổng hợp câu hỏi ôn tập toàn bộ chương 1 về phương trình và hệ hai phương trình bậc nhất hai ẩn.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example5',
     questions: [
       {
         id: 'q1-5-1',
-        text: 'Số nào sau đây là số tự nhiên?',
-        options: ['-8', '0', '1,2', '-1'],
+        text: 'Phương trình nào sau đây là phương trình bậc nhất hai ẩn?',
+        options: ['x² + y = 1', '2x - 3y = 7', 'xy = 5', '1/x + y = 2'],
         correctAnswerIndex: 1,
-        explanation: 'Số 0 thuộc tập hợp số tự nhiên.'
+        explanation: '2x - 3y = 7 là phương trình bậc nhất hai ẩn.'
       },
       {
         id: 'q1-5-2',
-        text: 'Kết quả của phép tính $45+17$ là:',
-        options: ['62', '52', '72', '63'],
+        text: 'Nghiệm của hệ { x + y = 8; x - y = 4 } là:',
+        options: ['(6; 2)', '(2; 6)', '(5; 3)', '(4; 4)'],
         correctAnswerIndex: 0,
-        explanation: '$45+17=62$.'
+        explanation: 'Cộng hai phương trình được 2x = 12 nên x = 6, suy ra y = 2.'
       },
       {
         id: 'q1-5-3',
-        text: 'Kết quả của phép tính $90-38$ là:',
-        options: ['52', '58', '48', '62'],
-        correctAnswerIndex: 0,
-        explanation: '$90-38=52$.'
+        text: 'Hệ { x + y = 1; x + y = 2 } là hệ:',
+        options: ['Có một nghiệm', 'Có vô số nghiệm', 'Vô nghiệm', 'Có hai nghiệm'],
+        correctAnswerIndex: 2,
+        explanation: 'Hai phương trình mâu thuẫn nên hệ vô nghiệm.'
       },
       {
         id: 'q1-5-4',
-        text: 'Giá trị của $4^2$ là:',
-        options: ['8', '12', '16', '20'],
-        correctAnswerIndex: 2,
-        explanation: '$4^2=16$.'
+        text: 'Hệ { 2x + y = 6; 4x + 2y = 12 } là hệ:',
+        options: ['Có một nghiệm', 'Có vô số nghiệm', 'Vô nghiệm', 'Không xác định'],
+        correctAnswerIndex: 1,
+        explanation: 'Phương trình thứ hai là bội của phương trình thứ nhất nên hệ có vô số nghiệm.'
       },
       {
         id: 'q1-5-5',
-        text: 'Giá trị của biểu thức $6+2\\times5$ là:',
-        options: ['40', '16', '20', '50'],
-        correctAnswerIndex: 1,
-        explanation: '$2\\times5=10$, nên $6+10=16$.'
-      },
-      {
-        id: 'q1-5-6',
-        text: 'Giá trị của biểu thức $(6+2)\\times5$ là:',
-        options: ['40', '16', '35', '30'],
+        text: 'Tổng hai số là 20, hiệu là 6. Số lớn là:',
+        options: ['13', '12', '14', '15'],
         correctAnswerIndex: 0,
-        explanation: 'Trong ngoặc trước: $6+2=8$, rồi $8\\times5=40$.'
-      },
-      {
-        id: 'q1-5-7',
-        text: 'Số dư của phép chia $17:5$ là:',
-        options: ['1', '2', '3', '4'],
-        correctAnswerIndex: 1,
-        explanation: '$17=5\\times3+2$, nên số dư là 2.'
-      },
-      {
-        id: 'q1-5-8',
-        text: 'Tập hợp nào sau đây chỉ gồm các số tự nhiên?',
-        options: ['$\\{0;1;2;3\\}$', '$\\{-1;0;1\\}$', '$\\{1;2;3,5\\}$', '$\\{-2;-1;0\\}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Chỉ tập hợp $\\{0;1;2;3\\}$ gồm toàn số tự nhiên.'
-      },
-      {
-        id: 'q1-5-9',
-        text: 'Biểu thức nào sau đây có giá trị bằng 25?',
-        options: ['$5^2$', '$2^5$', '$3^2$', '$4^2$'],
-        correctAnswerIndex: 0,
-        explanation: '$5^2=25$.'
-      },
-      {
-        id: 'q1-5-10',
-        text: 'Nội dung trọng tâm của chương này là:',
-        options: [
-          'Số tự nhiên và các phép tính cơ bản',
-          'Phân số và số thập phân',
-          'Xác suất thực nghiệm',
-          'Đường tròn và hình hộp chữ nhật'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Chương này tập trung vào số tự nhiên, phép tính, lũy thừa và thứ tự thực hiện phép tính.'
+        explanation: 'Gọi số lớn là x, số bé là y. Ta có x + y = 20, x - y = 6. Giải ra x = 13.'
       }
     ]
   }
