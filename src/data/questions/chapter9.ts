@@ -4,556 +4,694 @@ import { chapter9ExamTopics } from './chapter9-exams';
 export const chapter9CoreTopics: Topic[] = [
   {
     id: 'c9-t1',
-    title: 'Đọc và nhận xét dữ liệu từ bảng',
-    description: 'Biết đọc dữ liệu từ bảng thống kê và đưa ra các nhận xét đơn giản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 27: Góc nội tiếp',
+    description:
+      'Nhận biết góc nội tiếp, số đo góc nội tiếp và các tính chất cơ bản liên quan đến cung bị chắn.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter9-1',
     questions: [
       {
         id: 'q9-1-1',
-        text: 'Từ một bảng thống kê, ta có thể biết:',
+        text: 'Góc nội tiếp là góc có:',
         options: [
-          'Số lượng của từng nhóm đối tượng',
-          'Cách vẽ tam giác',
-          'Cách tính phân số',
-          'Số đo một góc bất kì'
+          'Đỉnh nằm trong đường tròn',
+          'Đỉnh nằm ngoài đường tròn',
+          'Đỉnh nằm trên đường tròn và hai cạnh chứa hai dây của đường tròn',
+          'Một cạnh là tiếp tuyến'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng thống kê giúp ta biết số lượng hoặc thông tin của từng nhóm đối tượng.'
+        correctAnswerIndex: 2,
+        explanation:
+          'Góc nội tiếp là góc có đỉnh nằm trên đường tròn và hai cạnh chứa hai dây của đường tròn.'
       },
       {
         id: 'q9-1-2',
-        text: 'Khi đọc bảng thống kê, ta cần chú ý:',
+        text: 'Số đo của một góc nội tiếp bằng:',
         options: [
-          'Tên hàng, tên cột và số liệu',
-          'Chỉ màu của bảng',
-          'Chỉ khung bảng',
-          'Chỉ hình minh họa'
+          'Số đo cung bị chắn',
+          'Một nửa số đo cung bị chắn',
+          'Hai lần số đo cung bị chắn',
+          'Tổng số đo hai cung kề nhau'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Tên hàng, tên cột và số liệu là những thông tin quan trọng nhất trong bảng.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Số đo góc nội tiếp bằng một nửa số đo cung bị chắn.'
       },
       {
         id: 'q9-1-3',
-        text: 'Nếu bảng cho biết số học sinh của 4 tổ lần lượt là 8, 10, 7, 9 thì tổ có nhiều học sinh nhất là:',
-        options: ['Tổ 1', 'Tổ 2', 'Tổ 3', 'Tổ 4'],
-        correctAnswerIndex: 1,
-        explanation: 'Trong các số 8, 10, 7, 9 thì 10 là lớn nhất, tương ứng với tổ 2.'
+        text: 'Nếu góc nội tiếp chắn cung $60^\\circ$ thì số đo góc nội tiếp đó là:',
+        options: ['$30^\\circ$', '$60^\\circ$', '$90^\\circ$', '$120^\\circ$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Góc nội tiếp bằng một nửa số đo cung bị chắn nên bằng $\\dfrac{60^\\circ}{2}=30^\\circ$.'
       },
       {
         id: 'q9-1-4',
-        text: 'Nếu bảng cho biết số cây của 3 lớp là 12, 15, 9 thì lớp có ít cây nhất có số cây là:',
-        options: ['12', '15', '9', '6'],
+        text: 'Nếu góc nội tiếp có số đo $40^\\circ$ thì số đo cung bị chắn là:',
+        options: ['$20^\\circ$', '$40^\\circ$', '$80^\\circ$', '$100^\\circ$'],
         correctAnswerIndex: 2,
-        explanation: 'Trong các số 12, 15, 9 thì 9 là nhỏ nhất.'
+        explanation:
+          'Cung bị chắn có số đo gấp đôi góc nội tiếp, nên bằng $80^\\circ$.'
       },
       {
         id: 'q9-1-5',
-        text: 'Từ bảng dữ liệu, ta có thể:',
+        text: 'Hai góc nội tiếp cùng chắn một cung thì:',
         options: [
-          'So sánh các giá trị với nhau',
-          'Dựng hình đối xứng',
-          'Tính chu vi hình tròn',
-          'Tìm số đối của số nguyên'
+          'Phụ nhau',
+          'Bằng nhau',
+          'Bù nhau',
+          'Hơn kém nhau $90^\\circ$'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng dữ liệu giúp ta so sánh các giá trị dễ dàng.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Hai góc nội tiếp cùng chắn một cung thì bằng nhau.'
       },
       {
         id: 'q9-1-6',
-        text: 'Một nhận xét đúng từ bảng số liệu là:',
-        options: [
-          'Nhóm có số lớn hơn thì nhiều hơn',
-          'Mọi nhóm luôn bằng nhau',
-          'Không thể so sánh',
-          'Số liệu không có ý nghĩa'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Từ bảng số liệu, ta có thể nhận xét nhóm nào có số lượng lớn hơn hoặc nhỏ hơn.'
+        text: 'Một góc nội tiếp chắn nửa đường tròn là góc:',
+        options: ['$45^\\circ$', '$60^\\circ$', '$90^\\circ$', '$180^\\circ$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Nửa đường tròn có số đo $180^\\circ$, nên góc nội tiếp chắn nửa đường tròn bằng $90^\\circ$.'
       },
       {
         id: 'q9-1-7',
-        text: 'Nếu bảng cho biết số quả bóng của các bạn là 3, 5, 5, 2 thì số lượng xuất hiện nhiều nhất là:',
-        options: ['2', '3', '5', '10'],
-        correctAnswerIndex: 2,
-        explanation: 'Số 5 xuất hiện hai lần, nhiều hơn các số khác.'
+        text: 'Nếu hai góc nội tiếp bằng nhau thì chúng chắn:',
+        options: [
+          'Hai cung bằng nhau',
+          'Hai cung không bằng nhau',
+          'Hai đường kính',
+          'Hai bán kính'
+        ],
+        correctAnswerIndex: 0,
+        explanation:
+          'Trong cùng một đường tròn, hai góc nội tiếp bằng nhau chắn hai cung bằng nhau.'
       },
       {
         id: 'q9-1-8',
-        text: 'Mục đích của việc đọc bảng thống kê là:',
+        text: 'Góc nội tiếp $\\widehat{AMB}$ chắn cung:',
         options: [
-          'Hiểu và rút ra thông tin từ dữ liệu',
-          'Chỉ để nhìn bảng',
-          'Chỉ để tô màu',
-          'Không có mục đích gì'
+          'Cung $AB$ không chứa $M$',
+          'Cung $AB$ chứa $M$',
+          'Đường kính $AB$',
+          'Bán kính $OM$'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Việc đọc bảng nhằm hiểu dữ liệu và rút ra thông tin cần thiết.'
+        explanation:
+          'Góc nội tiếp $\\widehat{AMB}$ chắn cung $AB$ không chứa điểm $M$.'
       },
       {
         id: 'q9-1-9',
-        text: 'Nếu bảng dữ liệu về số bạn thích từng môn học, ta có thể biết:',
-        options: [
-          'Môn nào được thích nhiều nhất',
-          'Chiều cao từng bạn',
-          'Chu vi lớp học',
-          'Số đo góc vuông'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng dữ liệu này cho biết môn nào được nhiều bạn lựa chọn nhất.'
+        text: 'Nếu góc nội tiếp chắn cung $120^\\circ$ thì góc đó bằng:',
+        options: ['$30^\\circ$', '$45^\\circ$', '$60^\\circ$', '$120^\\circ$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Góc nội tiếp bằng một nửa số đo cung bị chắn, nên bằng $60^\\circ$.'
       },
       {
         id: 'q9-1-10',
-        text: 'Một bảng số liệu rõ ràng giúp ta:',
+        text: 'Mệnh đề nào sau đây đúng?',
         options: [
-          'Nhận xét dễ hơn',
-          'Khó hiểu hơn',
-          'Không dùng được',
-          'Chỉ để trang trí'
+          'Góc nội tiếp luôn bằng số đo cung bị chắn',
+          'Góc nội tiếp bằng một nửa số đo cung bị chắn',
+          'Mọi góc nội tiếp đều là góc vuông',
+          'Hai góc nội tiếp bất kỳ luôn bằng nhau'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng rõ ràng sẽ giúp ta quan sát và nhận xét dễ dàng hơn.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Đây là tính chất cơ bản của góc nội tiếp.'
       }
     ]
   },
   {
     id: 'c9-t2',
-    title: 'Đọc và nhận xét dữ liệu từ biểu đồ',
-    description: 'Biết đọc thông tin từ biểu đồ tranh, biểu đồ cột và đưa ra nhận xét phù hợp.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 28: Đường tròn ngoại tiếp và đường tròn nội tiếp của một tam giác',
+    description:
+      'Nhận biết đường tròn ngoại tiếp, đường tròn nội tiếp tam giác và các yếu tố đặc trưng của chúng.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter9-2',
     questions: [
       {
         id: 'q9-2-1',
-        text: 'Biểu đồ cột giúp ta:',
+        text: 'Đường tròn ngoại tiếp tam giác là đường tròn:',
         options: [
-          'So sánh số lượng giữa các nhóm',
-          'Dựng đường tròn',
-          'Tính diện tích tam giác',
-          'Giải phương trình'
+          'Đi qua ba đỉnh của tam giác',
+          'Nằm hoàn toàn trong tam giác',
+          'Có tâm là một đỉnh của tam giác',
+          'Tiếp xúc với một cạnh của tam giác'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Biểu đồ cột dùng để biểu diễn và so sánh số lượng giữa các nhóm.'
+        explanation:
+          'Đường tròn ngoại tiếp tam giác là đường tròn đi qua ba đỉnh của tam giác.'
       },
       {
         id: 'q9-2-2',
-        text: 'Trong biểu đồ cột, cột cao hơn thường cho biết:',
+        text: 'Tâm đường tròn ngoại tiếp tam giác là giao điểm của:',
         options: [
-          'Giá trị lớn hơn',
-          'Giá trị nhỏ hơn',
-          'Không có ý nghĩa',
-          'Giá trị bằng 0'
+          'Ba đường trung tuyến',
+          'Ba đường cao',
+          'Ba đường phân giác',
+          'Các đường trung trực của các cạnh'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Cột cao hơn thường biểu thị giá trị lớn hơn.'
+        correctAnswerIndex: 3,
+        explanation:
+          'Tâm đường tròn ngoại tiếp là giao điểm các đường trung trực của các cạnh tam giác.'
       },
       {
         id: 'q9-2-3',
-        text: 'Biểu đồ tranh có ưu điểm là:',
+        text: 'Đường tròn nội tiếp tam giác là đường tròn:',
         options: [
-          'Trực quan, dễ nhìn',
-          'Khó hiểu hơn bảng',
-          'Không biểu diễn được dữ liệu',
-          'Chỉ dùng cho số rất lớn'
+          'Đi qua ba đỉnh của tam giác',
+          'Tiếp xúc với ba cạnh của tam giác',
+          'Có tâm là trọng tâm tam giác',
+          'Có bán kính bằng nửa chu vi'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ tranh thường trực quan và dễ nhìn.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Đường tròn nội tiếp là đường tròn tiếp xúc với cả ba cạnh của tam giác.'
       },
       {
         id: 'q9-2-4',
-        text: 'Khi đọc biểu đồ, ta cần chú ý:',
+        text: 'Tâm đường tròn nội tiếp tam giác là giao điểm của:',
         options: [
-          'Tên biểu đồ, các nhãn và số liệu',
-          'Chỉ màu sắc',
-          'Chỉ khung biểu đồ',
-          'Chỉ hình vẽ bên ngoài'
+          'Ba đường trung trực',
+          'Ba đường trung tuyến',
+          'Ba đường phân giác',
+          'Ba đường cao'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Tên biểu đồ, nhãn và số liệu là thông tin quan trọng nhất khi đọc biểu đồ.'
+        correctAnswerIndex: 2,
+        explanation:
+          'Tâm đường tròn nội tiếp là giao điểm của ba đường phân giác trong tam giác.'
       },
       {
         id: 'q9-2-5',
-        text: 'Từ biểu đồ cột về số cây trồng của các lớp, ta có thể biết:',
-        options: [
-          'Lớp nào trồng nhiều cây nhất',
-          'Lớp nào học giỏi nhất',
-          'Chiều cao lớp học',
-          'Số đo góc trong lớp'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ cột giúp ta biết lớp nào có số cây nhiều nhất.'
+        text: 'Mỗi tam giác có số đường tròn ngoại tiếp là:',
+        options: ['$0$', '$1$', '$2$', 'Vô số'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Mỗi tam giác luôn xác định duy nhất một đường tròn ngoại tiếp.'
       },
       {
         id: 'q9-2-6',
-        text: 'Nếu hai cột trong biểu đồ cao bằng nhau thì:',
-        options: [
-          'Hai nhóm có giá trị bằng nhau',
-          'Hai nhóm không thể so sánh',
-          'Một nhóm lớn hơn',
-          'Một nhóm nhỏ hơn'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Hai cột cao bằng nhau thì biểu thị hai giá trị bằng nhau.'
+        text: 'Mỗi tam giác có số đường tròn nội tiếp là:',
+        options: ['$0$', '$1$', '$2$', 'Vô số'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Mỗi tam giác luôn xác định duy nhất một đường tròn nội tiếp.'
       },
       {
         id: 'q9-2-7',
-        text: 'Biểu đồ tranh thường dùng:',
+        text: 'Trong tam giác đều, tâm đường tròn nội tiếp và tâm đường tròn ngoại tiếp:',
         options: [
-          'Hình ảnh lặp lại để thể hiện số lượng',
-          'Đường chéo để đo góc',
-          'Số âm để biểu diễn hình học',
-          'Phân số để thay cho tên'
+          'Là hai điểm khác nhau',
+          'Trùng nhau',
+          'Nằm trên hai cạnh khác nhau',
+          'Không tồn tại'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ tranh thường dùng các hình ảnh lặp lại để biểu diễn số lượng.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Trong tam giác đều, các tâm đặc biệt trùng nhau.'
       },
       {
         id: 'q9-2-8',
-        text: 'Khi phân tích biểu đồ, ta có thể:',
+        text: 'Nếu một điểm cách đều ba đỉnh của tam giác thì điểm đó là:',
         options: [
-          'Đưa ra so sánh và nhận xét',
-          'Chỉ đọc tên biểu đồ',
-          'Không kết luận được gì',
-          'Chỉ tô màu lại biểu đồ'
+          'Tâm đường tròn nội tiếp',
+          'Tâm đường tròn ngoại tiếp',
+          'Trọng tâm',
+          'Trực tâm'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Phân tích biểu đồ giúp ta đưa ra nhận xét và so sánh giữa các nhóm.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Điểm cách đều ba đỉnh là tâm đường tròn ngoại tiếp tam giác.'
       },
       {
         id: 'q9-2-9',
-        text: 'Một biểu đồ dễ hiểu thường có:',
+        text: 'Nếu một điểm cách đều ba cạnh của tam giác thì điểm đó là:',
         options: [
-          'Tiêu đề rõ ràng và số liệu hợp lí',
-          'Không có tiêu đề',
-          'Không có số liệu',
-          'Chỉ có hình vẽ trang trí'
+          'Tâm đường tròn ngoại tiếp',
+          'Trọng tâm',
+          'Tâm đường tròn nội tiếp',
+          'Trực tâm'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ rõ ràng cần có tiêu đề và số liệu hợp lí.'
+        correctAnswerIndex: 2,
+        explanation:
+          'Điểm cách đều ba cạnh là tâm đường tròn nội tiếp tam giác.'
       },
       {
         id: 'q9-2-10',
-        text: 'Từ biểu đồ cột, ta dễ nhận ra:',
+        text: 'Mệnh đề nào sau đây đúng?',
         options: [
-          'Nhóm lớn nhất và nhóm nhỏ nhất',
-          'Trục đối xứng của hình',
-          'Số đo góc vuông',
-          'Chu vi hình chữ nhật'
+          'Mọi tam giác đều có đường tròn nội tiếp và ngoại tiếp',
+          'Chỉ tam giác đều mới có đường tròn ngoại tiếp',
+          'Chỉ tam giác vuông mới có đường tròn nội tiếp',
+          'Không phải tam giác nào cũng có đường tròn ngoại tiếp'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Biểu đồ cột giúp ta dễ nhận ra giá trị lớn nhất và nhỏ nhất.'
+        explanation:
+          'Mọi tam giác đều có duy nhất một đường tròn nội tiếp và một đường tròn ngoại tiếp.'
       }
     ]
   },
   {
     id: 'c9-t3',
-    title: 'So sánh và rút ra nhận xét từ dữ liệu',
-    description: 'Biết so sánh số liệu và rút ra những kết luận đơn giản từ bảng hoặc biểu đồ.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Luyện tập chung',
+    description:
+      'Ôn tập về góc nội tiếp, đường tròn ngoại tiếp và đường tròn nội tiếp của tam giác.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter9-3',
     questions: [
       {
         id: 'q9-3-1',
-        text: 'Nếu số bạn thích kem vani là 12 và số bạn thích kem socola là 9 thì:',
-        options: [
-          'Kem vani được thích nhiều hơn',
-          'Kem socola được thích nhiều hơn',
-          'Hai loại bằng nhau',
-          'Không so sánh được'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Vì 12 > 9 nên kem vani được thích nhiều hơn.'
+        text: 'Nếu góc nội tiếp chắn cung $100^\\circ$ thì số đo góc nội tiếp là:',
+        options: ['$40^\\circ$', '$50^\\circ$', '$100^\\circ$', '$200^\\circ$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Góc nội tiếp bằng một nửa số đo cung bị chắn, nên bằng $50^\\circ$.'
       },
       {
         id: 'q9-3-2',
-        text: 'Nếu số sách của tổ 1 là 15, tổ 2 là 11 thì tổ 1 nhiều hơn tổ 2:',
-        options: ['2 quyển', '3 quyển', '4 quyển', '5 quyển'],
+        text: 'Góc nội tiếp chắn nửa đường tròn là góc:',
+        options: ['$30^\\circ$', '$45^\\circ$', '$90^\\circ$', '$180^\\circ$'],
         correctAnswerIndex: 2,
-        explanation: 'Tổ 1 nhiều hơn tổ 2 là $15 - 11 = 4$ quyển.'
+        explanation:
+          'Góc nội tiếp chắn nửa đường tròn là góc vuông.'
       },
       {
         id: 'q9-3-3',
-        text: 'Từ dữ liệu, nhận xét nào là hợp lí?',
+        text: 'Tâm đường tròn ngoại tiếp tam giác là giao điểm của:',
         options: [
-          'Nhóm có số lớn hơn thì nhiều hơn',
-          'Mọi nhóm đều giống nhau',
-          'Số liệu không dùng được',
-          'Không thể nhận xét'
+          'Ba đường phân giác',
+          'Ba đường trung trực',
+          'Ba đường cao',
+          'Ba đường trung tuyến'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Khi số liệu lớn hơn thì thường biểu thị số lượng hoặc giá trị nhiều hơn.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Đó là định nghĩa của tâm đường tròn ngoại tiếp.'
       },
       {
         id: 'q9-3-4',
-        text: 'Nếu số cây lớp 9A là 20, lớp 9B là 20 thì:',
+        text: 'Tâm đường tròn nội tiếp tam giác là giao điểm của:',
         options: [
-          'Hai lớp trồng số cây bằng nhau',
-          'lớp 9A nhiều hơn',
-          'lớp 9B nhiều hơn',
-          'Không xác định'
+          'Ba đường trung trực',
+          'Ba đường cao',
+          'Ba đường phân giác',
+          'Ba đường trung tuyến'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Hai lớp đều có 20 cây nên số cây bằng nhau.'
+        correctAnswerIndex: 2,
+        explanation:
+          'Đó là định nghĩa của tâm đường tròn nội tiếp.'
       },
       {
         id: 'q9-3-5',
-        text: 'So sánh dữ liệu giúp ta:',
+        text: 'Trong tam giác đều, tâm nội tiếp và tâm ngoại tiếp:',
         options: [
-          'Biết sự giống nhau hoặc khác nhau giữa các nhóm',
-          'Làm mất dữ liệu',
-          'Không dùng được bảng',
-          'Chỉ dùng cho hình học'
+          'Phân biệt',
+          'Trùng nhau',
+          'Không xác định',
+          'Nằm ngoài tam giác'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'So sánh dữ liệu giúp ta thấy sự giống nhau và khác nhau giữa các nhóm.'
-      },
-      {
-        id: 'q9-3-6',
-        text: 'Từ dữ liệu về số học sinh từng tổ, ta có thể biết:',
-        options: [
-          'Tổ nào đông nhất',
-          'Tổ nào vẽ đẹp nhất',
-          'Tổ nào có góc vuông',
-          'Tổ nào có đường tròn'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Dữ liệu về số học sinh giúp ta biết tổ nào đông nhất.'
-      },
-      {
-        id: 'q9-3-7',
-        text: 'Nếu cột của nhóm A thấp hơn cột của nhóm B thì:',
-        options: [
-          'Nhóm A có giá trị nhỏ hơn nhóm B',
-          'Nhóm A lớn hơn nhóm B',
-          'Hai nhóm bằng nhau',
-          'Không thể kết luận'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Trong biểu đồ cột, cột thấp hơn biểu thị giá trị nhỏ hơn.'
-      },
-      {
-        id: 'q9-3-8',
-        text: 'Một kết luận đúng từ bảng số liệu phải:',
-        options: [
-          'Dựa trên số liệu đã cho',
-          'Dựa trên phỏng đoán không cần số liệu',
-          'Không cần đọc bảng',
-          'Chỉ dựa vào màu sắc'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Mọi kết luận cần dựa trên dữ liệu đã cho.'
-      },
-      {
-        id: 'q9-3-9',
-        text: 'Nếu số liệu của bốn bạn là 2, 2, 5, 7 thì giá trị nhỏ nhất là:',
-        options: ['2', '5', '7', '4'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong các số 2, 2, 5, 7 thì giá trị nhỏ nhất là 2.'
-      },
-      {
-        id: 'q9-3-10',
-        text: 'Nếu số liệu của bốn bạn là 2, 2, 5, 7 thì giá trị lớn nhất là:',
-        options: ['2', '5', '7', '9'],
-        correctAnswerIndex: 2,
-        explanation: 'Trong các số 2, 2, 5, 7 thì giá trị lớn nhất là 7.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Trong tam giác đều, các tâm đặc biệt trùng nhau.'
       }
     ]
   },
   {
     id: 'c9-t4',
-    title: 'Một số đại lượng đặc trưng đơn giản',
-    description: 'Làm quen với giá trị lớn nhất, nhỏ nhất và tổng đơn giản của dãy số liệu.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 29: Tứ giác nội tiếp',
+    description:
+      'Nhận biết tứ giác nội tiếp và vận dụng tính chất về tổng số đo hai góc đối của tứ giác nội tiếp.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter9-4',
     questions: [
       {
         id: 'q9-4-1',
-        text: 'Trong dãy số 3, 5, 2, 8, giá trị lớn nhất là:',
-        options: ['2', '3', '5', '8'],
-        correctAnswerIndex: 3,
-        explanation: 'Trong các số 3, 5, 2, 8 thì 8 là lớn nhất.'
+        text: 'Tứ giác nội tiếp là tứ giác có:',
+        options: [
+          'Bốn cạnh bằng nhau',
+          'Bốn đỉnh cùng nằm trên một đường tròn',
+          'Hai đường chéo bằng nhau',
+          'Hai cạnh đối song song'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Đây là định nghĩa của tứ giác nội tiếp.'
       },
       {
         id: 'q9-4-2',
-        text: 'Trong dãy số 3, 5, 2, 8, giá trị nhỏ nhất là:',
-        options: ['2', '3', '5', '8'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong các số 3, 5, 2, 8 thì 2 là nhỏ nhất.'
+        text: 'Trong tứ giác nội tiếp, tổng số đo hai góc đối bằng:',
+        options: ['$90^\\circ$', '$180^\\circ$', '$270^\\circ$', '$360^\\circ$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Tính chất cơ bản của tứ giác nội tiếp là tổng hai góc đối bằng $180^\\circ$.'
       },
       {
         id: 'q9-4-3',
-        text: 'Tổng của các số 2, 4, 6 là:',
-        options: ['10', '11', '12', '13'],
-        correctAnswerIndex: 2,
-        explanation: 'Ta có $2 + 4 + 6 = 12$.'
+        text: 'Nếu một tứ giác có tổng hai góc đối bằng $180^\\circ$ thì:',
+        options: [
+          'Tứ giác đó là hình bình hành',
+          'Tứ giác đó nội tiếp được đường tròn',
+          'Tứ giác đó là hình thang',
+          'Tứ giác đó là hình chữ nhật'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Đây là dấu hiệu nhận biết tứ giác nội tiếp.'
       },
       {
         id: 'q9-4-4',
-        text: 'Nếu số cây của ba lớp lần lượt là 10, 12, 8 thì tổng số cây là:',
-        options: ['28', '30', '32', '34'],
-        correctAnswerIndex: 1,
-        explanation: 'Tổng số cây là $10 + 12 + 8 = 30$.'
+        text: 'Trong tứ giác nội tiếp $ABCD$, nếu $\\widehat{A}=70^\\circ$ thì $\\widehat{C}$ bằng:',
+        options: ['$70^\\circ$', '$90^\\circ$', '$110^\\circ$', '$120^\\circ$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Hai góc đối của tứ giác nội tiếp bù nhau, nên $\\widehat{C}=180^\\circ-70^\\circ=110^\\circ$.'
       },
       {
         id: 'q9-4-5',
-        text: 'Nếu số bạn của các nhóm là 6, 7, 9 thì nhóm đông nhất có:',
-        options: ['6 bạn', '7 bạn', '9 bạn', '22 bạn'],
-        correctAnswerIndex: 2,
-        explanation: 'Nhóm đông nhất là nhóm có số lớn nhất, tức là 9 bạn.'
+        text: 'Trong tứ giác nội tiếp $ABCD$, nếu $\\widehat{B}=95^\\circ$ thì $\\widehat{D}$ bằng:',
+        options: ['$85^\\circ$', '$90^\\circ$', '$95^\\circ$', '$105^\\circ$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $\\widehat{B}+\\widehat{D}=180^\\circ$, nên $\\widehat{D}=85^\\circ$.'
       },
       {
         id: 'q9-4-6',
-        text: 'Nếu số bạn của các nhóm là 6, 7, 9 thì nhóm ít nhất có:',
-        options: ['6 bạn', '7 bạn', '9 bạn', '3 bạn'],
-        correctAnswerIndex: 0,
-        explanation: 'Nhóm ít nhất là nhóm có số nhỏ nhất, tức là 6 bạn.'
+        text: 'Tứ giác có bốn đỉnh cùng thuộc một đường tròn thì gọi là:',
+        options: [
+          'Tứ giác đều',
+          'Tứ giác nội tiếp',
+          'Hình bình hành',
+          'Hình thoi'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Đó là định nghĩa của tứ giác nội tiếp.'
       },
       {
         id: 'q9-4-7',
-        text: 'Để tìm giá trị lớn nhất trong một dãy số liệu, ta cần:',
+        text: 'Nếu một góc ngoài tại một đỉnh của tứ giác nội tiếp thì nó bằng:',
         options: [
-          'So sánh các giá trị với nhau',
-          'Cộng tất cả lại',
-          'Nhân tất cả lại',
-          'Đổi sang phân số'
+          'Góc kề với nó',
+          'Góc đối diện trong',
+          'Một nửa góc đối diện',
+          'Tổng hai góc kề'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Muốn tìm giá trị lớn nhất, ta so sánh các giá trị trong dãy.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Trong tứ giác nội tiếp, góc ngoài tại một đỉnh bằng góc trong đối diện.'
       },
       {
         id: 'q9-4-8',
-        text: 'Để tìm tổng số lượng của nhiều nhóm, ta cần:',
+        text: 'Mệnh đề nào sau đây đúng?',
         options: [
-          'Cộng các số liệu lại',
-          'Lấy số lớn nhất trừ số nhỏ nhất',
-          'Chỉ chọn số lớn nhất',
-          'Chỉ chọn số nhỏ nhất'
+          'Mọi hình thang đều là tứ giác nội tiếp',
+          'Mọi hình chữ nhật đều là tứ giác nội tiếp',
+          'Mọi hình bình hành đều là tứ giác nội tiếp',
+          'Mọi hình thoi đều là tứ giác nội tiếp'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Muốn tìm tổng, ta cộng các số liệu lại.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Trong hình chữ nhật, các góc đều bằng $90^\\circ$, nên hai góc đối bù nhau và hình chữ nhật nội tiếp được đường tròn.'
       },
       {
         id: 'q9-4-9',
-        text: 'Nếu dữ liệu là 4, 4, 6, 10 thì tổng là:',
-        options: ['18', '20', '22', '24'],
-        correctAnswerIndex: 3,
-        explanation: 'Ta có $4 + 4 + 6 + 10 = 24$.'
+        text: 'Nếu một tứ giác nội tiếp có một góc bằng $90^\\circ$ thì góc đối diện với nó bằng:',
+        options: ['$45^\\circ$', '$60^\\circ$', '$90^\\circ$', '$180^\\circ$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Hai góc đối bù nhau, nên góc đối diện cũng bằng $90^\\circ$.'
       },
       {
         id: 'q9-4-10',
-        text: 'Giá trị lớn nhất và nhỏ nhất của dãy 9, 1, 5, 7 lần lượt là:',
-        options: ['1 và 9', '9 và 1', '7 và 1', '9 và 5'],
+        text: 'Dấu hiệu nhận biết tứ giác nội tiếp là:',
+        options: [
+          'Có hai góc kề nhau bằng nhau',
+          'Có tổng hai góc đối bằng $180^\\circ$',
+          'Có hai cạnh đối bằng nhau',
+          'Có hai đường chéo cắt nhau tại trung điểm'
+        ],
         correctAnswerIndex: 1,
-        explanation: 'Giá trị lớn nhất là 9, giá trị nhỏ nhất là 1.'
+        explanation:
+          'Đây là dấu hiệu nhận biết quan trọng của tứ giác nội tiếp.'
       }
     ]
   },
   {
     id: 'c9-t5',
-    title: 'Ôn tập chương Phân tích và xử lí dữ liệu',
-    description: 'Củng cố cách đọc bảng, biểu đồ, so sánh và rút ra nhận xét từ dữ liệu.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 30: Đa giác đều',
+    description:
+      'Nhận biết đa giác đều, các đặc điểm cơ bản và liên hệ với đường tròn ngoại tiếp, nội tiếp.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter9-5',
     questions: [
       {
         id: 'q9-5-1',
-        text: 'Từ bảng thống kê, ta có thể:',
+        text: 'Đa giác đều là đa giác có:',
         options: [
-          'Đọc và so sánh số liệu',
-          'Dựng hình vuông',
-          'Chỉ tính chu vi',
-          'Chỉ vẽ đường tròn'
+          'Các cạnh bằng nhau',
+          'Các góc bằng nhau',
+          'Các cạnh và các góc bằng nhau',
+          'Các đường chéo bằng nhau'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng thống kê giúp ta đọc và so sánh số liệu.'
+        correctAnswerIndex: 2,
+        explanation:
+          'Đa giác đều là đa giác có tất cả các cạnh bằng nhau và tất cả các góc bằng nhau.'
       },
       {
         id: 'q9-5-2',
-        text: 'Biểu đồ cột giúp ta:',
+        text: 'Tam giác đều là một:',
         options: [
-          'So sánh số lượng các nhóm',
-          'Tính diện tích hình tam giác',
-          'Đo góc vuông',
-          'Viết phân số'
+          'Đa giác đều',
+          'Tứ giác đều',
+          'Ngũ giác đều',
+          'Lục giác đều'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Biểu đồ cột rất thuận tiện cho việc so sánh các nhóm dữ liệu.'
+        explanation:
+          'Tam giác đều là đa giác đều có $3$ cạnh.'
       },
       {
         id: 'q9-5-3',
-        text: 'Nếu cột của nhóm A cao hơn nhóm B thì:',
+        text: 'Hình vuông là một:',
         options: [
-          'Nhóm A nhiều hơn nhóm B',
-          'Nhóm A ít hơn nhóm B',
-          'Hai nhóm bằng nhau',
-          'Không thể biết'
+          'Tứ giác đều',
+          'Tam giác đều',
+          'Ngũ giác đều',
+          'Lục giác đều'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Cột cao hơn biểu thị giá trị lớn hơn.'
+        explanation:
+          'Hình vuông là tứ giác có các cạnh bằng nhau và các góc đều bằng $90^\\circ$, nên là tứ giác đều.'
       },
       {
         id: 'q9-5-4',
-        text: 'Nếu số liệu là 3, 8, 5 thì giá trị lớn nhất là:',
-        options: ['3', '5', '8', '16'],
+        text: 'Mỗi đa giác đều luôn có:',
+        options: [
+          'Đường tròn ngoại tiếp',
+          'Đường tròn nội tiếp',
+          'Cả đường tròn ngoại tiếp và đường tròn nội tiếp',
+          'Không có đường tròn nào'
+        ],
         correctAnswerIndex: 2,
-        explanation: 'Trong các số 3, 8, 5 thì 8 là lớn nhất.'
+        explanation:
+          'Mỗi đa giác đều đều có cả đường tròn ngoại tiếp và đường tròn nội tiếp.'
       },
       {
         id: 'q9-5-5',
-        text: 'Nếu số liệu là 3, 8, 5 thì giá trị nhỏ nhất là:',
-        options: ['3', '5', '8', '0'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong các số 3, 8, 5 thì 3 là nhỏ nhất.'
+        text: 'Một ngũ giác đều có số cạnh là:',
+        options: ['$3$', '$4$', '$5$', '$6$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Ngũ giác đều là đa giác đều có $5$ cạnh.'
       },
       {
         id: 'q9-5-6',
-        text: 'Tổng của 4, 6, 7 là:',
-        options: ['15', '16', '17', '18'],
+        text: 'Một lục giác đều có số cạnh là:',
+        options: ['$4$', '$5$', '$6$', '$8$'],
         correctAnswerIndex: 2,
-        explanation: 'Ta có $4 + 6 + 7 = 17$.'
+        explanation:
+          'Lục giác đều có $6$ cạnh.'
       },
       {
         id: 'q9-5-7',
-        text: 'Một nhận xét đúng phải:',
+        text: 'Trong một đa giác đều, các góc ở các đỉnh:',
         options: [
-          'Dựa trên dữ liệu đã cho',
-          'Dựa trên đoán mò',
-          'Không cần bảng hay biểu đồ',
-          'Chỉ dựa trên màu sắc'
+          'Không bằng nhau',
+          'Bằng nhau',
+          'Chỉ có hai góc bằng nhau',
+          'Phụ thuộc vào độ dài cạnh'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Mọi nhận xét đúng đều phải dựa trên dữ liệu đã cho.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Đó là đặc trưng của đa giác đều.'
       },
       {
         id: 'q9-5-8',
-        text: 'Biểu đồ tranh có ưu điểm:',
+        text: 'Trong một đa giác đều, các cạnh:',
         options: [
-          'Sinh động, dễ nhìn',
-          'Khó đọc hơn mọi trường hợp',
-          'Không thể dùng cho dữ liệu',
-          'Chỉ dùng để trang trí'
+          'Không bằng nhau',
+          'Bằng nhau',
+          'Chỉ có hai cạnh bằng nhau',
+          'Tỉ lệ với số góc'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ tranh thường sinh động và dễ nhìn.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Đa giác đều có các cạnh bằng nhau.'
       },
       {
         id: 'q9-5-9',
-        text: 'Từ dữ liệu, ta có thể biết nhóm nào:',
+        text: 'Một đa giác đều vừa nội tiếp vừa ngoại tiếp được một đường tròn nghĩa là:',
         options: [
-          'Nhiều nhất hoặc ít nhất',
-          'Có góc vuông',
-          'Có đoạn thẳng dài hơn',
-          'Có hình tròn'
+          'Các đỉnh cùng nằm trên một đường tròn và các cạnh cùng tiếp xúc với một đường tròn',
+          'Chỉ các đỉnh nằm trên một đường tròn',
+          'Chỉ các cạnh tiếp xúc với một đường tròn',
+          'Không có ý nghĩa hình học'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Từ dữ liệu, ta có thể xác định nhóm lớn nhất hoặc nhỏ nhất.'
+        explanation:
+          'Đa giác đều có cả đường tròn ngoại tiếp đi qua các đỉnh và đường tròn nội tiếp tiếp xúc các cạnh.'
       },
       {
         id: 'q9-5-10',
-        text: 'Nội dung trọng tâm của chương này là:',
+        text: 'Mệnh đề nào sau đây đúng?',
         options: [
-          'Đọc, phân tích và xử lí dữ liệu từ bảng và biểu đồ',
-          'Phân số và số thập phân',
-          'Hình học cơ bản',
-          'Tính đối xứng'
+          'Mọi hình chữ nhật đều là đa giác đều',
+          'Mọi hình thoi đều là đa giác đều',
+          'Mọi hình vuông đều là đa giác đều',
+          'Mọi tam giác đều không phải đa giác đều'
+        ],
+        correctAnswerIndex: 2,
+        explanation:
+          'Hình vuông là tứ giác đều nên là một đa giác đều.'
+      }
+    ]
+  },
+  {
+    id: 'c9-t6',
+    title: 'Luyện tập chung',
+    description:
+      'Ôn tập về góc nội tiếp, tứ giác nội tiếp và đa giác đều.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter9-6',
+    questions: [
+      {
+        id: 'q9-6-1',
+        text: 'Góc nội tiếp chắn cung $140^\\circ$ có số đo bằng:',
+        options: ['$60^\\circ$', '$70^\\circ$', '$80^\\circ$', '$140^\\circ$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Góc nội tiếp bằng một nửa số đo cung bị chắn, nên bằng $70^\\circ$.'
+      },
+      {
+        id: 'q9-6-2',
+        text: 'Trong tứ giác nội tiếp, hai góc đối:',
+        options: [
+          'Bằng nhau',
+          'Bù nhau',
+          'Phụ nhau',
+          'Vuông góc'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Tính chất cơ bản: tổng hai góc đối bằng $180^\\circ$.'
+      },
+      {
+        id: 'q9-6-3',
+        text: 'Một hình chữ nhật có nội tiếp được đường tròn không?',
+        options: ['Có', 'Không', 'Chỉ khi là hình vuông', 'Chỉ khi là hình thoi'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Mọi hình chữ nhật đều nội tiếp được đường tròn.'
+      },
+      {
+        id: 'q9-6-4',
+        text: 'Tâm đường tròn nội tiếp tam giác là giao điểm của:',
+        options: [
+          'Ba đường cao',
+          'Ba đường trung tuyến',
+          'Ba đường trung trực',
+          'Ba đường phân giác'
+        ],
+        correctAnswerIndex: 3,
+        explanation:
+          'Tâm đường tròn nội tiếp là giao điểm ba đường phân giác.'
+      },
+      {
+        id: 'q9-6-5',
+        text: 'Hình vuông là:',
+        options: [
+          'Tứ giác đều',
+          'Ngũ giác đều',
+          'Không phải đa giác đều',
+          'Tam giác đều'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Chương này tập trung vào phân tích và xử lí dữ liệu từ bảng và biểu đồ.'
+        explanation:
+          'Hình vuông là tứ giác đều.'
+      }
+    ]
+  },
+  {
+    id: 'c9-t7',
+    title: 'Bài tập cuối chương 9',
+    description:
+      'Tổng hợp câu hỏi ôn tập toàn bộ chương 9 về góc nội tiếp, đường tròn ngoại tiếp, đường tròn nội tiếp, tứ giác nội tiếp và đa giác đều.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter9-7',
+    questions: [
+      {
+        id: 'q9-7-1',
+        text: 'Nếu một góc nội tiếp bằng $35^\\circ$ thì cung bị chắn có số đo bằng:',
+        options: ['$35^\\circ$', '$70^\\circ$', '$105^\\circ$', '$140^\\circ$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Cung bị chắn có số đo gấp đôi góc nội tiếp, nên bằng $70^\\circ$.'
+      },
+      {
+        id: 'q9-7-2',
+        text: 'Tâm đường tròn ngoại tiếp tam giác là giao điểm của:',
+        options: [
+          'Ba đường trung tuyến',
+          'Ba đường phân giác',
+          'Ba đường trung trực',
+          'Ba đường cao'
+        ],
+        correctAnswerIndex: 2,
+        explanation:
+          'Đó là định nghĩa của tâm đường tròn ngoại tiếp.'
+      },
+      {
+        id: 'q9-7-3',
+        text: 'Tứ giác có tổng hai góc đối bằng $180^\\circ$ thì:',
+        options: [
+          'Là hình bình hành',
+          'Là tứ giác nội tiếp',
+          'Là hình thang',
+          'Là hình chữ nhật'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Đây là dấu hiệu nhận biết tứ giác nội tiếp.'
+      },
+      {
+        id: 'q9-7-4',
+        text: 'Đa giác đều là đa giác có:',
+        options: [
+          'Các cạnh bằng nhau',
+          'Các góc bằng nhau',
+          'Các cạnh và các góc bằng nhau',
+          'Các đường chéo bằng nhau'
+        ],
+        correctAnswerIndex: 2,
+        explanation:
+          'Đó là định nghĩa của đa giác đều.'
+      },
+      {
+        id: 'q9-7-5',
+        text: 'Trong tam giác đều, tâm nội tiếp và tâm ngoại tiếp:',
+        options: [
+          'Phân biệt',
+          'Trùng nhau',
+          'Không tồn tại',
+          'Nằm ngoài tam giác'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Trong tam giác đều, các tâm đặc biệt trùng nhau.'
       }
     ]
   }

@@ -4,566 +4,327 @@ import { chapter8ExamTopics } from './chapter8-exams';
 export const chapter8CoreTopics: Topic[] = [
   {
     id: 'c8-t1',
-    title: 'Thu thập dữ liệu',
-    description: 'Nhận biết dữ liệu, cách thu thập dữ liệu và các tình huống khảo sát đơn giản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 25: Phép thử ngẫu nhiên và không gian mẫu',
+    description:
+      'Nhận biết phép thử ngẫu nhiên, kết quả có thể xảy ra và xác định không gian mẫu trong các mô hình xác suất đơn giản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter8-1',
     questions: [
       {
         id: 'q8-1-1',
-        text: 'Dữ liệu là:',
+        text: 'Phép thử ngẫu nhiên là phép thử:',
         options: [
-          'Những thông tin thu thập được',
-          'Chỉ là các con số',
-          'Chỉ là hình vẽ',
-          'Một phép tính'
+          'Luôn cho cùng một kết quả',
+          'Không biết trước chắc chắn kết quả nào sẽ xảy ra',
+          'Không có kết quả',
+          'Chỉ có một kết quả duy nhất'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Dữ liệu là những thông tin thu thập được từ quan sát, điều tra hoặc đo đạc.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Phép thử ngẫu nhiên là phép thử mà ta không thể biết chắc chắn trước kết quả nào sẽ xảy ra.'
       },
       {
         id: 'q8-1-2',
-        text: 'Một cách thu thập dữ liệu là:',
-        options: ['Điều tra', 'Làm phép cộng', 'Vẽ tam giác', 'Đo góc'],
-        correctAnswerIndex: 0,
-        explanation: 'Điều tra là một cách phổ biến để thu thập dữ liệu.'
+        text: 'Khi gieo một đồng xu một lần, số kết quả có thể xảy ra là:',
+        options: ['$1$', '$2$', '$3$', '$4$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Khi gieo một đồng xu một lần có hai kết quả có thể xảy ra: sấp hoặc ngửa.'
       },
       {
         id: 'q8-1-3',
-        text: 'Khi hỏi các bạn trong lớp về môn học yêu thích, ta đang:',
-        options: ['Thu thập dữ liệu', 'Giải toán', 'Vẽ hình', 'Đo độ dài'],
+        text: 'Không gian mẫu của phép thử gieo một đồng xu một lần là:',
+        options: [
+          '$\\{\\text{sấp},\\text{ngửa}\\}$',
+          '$\\{1,2,3,4,5,6\\}$',
+          '$\\{\\text{đỏ},\\text{xanh}\\}$',
+          '$\\{0,1\\}$'
+        ],
         correctAnswerIndex: 0,
-        explanation: 'Việc hỏi và ghi lại câu trả lời là đang thu thập dữ liệu.'
+        explanation:
+          'Không gian mẫu là tập hợp tất cả các kết quả có thể xảy ra của phép thử.'
       },
       {
         id: 'q8-1-4',
-        text: 'Dữ liệu về chiều cao học sinh thường được thu thập bằng cách:',
-        options: ['Đo đạc', 'Phỏng đoán', 'Tô màu', 'Gấp giấy'],
+        text: 'Khi gieo một con xúc xắc một lần, không gian mẫu là:',
+        options: [
+          '$\\{1,2,3,4,5,6\\}$',
+          '$\\{0,1,2,3,4,5\\}$',
+          '$\\{1,2,3,4,5\\}$',
+          '$\\{2,4,6\\}$'
+        ],
         correctAnswerIndex: 0,
-        explanation: 'Chiều cao là dữ liệu đo được bằng cách đo đạc.'
+        explanation:
+          'Một con xúc xắc có $6$ mặt nên không gian mẫu là $\\{1,2,3,4,5,6\\}$.'
       },
       {
         id: 'q8-1-5',
-        text: 'Dữ liệu về màu sắc yêu thích của học sinh có thể thu thập bằng cách:',
-        options: ['Khảo sát', 'Cân đo', 'Vẽ đường thẳng', 'Tính chu vi'],
-        correctAnswerIndex: 0,
-        explanation: 'Màu sắc yêu thích có thể thu thập bằng khảo sát hoặc hỏi đáp.'
+        text: 'Số phần tử của không gian mẫu khi gieo một con xúc xắc một lần là:',
+        options: ['$4$', '$5$', '$6$', '$7$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Không gian mẫu có $6$ phần tử tương ứng với $6$ mặt của xúc xắc.'
       },
       {
         id: 'q8-1-6',
-        text: 'Nếu ta đếm số học sinh nam trong lớp thì dữ liệu thu được là:',
-        options: ['Một con số', 'Một hình vẽ', 'Một đoạn thẳng', 'Một góc'],
-        correctAnswerIndex: 0,
-        explanation: 'Kết quả đếm được là một con số.'
+        text: 'Khi gieo đồng thời hai đồng xu, số kết quả có thể xảy ra là:',
+        options: ['$2$', '$3$', '$4$', '$6$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Các kết quả có thể là: $(\\text{sấp},\\text{sấp})$, $(\\text{sấp},\\text{ngửa})$, $(\\text{ngửa},\\text{sấp})$, $(\\text{ngửa},\\text{ngửa})$.'
       },
       {
         id: 'q8-1-7',
-        text: 'Một ví dụ về dữ liệu trong thực tế là:',
+        text: 'Khi gieo đồng thời hai đồng xu, không gian mẫu có thể viết là:',
         options: [
-          'Số bạn đi học bằng xe đạp',
-          'Một cạnh của hình vuông',
-          'Phép cộng 2 + 3',
-          'Một tia Ox'
+          '$\\{SS,SN,NS,NN\\}$',
+          '$\\{S,N\\}$',
+          '$\\{1,2,3,4\\}$',
+          '$\\{SS,NN\\}$'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Số bạn đi học bằng xe đạp là một thông tin có thể thu thập được nên là dữ liệu.'
+        explanation:
+          'Ta ký hiệu $S$ là sấp, $N$ là ngửa, khi đó không gian mẫu là $\\{SS,SN,NS,NN\\}$.'
       },
       {
         id: 'q8-1-8',
-        text: 'Thu thập dữ liệu giúp ta:',
+        text: 'Khi rút ngẫu nhiên một thẻ từ hộp gồm các thẻ ghi số $1,2,3,4$, không gian mẫu là:',
         options: [
-          'Biết thêm thông tin để nhận xét, so sánh',
-          'Chỉ để viết số',
-          'Chỉ để vẽ biểu đồ',
-          'Chỉ để tính chu vi'
+          '$\\{1,2,3,4\\}$',
+          '$\\{0,1,2,3,4\\}$',
+          '$\\{1,2,3\\}$',
+          '$\\{2,4\\}$'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Thu thập dữ liệu giúp ta có thông tin để phân tích và đưa ra nhận xét.'
+        explanation:
+          'Mỗi thẻ là một kết quả có thể xảy ra, nên không gian mẫu là $\\{1,2,3,4\\}$.'
       },
       {
         id: 'q8-1-9',
-        text: 'Kết quả của một cuộc khảo sát thường được ghi lại dưới dạng:',
-        options: ['Dữ liệu', 'Góc', 'Đường tròn', 'Phân số'],
-        correctAnswerIndex: 0,
-        explanation: 'Kết quả khảo sát được ghi lại thành dữ liệu.'
+        text: 'Không gian mẫu của một phép thử là tập hợp:',
+        options: [
+          'Các biến cố chắc chắn',
+          'Tất cả các kết quả có thể xảy ra',
+          'Các kết quả không thể xảy ra',
+          'Các giá trị trung bình'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Đây là định nghĩa của không gian mẫu.'
       },
       {
         id: 'q8-1-10',
-        text: 'Muốn biết trong lớp có bao nhiêu bạn thích đá bóng, ta nên:',
+        text: 'Khi gieo một con xúc xắc một lần, biến cố “xuất hiện số chẵn” gồm các kết quả:',
         options: [
-          'Hỏi từng bạn và ghi lại kết quả',
-          'Đo chiều cao các bạn',
-          'Vẽ hình tròn',
-          'Tính diện tích lớp học'
+          '$\\{1,3,5\\}$',
+          '$\\{2,4,6\\}$',
+          '$\\{1,2,3\\}$',
+          '$\\{4,5,6\\}$'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Muốn biết sở thích của các bạn, ta cần khảo sát và ghi lại kết quả.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Các số chẵn trên xúc xắc là $2,4,6$.'
       }
     ]
   },
   {
     id: 'c8-t2',
-    title: 'Phân loại và tổ chức dữ liệu',
-    description: 'Biết sắp xếp, phân loại và trình bày dữ liệu theo nhóm phù hợp.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 26: Xác suất của biến cố liên quan tới phép thử',
+    description:
+      'Nhận biết biến cố, số phần tử thuận lợi và tính xác suất của biến cố trong các mô hình xác suất đơn giản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter8-2',
     questions: [
       {
         id: 'q8-2-1',
-        text: 'Sau khi thu thập dữ liệu, việc cần làm tiếp theo thường là:',
+        text: 'Xác suất của biến cố $A$ trong mô hình đồng khả năng được tính bởi công thức:',
         options: [
-          'Sắp xếp và tổ chức dữ liệu',
-          'Xóa dữ liệu',
-          'Bỏ qua dữ liệu',
-          'Chỉ tính tổng'
+          '$P(A)=\\dfrac{n(A)}{n(\\Omega)}$',
+          '$P(A)=n(A)\\cdot n(\\Omega)$',
+          '$P(A)=n(\\Omega)-n(A)$',
+          '$P(A)=\\dfrac{n(\\Omega)}{n(A)}$'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Sau khi thu thập dữ liệu, ta thường sắp xếp và tổ chức để dễ quan sát.'
+        explanation:
+          'Trong mô hình đồng khả năng, xác suất của biến cố bằng số kết quả thuận lợi chia cho số kết quả có thể xảy ra.'
       },
       {
         id: 'q8-2-2',
-        text: 'Nếu dữ liệu là tên các môn học yêu thích, ta có thể tổ chức theo:',
-        options: ['Nhóm môn học', 'Độ dài đoạn thẳng', 'Số đo góc', 'Chu vi'],
+        text: 'Khi gieo một con xúc xắc một lần, xác suất xuất hiện mặt $1$ là:',
+        options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{5}{6}$'],
         correctAnswerIndex: 0,
-        explanation: 'Dữ liệu này phù hợp để phân loại theo từng nhóm môn học.'
+        explanation:
+          'Có $1$ kết quả thuận lợi trong tổng số $6$ kết quả đồng khả năng.'
       },
       {
         id: 'q8-2-3',
-        text: 'Khi tổ chức dữ liệu, mục đích là:',
-        options: [
-          'Dễ quan sát và nhận xét hơn',
-          'Làm dữ liệu dài hơn',
-          'Làm dữ liệu khó hiểu hơn',
-          'Chỉ để trang trí'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Tổ chức dữ liệu giúp ta quan sát và rút ra nhận xét dễ hơn.'
+        text: 'Khi gieo một đồng xu một lần, xác suất xuất hiện mặt ngửa là:',
+        options: ['$\\dfrac{1}{4}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$1$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Có $2$ kết quả đồng khả năng là sấp và ngửa, nên xác suất xuất hiện ngửa là $\\dfrac{1}{2}$.'
       },
       {
         id: 'q8-2-4',
-        text: 'Một cách đơn giản để tổ chức dữ liệu là dùng:',
-        options: ['Bảng', 'Compa', 'Êke', 'Thước đo góc'],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng là cách đơn giản và phổ biến để tổ chức dữ liệu.'
+        text: 'Khi gieo một con xúc xắc một lần, xác suất xuất hiện số chẵn là:',
+        options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{2}{3}$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Các kết quả thuận lợi là $\\{2,4,6\\}$, có $3$ kết quả trên tổng $6$ kết quả.'
       },
       {
         id: 'q8-2-5',
-        text: 'Nếu dữ liệu là số quả cam của từng bạn, ta có thể:',
-        options: [
-          'Sắp xếp từ bé đến lớn',
-          'Vẽ hình bất kì',
-          'Không cần ghi lại',
-          'Đổi thành màu sắc'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Với dữ liệu là số lượng, ta có thể sắp xếp theo thứ tự tăng dần.'
+        text: 'Khi gieo một con xúc xắc một lần, xác suất xuất hiện số lớn hơn $4$ là:',
+        options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{2}{3}$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Các số lớn hơn $4$ là $5$ và $6$, có $2$ kết quả thuận lợi nên xác suất là $\\dfrac{2}{6}=\\dfrac{1}{3}$.'
       },
       {
         id: 'q8-2-6',
-        text: 'Tổ chức dữ liệu theo nhóm giúp:',
-        options: [
-          'Biết nhóm nào nhiều, nhóm nào ít',
-          'Làm mất dữ liệu',
-          'Không thể so sánh',
-          'Không cần tính toán'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Tổ chức dữ liệu theo nhóm giúp so sánh dễ hơn.'
+        text: 'Khi rút ngẫu nhiên một thẻ từ hộp gồm các thẻ ghi số $1,2,3,4,5$, xác suất rút được số nguyên tố là:',
+        options: ['$\\dfrac{1}{5}$', '$\\dfrac{2}{5}$', '$\\dfrac{3}{5}$', '$\\dfrac{4}{5}$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Các số nguyên tố là $2,3,5$, có $3$ kết quả thuận lợi trên $5$ kết quả.'
       },
       {
         id: 'q8-2-7',
-        text: 'Một bảng dữ liệu thường gồm:',
-        options: [
-          'Các hàng và các cột',
-          'Chỉ một hình tròn',
-          'Chỉ một đường thẳng',
-          'Chỉ một phép tính'
-        ],
+        text: 'Khi gieo đồng thời hai đồng xu, xác suất để cả hai đều ngửa là:',
+        options: ['$\\dfrac{1}{4}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{3}{4}$'],
         correctAnswerIndex: 0,
-        explanation: 'Bảng dữ liệu thường được trình bày theo hàng và cột.'
+        explanation:
+          'Không gian mẫu có $4$ phần tử: $SS,SN,NS,NN$. Chỉ có $NN$ là thuận lợi nên xác suất là $\\dfrac{1}{4}$.'
       },
       {
         id: 'q8-2-8',
-        text: 'Dữ liệu “số anh chị em trong gia đình” phù hợp để:',
-        options: [
-          'Lập bảng thống kê',
-          'Vẽ tam giác',
-          'Đo độ dài',
-          'Tính góc'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Đây là dữ liệu về số lượng, rất phù hợp để lập bảng.'
+        text: 'Khi gieo đồng thời hai đồng xu, xác suất để có đúng một mặt ngửa là:',
+        options: ['$\\dfrac{1}{4}$', '$\\dfrac{1}{2}$', '$\\dfrac{3}{4}$', '$1$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Các kết quả thuận lợi là $SN$ và $NS$, có $2$ trên tổng $4$ kết quả, nên xác suất là $\\dfrac{1}{2}$.'
       },
       {
         id: 'q8-2-9',
-        text: 'Một lợi ích của việc sắp xếp dữ liệu là:',
+        text: 'Giá trị của xác suất luôn thuộc khoảng:',
         options: [
-          'Dễ tìm giá trị lớn nhất, nhỏ nhất',
-          'Làm dữ liệu sai đi',
-          'Không dùng được nữa',
-          'Mất thời gian vô ích'
+          '$P(A) < 0$',
+          '$0 \\le P(A) \\le 1$',
+          '$P(A) > 1$',
+          '$-1 \\le P(A) \\le 1$'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Sắp xếp giúp ta tìm giá trị lớn nhất và nhỏ nhất dễ hơn.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Xác suất của một biến cố luôn nằm trong đoạn từ $0$ đến $1$.'
       },
       {
         id: 'q8-2-10',
-        text: 'Nếu muốn biết loại quả nào được yêu thích nhất, ta nên:',
-        options: [
-          'Nhóm các câu trả lời theo từng loại quả',
-          'Đo chiều cao của các bạn',
-          'Vẽ đường thẳng',
-          'Bỏ qua dữ liệu'
-        ],
+        text: 'Nếu một biến cố không thể xảy ra thì xác suất của nó bằng:',
+        options: ['$0$', '$\\dfrac{1}{2}$', '$1$', 'Không xác định'],
         correctAnswerIndex: 0,
-        explanation: 'Nhóm dữ liệu theo từng loại quả giúp ta biết loại nào được chọn nhiều nhất.'
+        explanation:
+          'Biến cố không thể xảy ra có xác suất bằng $0$.'
       }
     ]
   },
   {
     id: 'c8-t3',
-    title: 'Bảng thống kê đơn giản',
-    description: 'Đọc, lập và nhận xét từ các bảng thống kê đơn giản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Luyện tập chung',
+    description:
+      'Ôn tập về phép thử ngẫu nhiên, không gian mẫu và xác suất của biến cố trong các mô hình đơn giản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter8-3',
     questions: [
       {
         id: 'q8-3-1',
-        text: 'Bảng thống kê dùng để:',
-        options: [
-          'Trình bày dữ liệu một cách rõ ràng',
-          'Vẽ tam giác',
-          'Tính diện tích',
-          'Đo góc'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng thống kê giúp trình bày dữ liệu rõ ràng và dễ theo dõi.'
+        text: 'Khi gieo một con xúc xắc một lần, số phần tử của không gian mẫu là:',
+        options: ['$4$', '$5$', '$6$', '$7$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Không gian mẫu là $\\{1,2,3,4,5,6\\}$ nên có $6$ phần tử.'
       },
       {
         id: 'q8-3-2',
-        text: 'Trong bảng thống kê, hàng và cột giúp ta:',
-        options: [
-          'Đọc và so sánh dữ liệu dễ hơn',
-          'Làm bảng rối hơn',
-          'Không dùng để đọc dữ liệu',
-          'Chỉ dùng để trang trí'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Hàng và cột trong bảng giúp dữ liệu được trình bày khoa học hơn.'
+        text: 'Khi gieo một con xúc xắc một lần, xác suất xuất hiện số lẻ là:',
+        options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{2}{3}$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Các số lẻ là $1,3,5$, có $3$ kết quả thuận lợi trên $6$ kết quả.'
       },
       {
         id: 'q8-3-3',
-        text: 'Nếu bảng ghi số sách đọc được của 4 bạn là 2, 5, 3, 4 thì số lớn nhất là:',
-        options: ['2', '3', '4', '5'],
-        correctAnswerIndex: 3,
-        explanation: 'Trong các số 2, 5, 3, 4 thì 5 là lớn nhất.'
+        text: 'Khi gieo một đồng xu một lần, không gian mẫu là:',
+        options: [
+          '$\\{\\text{sấp},\\text{ngửa}\\}$',
+          '$\\{1,2\\}$',
+          '$\\{\\text{đỏ},\\text{xanh}\\}$',
+          '$\\{0,1,2\\}$'
+        ],
+        correctAnswerIndex: 0,
+        explanation:
+          'Đồng xu chỉ có hai kết quả có thể xảy ra là sấp và ngửa.'
       },
       {
         id: 'q8-3-4',
-        text: 'Nếu bảng ghi số sách đọc được của 4 bạn là 2, 5, 3, 4 thì số nhỏ nhất là:',
-        options: ['2', '3', '4', '5'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong các số 2, 5, 3, 4 thì 2 là nhỏ nhất.'
+        text: 'Khi gieo đồng thời hai đồng xu, xác suất để có ít nhất một mặt ngửa là:',
+        options: ['$\\dfrac{1}{4}$', '$\\dfrac{1}{2}$', '$\\dfrac{3}{4}$', '$1$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Các kết quả thuận lợi là $SN,NS,NN$, có $3$ trên tổng $4$ kết quả.'
       },
       {
         id: 'q8-3-5',
-        text: 'Một bảng thống kê về số cây trồng của các lớp giúp ta:',
-        options: [
-          'So sánh lớp nào trồng nhiều cây hơn',
-          'Vẽ thêm đoạn thẳng',
-          'Tính chu vi lớp học',
-          'Đo góc nhọn'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng thống kê giúp so sánh số lượng giữa các lớp.'
-      },
-      {
-        id: 'q8-3-6',
-        text: 'Khi đọc bảng thống kê, ta cần chú ý:',
-        options: [
-          'Tên hàng, tên cột và số liệu',
-          'Chỉ màu sắc của bảng',
-          'Chỉ kích thước bảng',
-          'Chỉ hình vẽ kèm theo'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Tên hàng, tên cột và số liệu là thông tin quan trọng nhất trong bảng.'
-      },
-      {
-        id: 'q8-3-7',
-        text: 'Một bảng thống kê có thể cho biết:',
-        options: [
-          'Số lượng từng nhóm đối tượng',
-          'Cách dựng tia phân giác',
-          'Chu vi hình tròn',
-          'Số đo góc bẹt'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng thống kê thường dùng để ghi số lượng của từng nhóm.'
-      },
-      {
-        id: 'q8-3-8',
-        text: 'Nếu bảng ghi số bạn thích Toán là 12, thích Văn là 8 thì môn được thích nhiều hơn là:',
-        options: ['Toán', 'Văn', 'Hai môn bằng nhau', 'Không xác định'],
-        correctAnswerIndex: 0,
-        explanation: 'Vì 12 > 8 nên môn Toán được thích nhiều hơn.'
-      },
-      {
-        id: 'q8-3-9',
-        text: 'Lập bảng thống kê giúp ta:',
-        options: [
-          'Ghi chép dữ liệu gọn gàng hơn',
-          'Làm mất thông tin',
-          'Không thể so sánh dữ liệu',
-          'Bỏ qua dữ liệu'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng thống kê giúp dữ liệu được ghi chép gọn gàng và khoa học.'
-      },
-      {
-        id: 'q8-3-10',
-        text: 'Từ bảng thống kê, ta có thể đưa ra:',
-        options: ['Nhận xét', 'Chỉ hình vẽ', 'Chỉ phép cộng', 'Không làm gì được'],
-        correctAnswerIndex: 0,
-        explanation: 'Từ bảng thống kê, ta có thể quan sát và đưa ra nhận xét.'
+        text: 'Xác suất của biến cố chắc chắn là:',
+        options: ['$0$', '$\\dfrac{1}{2}$', '$1$', '$2$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Biến cố chắc chắn có xác suất bằng $1$.'
       }
     ]
   },
   {
     id: 'c8-t4',
-    title: 'Biểu đồ tranh và biểu đồ cột đơn giản',
-    description: 'Làm quen với biểu đồ tranh, biểu đồ cột và cách đọc thông tin từ biểu đồ.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài tập cuối chương 8',
+    description:
+      'Tổng hợp câu hỏi ôn tập toàn bộ chương 8 về xác suất của biến cố trong một số mô hình xác suất đơn giản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter8-4',
     questions: [
       {
         id: 'q8-4-1',
-        text: 'Biểu đồ tranh dùng hình ảnh để:',
-        options: [
-          'Biểu diễn dữ liệu',
-          'Tính diện tích',
-          'Đo góc',
-          'Dựng đường thẳng'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ tranh dùng hình ảnh để biểu diễn dữ liệu một cách trực quan.'
+        text: 'Khi gieo một con xúc xắc một lần, xác suất xuất hiện số nhỏ hơn $3$ là:',
+        options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{2}{3}$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Các số nhỏ hơn $3$ là $1,2$, có $2$ kết quả thuận lợi trên $6$ kết quả nên xác suất là $\\dfrac{2}{6}=\\dfrac{1}{3}$.'
       },
       {
         id: 'q8-4-2',
-        text: 'Biểu đồ cột dùng để:',
-        options: [
-          'Biểu diễn số lượng của các nhóm',
-          'Dựng tam giác',
-          'Đo độ dài đoạn thẳng',
-          'Vẽ đường tròn'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ cột giúp biểu diễn và so sánh số lượng giữa các nhóm.'
+        text: 'Khi rút một thẻ từ hộp gồm các thẻ ghi số $1,2,3,4,5,6$, xác suất rút được số chẵn là:',
+        options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{2}{3}$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Các số chẵn là $2,4,6$, có $3$ kết quả thuận lợi trên $6$ kết quả.'
       },
       {
         id: 'q8-4-3',
-        text: 'Trong biểu đồ cột, cột cao hơn thường biểu thị:',
-        options: [
-          'Số lượng lớn hơn',
-          'Số lượng nhỏ hơn',
-          'Không có ý nghĩa',
-          'Chỉ đẹp hơn'
-        ],
+        text: 'Khi gieo đồng thời hai đồng xu, xác suất để cả hai đều sấp là:',
+        options: ['$\\dfrac{1}{4}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{3}{4}$'],
         correctAnswerIndex: 0,
-        explanation: 'Cột cao hơn thường biểu thị giá trị hoặc số lượng lớn hơn.'
+        explanation:
+          'Chỉ có kết quả $SS$ là thuận lợi, nên xác suất là $\\dfrac{1}{4}$.'
       },
       {
         id: 'q8-4-4',
-        text: 'Biểu đồ tranh có ưu điểm là:',
-        options: [
-          'Dễ nhìn, sinh động',
-          'Khó hiểu hơn bảng',
-          'Không thể so sánh',
-          'Chỉ dùng cho số rất lớn'
-        ],
+        text: 'Xác suất của một biến cố không thể xảy ra là:',
+        options: ['$0$', '$\\dfrac{1}{2}$', '$1$', '$2$'],
         correctAnswerIndex: 0,
-        explanation: 'Biểu đồ tranh thường trực quan và dễ nhìn.'
+        explanation:
+          'Biến cố không thể xảy ra có xác suất bằng $0$.'
       },
       {
         id: 'q8-4-5',
-        text: 'Khi đọc biểu đồ cột, ta thường quan sát:',
-        options: [
-          'Tên cột và chiều cao của cột',
-          'Chỉ màu sắc',
-          'Chỉ khung viền',
-          'Chỉ số góc'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Tên cột và chiều cao cột là thông tin quan trọng nhất khi đọc biểu đồ cột.'
-      },
-      {
-        id: 'q8-4-6',
-        text: 'Nếu biểu đồ cột cho thấy lớp 9A có cột cao hơn lớp 9B thì:',
-        options: [
-          'lớp 9A có số lượng nhiều hơn lớp 9B',
-          'lớp 9A ít hơn lớp 9B',
-          'Hai lớp bằng nhau',
-          'Không thể kết luận'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Cột cao hơn biểu thị số lượng lớn hơn.'
-      },
-      {
-        id: 'q8-4-7',
-        text: 'Biểu đồ nào phù hợp để biểu diễn số lượng sách của các tổ trong lớp?',
-        options: ['Biểu đồ cột', 'Đường thẳng', 'Tam giác', 'Đường tròn bắt buộc'],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ cột phù hợp để so sánh số lượng giữa các nhóm.'
-      },
-      {
-        id: 'q8-4-8',
-        text: 'Biểu đồ tranh thường dùng:',
-        options: [
-          'Các hình ảnh lặp lại để biểu thị số lượng',
-          'Các đoạn thẳng vuông góc',
-          'Các góc nhọn',
-          'Các phép tính cộng'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ tranh thường dùng các hình ảnh lặp lại để biểu thị số lượng.'
-      },
-      {
-        id: 'q8-4-9',
-        text: 'Từ biểu đồ, ta có thể:',
-        options: [
-          'So sánh các nhóm dữ liệu',
-          'Xác định trục đối xứng của hình',
-          'Tính chu vi hình vuông',
-          'Đo góc bẹt'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ giúp ta so sánh các nhóm dữ liệu một cách trực quan.'
-      },
-      {
-        id: 'q8-4-10',
-        text: 'Một biểu đồ tốt cần:',
-        options: [
-          'Rõ ràng, dễ đọc',
-          'Nhiều màu đến mức khó nhìn',
-          'Không ghi tên',
-          'Không có số liệu'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ cần rõ ràng, dễ đọc và có đủ thông tin cần thiết.'
-      }
-    ]
-  },
-  {
-    id: 'c8-t5',
-    title: 'Ôn tập chương Thu thập và tổ chức dữ liệu',
-    description: 'Củng cố kiến thức về thu thập, phân loại, tổ chức dữ liệu và đọc bảng, biểu đồ đơn giản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
-    questions: [
-      {
-        id: 'q8-5-1',
-        text: 'Dữ liệu là:',
-        options: [
-          'Thông tin thu thập được',
-          'Một loại góc',
-          'Một đoạn thẳng',
-          'Một hình vuông'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Dữ liệu là thông tin thu thập được.'
-      },
-      {
-        id: 'q8-5-2',
-        text: 'Một cách thu thập dữ liệu là:',
-        options: ['Khảo sát', 'Vẽ hình', 'Đo góc', 'Tính phân số'],
-        correctAnswerIndex: 0,
-        explanation: 'Khảo sát là một cách thu thập dữ liệu.'
-      },
-      {
-        id: 'q8-5-3',
-        text: 'Sau khi thu thập dữ liệu, ta thường:',
-        options: [
-          'Tổ chức và sắp xếp dữ liệu',
-          'Bỏ dữ liệu đi',
-          'Chỉ đo lại dữ liệu',
-          'Đổi dữ liệu thành hình học'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Sau khi thu thập, ta thường tổ chức dữ liệu để dễ quan sát.'
-      },
-      {
-        id: 'q8-5-4',
-        text: 'Bảng thống kê giúp ta:',
-        options: [
-          'Trình bày dữ liệu rõ ràng',
-          'Đo góc',
-          'Vẽ tam giác',
-          'Tính diện tích'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Bảng thống kê giúp trình bày dữ liệu rõ ràng.'
-      },
-      {
-        id: 'q8-5-5',
-        text: 'Biểu đồ cột giúp ta:',
-        options: [
-          'So sánh số lượng giữa các nhóm',
-          'Dựng đường tròn',
-          'Tính chu vi',
-          'Đo độ dài'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ cột giúp so sánh số lượng giữa các nhóm.'
-      },
-      {
-        id: 'q8-5-6',
-        text: 'Biểu đồ tranh có ưu điểm là:',
-        options: [
-          'Sinh động, dễ nhìn',
-          'Khó đọc hơn bảng',
-          'Không biểu diễn được dữ liệu',
-          'Chỉ dùng cho toán hình'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Biểu đồ tranh sinh động và dễ nhìn.'
-      },
-      {
-        id: 'q8-5-7',
-        text: 'Từ bảng hoặc biểu đồ, ta có thể:',
-        options: ['Đưa ra nhận xét', 'Chỉ vẽ thêm hình', 'Không làm gì được', 'Chỉ đổi màu cột'],
-        correctAnswerIndex: 0,
-        explanation: 'Từ bảng hoặc biểu đồ, ta có thể quan sát và đưa ra nhận xét.'
-      },
-      {
-        id: 'q8-5-8',
-        text: 'Nếu một cột trong biểu đồ cao hơn cột khác thì thường có nghĩa là:',
-        options: [
-          'Số lượng của nhóm đó lớn hơn',
-          'Nhóm đó nhỏ hơn',
-          'Hai nhóm bằng nhau',
-          'Không thể biết'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Cột cao hơn thường biểu thị số lượng lớn hơn.'
-      },
-      {
-        id: 'q8-5-9',
-        text: 'Việc sắp xếp dữ liệu giúp ta:',
-        options: [
-          'Dễ so sánh và dễ tìm thông tin',
-          'Làm dữ liệu khó hiểu hơn',
-          'Không còn dùng được dữ liệu',
-          'Chỉ để trang trí'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Sắp xếp dữ liệu giúp ta so sánh và tìm thông tin dễ hơn.'
-      },
-      {
-        id: 'q8-5-10',
-        text: 'Nội dung trọng tâm của chương này là:',
-        options: [
-          'Thu thập, tổ chức và biểu diễn dữ liệu đơn giản',
-          'Số nguyên và phân số',
-          'Điểm, tia, đoạn thẳng',
-          'Tâm đối xứng'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Chương này tập trung vào thu thập, tổ chức và biểu diễn dữ liệu đơn giản.'
+        text: 'Xác suất của một biến cố chắc chắn là:',
+        options: ['$0$', '$\\dfrac{1}{2}$', '$1$', '$2$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Biến cố chắc chắn có xác suất bằng $1$.'
       }
     ]
   }

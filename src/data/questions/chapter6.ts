@@ -4,470 +4,539 @@ import { chapter6ExamTopics } from './chapter6-exams';
 export const chapter6CoreTopics: Topic[] = [
   {
     id: 'c6-t1',
-    title: 'Trục đối xứng',
-    description: 'Nhận biết trục đối xứng của một hình phẳng và các hình có trục đối xứng.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 18: Hàm số $y = ax^2$ $(a \\ne 0)$',
+    description:
+      'Nhận biết hàm số $y = ax^2$, tính giá trị hàm số, lập bảng giá trị và nhận xét sự biến thiên đơn giản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter6-1',
     questions: [
       {
         id: 'q6-1-1',
-        text: 'Trục đối xứng của một hình là:',
-        options: [
-          'Đường thẳng chia hình thành hai phần bằng nhau và chồng khít lên nhau',
-          'Một đoạn thẳng bất kì trong hình',
-          'Một cạnh của hình',
-          'Một điểm nằm trong hình'
-        ],
+        text: 'Biểu thức nào sau đây là hàm số dạng $y = ax^2$ với $a \\ne 0$?',
+        options: ['$y = 2x^2$', '$y = 3x + 1$', '$y = \\dfrac{1}{x}$', '$y = 0$'],
         correctAnswerIndex: 0,
-        explanation: 'Trục đối xứng là đường thẳng mà khi gấp hình theo đường đó thì hai phần chồng khít lên nhau.'
+        explanation:
+          'Hàm số dạng $y = ax^2$ có biến $x$ ở bậc hai và hệ số $a \\ne 0$.'
       },
       {
         id: 'q6-1-2',
-        text: 'Hình vuông có bao nhiêu trục đối xứng?',
-        options: ['1', '2', '3', '4'],
-        correctAnswerIndex: 3,
-        explanation: 'Hình vuông có 4 trục đối xứng: 2 đường chéo và 2 đường thẳng đi qua trung điểm các cạnh đối diện.'
+        text: 'Với hàm số $y = 2x^2$, giá trị của $y$ khi $x = 3$ là:',
+        options: ['$6$', '$9$', '$18$', '$12$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Thay $x = 3$ vào hàm số, ta có $y = 2 \\cdot 3^2 = 2 \\cdot 9 = 18$.'
       },
       {
         id: 'q6-1-3',
-        text: 'Hình chữ nhật có bao nhiêu trục đối xứng?',
-        options: ['1', '2', '3', '4'],
-        correctAnswerIndex: 1,
-        explanation: 'Hình chữ nhật có 2 trục đối xứng.'
+        text: 'Với hàm số $y = -x^2$, giá trị của $y$ khi $x = -2$ là:',
+        options: ['$-4$', '$4$', '$-2$', '$2$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $y = -(-2)^2 = -4$.'
       },
       {
         id: 'q6-1-4',
-        text: 'Hình tròn có số trục đối xứng là:',
-        options: ['1', '2', '4', 'Vô số'],
-        correctAnswerIndex: 3,
-        explanation: 'Mọi đường thẳng đi qua tâm đều là trục đối xứng của hình tròn.'
+        text: 'Đồ thị của hàm số $y = ax^2$ là:',
+        options: ['Đường thẳng', 'Đường tròn', 'Parabol', 'Hypebol'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Đồ thị của hàm số $y = ax^2$ là một parabol.'
       },
       {
         id: 'q6-1-5',
-        text: 'Hình tam giác đều có bao nhiêu trục đối xứng?',
-        options: ['1', '2', '3', 'Không có'],
-        correctAnswerIndex: 2,
-        explanation: 'Hình tam giác đều có 3 trục đối xứng.'
+        text: 'Với hàm số $y = ax^2$, nếu $a > 0$ thì parabol:',
+        options: [
+          'Mở xuống',
+          'Mở lên',
+          'Là đường thẳng',
+          'Song song trục hoành'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Nếu $a > 0$ thì parabol mở lên.'
       },
       {
         id: 'q6-1-6',
-        text: 'Hình nào sau đây không có trục đối xứng?',
-        options: ['Hình vuông', 'Hình chữ nhật', 'Tam giác thường', 'Hình tròn'],
-        correctAnswerIndex: 2,
-        explanation: 'Tam giác thường không có trục đối xứng.'
+        text: 'Với hàm số $y = ax^2$, nếu $a < 0$ thì parabol:',
+        options: [
+          'Mở xuống',
+          'Mở lên',
+          'Trùng trục tung',
+          'Không có đồ thị'
+        ],
+        correctAnswerIndex: 0,
+        explanation:
+          'Nếu $a < 0$ thì parabol mở xuống.'
       },
       {
         id: 'q6-1-7',
-        text: 'Hình thoi có bao nhiêu trục đối xứng?',
-        options: ['1', '2', '3', '4'],
+        text: 'Với hàm số $y = x^2$, giá trị của $y$ khi $x = -3$ là:',
+        options: ['$-9$', '$9$', '$-6$', '$6$'],
         correctAnswerIndex: 1,
-        explanation: 'Hình thoi có 2 trục đối xứng là hai đường chéo.'
+        explanation:
+          'Ta có $y = (-3)^2 = 9$.'
       },
       {
         id: 'q6-1-8',
-        text: 'Hình nào sau đây có đúng một trục đối xứng?',
-        options: ['Hình tròn', 'Tam giác cân', 'Hình vuông', 'Hình chữ nhật'],
-        correctAnswerIndex: 1,
-        explanation: 'Tam giác cân có đúng 1 trục đối xứng.'
+        text: 'Trong hàm số $y = -2x^2$, hệ số $a$ là:',
+        options: ['$-2$', '$2$', ['$-x^2$'] as any, '$0$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'So sánh với dạng $y = ax^2$ ta có $a = -2$.'
       },
       {
         id: 'q6-1-9',
-        text: 'Nếu một hình có trục đối xứng thì hai phần của hình qua trục đó:',
-        options: [
-          'Có diện tích bằng nhau và chồng khít lên nhau',
-          'Luôn khác nhau',
-          'Chỉ có chu vi bằng nhau',
-          'Không liên quan gì'
-        ],
+        text: 'Điểm nào sau đây thuộc đồ thị hàm số $y = x^2$?',
+        options: ['$\\left(1;1\\right)$', '$\\left(2;3\\right)$', '$\\left(-1;-1\\right)$', '$\\left(0;1\\right)$'],
         correctAnswerIndex: 0,
-        explanation: 'Hai phần đối xứng qua trục có thể chồng khít lên nhau.'
+        explanation:
+          'Với $x = 1$ thì $y = 1^2 = 1$, nên điểm $\\left(1;1\\right)$ thuộc đồ thị.'
       },
       {
         id: 'q6-1-10',
-        text: 'Một chữ cái in hoa có thể có trục đối xứng là:',
-        options: ['A', 'F', 'G', 'L'],
-        correctAnswerIndex: 0,
-        explanation: 'Chữ A in hoa thường có 1 trục đối xứng.'
+        text: 'Đồ thị của hàm số $y = ax^2$ luôn đi qua điểm nào?',
+        options: ['$\\left(1;1\\right)$', '$\\left(0;0\\right)$', '$\\left(1;0\\right)$', '$\\left(0;1\\right)$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Với $x = 0$ thì $y = a \\cdot 0^2 = 0$, nên đồ thị luôn đi qua gốc tọa độ.'
       }
     ]
   },
   {
     id: 'c6-t2',
-    title: 'Tâm đối xứng',
-    description: 'Nhận biết tâm đối xứng của một hình phẳng và các hình có tâm đối xứng.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 19: Phương trình bậc hai một ẩn',
+    description:
+      'Nhận biết phương trình bậc hai một ẩn và giải các phương trình bậc hai đơn giản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter6-2',
     questions: [
       {
         id: 'q6-2-1',
-        text: 'Tâm đối xứng của một hình là điểm mà khi quay hình quanh điểm đó 180° thì:',
+        text: 'Phương trình bậc hai một ẩn có dạng:',
         options: [
-          'Hình trùng với chính nó',
-          'Hình lớn hơn',
-          'Hình nhỏ hơn',
-          'Hình biến mất'
+          '$ax + b = 0$',
+          '$ax^2 + bx + c = 0$',
+          '$ax^3 + bx + c = 0$',
+          '$\\dfrac{a}{x} + b = 0$'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Đó là tính chất của tâm đối xứng.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Phương trình bậc hai một ẩn có dạng $ax^2 + bx + c = 0$ với $a \\ne 0$.'
       },
       {
         id: 'q6-2-2',
-        text: 'Hình bình hành có:',
-        options: ['1 tâm đối xứng', '2 tâm đối xứng', 'Không có tâm đối xứng', 'Vô số tâm đối xứng'],
+        text: 'Phương trình nào sau đây là phương trình bậc hai một ẩn?',
+        options: ['$2x^2 - 3x + 1 = 0$', '$3x + 2 = 0$', '$x^3 - 1 = 0$', '$\\dfrac{1}{x} + 2 = 0$'],
         correctAnswerIndex: 0,
-        explanation: 'Hình bình hành có 1 tâm đối xứng là giao điểm hai đường chéo.'
+        explanation:
+          'Chỉ có $2x^2 - 3x + 1 = 0$ là phương trình bậc hai một ẩn.'
       },
       {
         id: 'q6-2-3',
-        text: 'Tâm đối xứng của hình chữ nhật là:',
-        options: [
-          'Giao điểm hai đường chéo',
-          'Một đỉnh của hình',
-          'Trung điểm một cạnh',
-          'Không có'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Hình chữ nhật có tâm đối xứng là giao điểm hai đường chéo.'
+        text: 'Nghiệm của phương trình $x^2 = 9$ là:',
+        options: ['$x = 3$', '$x = -3$', '$x = \\pm 3$', '$x = 9$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Ta có $x^2 = 9 \\Leftrightarrow x = \\pm 3$.'
       },
       {
         id: 'q6-2-4',
-        text: 'Hình vuông có tâm đối xứng là:',
-        options: [
-          'Giao điểm hai đường chéo',
-          'Trung điểm một cạnh',
-          'Một đỉnh',
-          'Không có'
-        ],
+        text: 'Nghiệm của phương trình $x^2 - 4 = 0$ là:',
+        options: ['$x = \\pm 2$', '$x = 2$', '$x = -2$', '$x = 4$'],
         correctAnswerIndex: 0,
-        explanation: 'Hình vuông có tâm đối xứng là giao điểm hai đường chéo.'
+        explanation:
+          'Ta có $x^2 - 4 = 0 \\Leftrightarrow x^2 = 4 \\Leftrightarrow x = \\pm 2$.'
       },
       {
         id: 'q6-2-5',
-        text: 'Hình tròn có tâm đối xứng là:',
-        options: ['Tâm của hình tròn', 'Một điểm bất kì trên đường tròn', 'Không có', 'Một đầu đường kính'],
+        text: 'Nghiệm của phương trình $x^2 - 5x = 0$ là:',
+        options: [
+          '$x = 0$ hoặc $x = 5$',
+          '$x = 5$',
+          '$x = -5$',
+          '$x = 0$'
+        ],
         correctAnswerIndex: 0,
-        explanation: 'Tâm của hình tròn là tâm đối xứng.'
+        explanation:
+          'Ta đặt nhân tử chung: $x^2 - 5x = x(x - 5) = 0 \\Rightarrow x = 0$ hoặc $x = 5$.'
       },
       {
         id: 'q6-2-6',
-        text: 'Hình nào sau đây không có tâm đối xứng?',
-        options: ['Hình bình hành', 'Hình chữ nhật', 'Tam giác đều', 'Hình vuông'],
-        correctAnswerIndex: 2,
-        explanation: 'Tam giác đều không có tâm đối xứng.'
+        text: 'Nghiệm của phương trình $(x - 1)(x - 3) = 0$ là:',
+        options: [
+          '$x = 1$ hoặc $x = 3$',
+          '$x = -1$ hoặc $x = -3$',
+          '$x = 1$',
+          '$x = 3$'
+        ],
+        correctAnswerIndex: 0,
+        explanation:
+          'Tích bằng $0$ khi một trong hai thừa số bằng $0$.'
       },
       {
         id: 'q6-2-7',
-        text: 'Hình thoi có tâm đối xứng là:',
-        options: [
-          'Giao điểm hai đường chéo',
-          'Một đỉnh',
-          'Trung điểm một cạnh',
-          'Không có'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Hình thoi có tâm đối xứng là giao điểm hai đường chéo.'
+        text: 'Phương trình $x^2 + 1 = 0$ trong tập số thực:',
+        options: ['Có hai nghiệm', 'Có một nghiệm', 'Vô nghiệm', 'Có vô số nghiệm'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Ta có $x^2 \\ge 0$ với mọi $x$, nên $x^2 + 1 > 0$. Phương trình vô nghiệm trong tập số thực.'
       },
       {
         id: 'q6-2-8',
-        text: 'Nếu một hình có tâm đối xứng thì khi quay 180° quanh tâm đó, hình sẽ:',
-        options: ['Trùng với chính nó', 'Lật ngược hoàn toàn khác', 'Biến mất', 'Chỉ đổi màu'],
-        correctAnswerIndex: 0,
-        explanation: 'Đó là tính chất của hình có tâm đối xứng.'
+        text: 'Tổng số nghiệm thực của phương trình $x^2 = 0$ là:',
+        options: ['$0$', '$1$', '$2$', 'Vô số'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Phương trình có nghiệm duy nhất là $x = 0$.'
       },
       {
         id: 'q6-2-9',
-        text: 'Giao điểm hai đường chéo của hình bình hành có vai trò là:',
-        options: ['Tâm đối xứng', 'Trục đối xứng', 'Một cạnh', 'Một góc'],
+        text: 'Nghiệm của phương trình $2x^2 - 8 = 0$ là:',
+        options: ['$x = \\pm 2$', '$x = 2$', '$x = \\pm 4$', '$x = 4$'],
         correctAnswerIndex: 0,
-        explanation: 'Giao điểm hai đường chéo là tâm đối xứng của hình bình hành.'
+        explanation:
+          'Ta có $2x^2 = 8 \\Rightarrow x^2 = 4 \\Rightarrow x = \\pm 2$.'
       },
       {
         id: 'q6-2-10',
-        text: 'Một ví dụ trong thực tế có tâm đối xứng là:',
-        options: ['Bánh xe đạp', 'Cây thước thẳng', 'Tam giác giấy', 'Quyển vở'],
+        text: 'Phương trình $x(x + 4) = 0$ có nghiệm là:',
+        options: [
+          '$x = 0$ hoặc $x = -4$',
+          '$x = 0$ hoặc $x = 4$',
+          '$x = -4$',
+          '$x = 4$'
+        ],
         correctAnswerIndex: 0,
-        explanation: 'Bánh xe đạp có dạng gần đúng như hình tròn nên có tâm đối xứng.'
+        explanation:
+          'Từ $x(x + 4) = 0$ suy ra $x = 0$ hoặc $x = -4$.'
       }
     ]
   },
   {
     id: 'c6-t3',
-    title: 'Hình có trục đối xứng và tâm đối xứng',
-    description: 'Phân biệt các hình có trục đối xứng, tâm đối xứng hoặc có cả hai.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Luyện tập chung',
+    description:
+      'Ôn tập về hàm số $y = ax^2$ và phương trình bậc hai một ẩn.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter6-3',
     questions: [
       {
         id: 'q6-3-1',
-        text: 'Hình vuông có:',
-        options: [
-          'Chỉ có trục đối xứng',
-          'Chỉ có tâm đối xứng',
-          'Có cả trục đối xứng và tâm đối xứng',
-          'Không có đối xứng'
-        ],
+        text: 'Với hàm số $y = 3x^2$, giá trị của $y$ khi $x = 2$ là:',
+        options: ['$6$', '$9$', '$12$', '$18$'],
         correctAnswerIndex: 2,
-        explanation: 'Hình vuông có 4 trục đối xứng và 1 tâm đối xứng.'
+        explanation:
+          'Ta có $y = 3 \\cdot 2^2 = 3 \\cdot 4 = 12$.'
       },
       {
         id: 'q6-3-2',
-        text: 'Hình chữ nhật có:',
-        options: [
-          'Có cả trục đối xứng và tâm đối xứng',
-          'Chỉ có trục đối xứng',
-          'Chỉ có tâm đối xứng',
-          'Không có đối xứng'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Hình chữ nhật có 2 trục đối xứng và 1 tâm đối xứng.'
+        text: 'Đồ thị của hàm số $y = -x^2$ là parabol:',
+        options: ['Mở lên', 'Mở xuống', 'Là đường thẳng', 'Không xác định'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Vì hệ số $a = -1 < 0$ nên parabol mở xuống.'
       },
       {
         id: 'q6-3-3',
-        text: 'Tam giác cân có:',
-        options: [
-          '1 trục đối xứng và không có tâm đối xứng',
-          '1 tâm đối xứng',
-          '2 trục đối xứng',
-          'Không có đối xứng'
-        ],
+        text: 'Nghiệm của phương trình $x^2 - 16 = 0$ là:',
+        options: ['$x = \\pm 4$', '$x = 4$', '$x = -4$', '$x = 16$'],
         correctAnswerIndex: 0,
-        explanation: 'Tam giác cân có 1 trục đối xứng nhưng không có tâm đối xứng.'
+        explanation:
+          'Ta có $x^2 = 16 \\Rightarrow x = \\pm 4$.'
       },
       {
         id: 'q6-3-4',
-        text: 'Hình bình hành có:',
+        text: 'Nghiệm của phương trình $x(x - 2) = 0$ là:',
         options: [
-          'Chỉ có tâm đối xứng',
-          'Chỉ có trục đối xứng',
-          'Có cả trục và tâm đối xứng',
-          'Không có đối xứng'
+          '$x = 0$ hoặc $x = 2$',
+          '$x = 0$ hoặc $x = -2$',
+          '$x = 2$',
+          '$x = -2$'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Hình bình hành thường chỉ có tâm đối xứng.'
+        explanation:
+          'Tích bằng $0$ khi một trong hai thừa số bằng $0$.'
       },
       {
         id: 'q6-3-5',
-        text: 'Hình thoi có:',
-        options: [
-          'Chỉ có trục đối xứng',
-          'Chỉ có tâm đối xứng',
-          'Có cả trục đối xứng và tâm đối xứng',
-          'Không có đối xứng'
-        ],
-        correctAnswerIndex: 2,
-        explanation: 'Hình thoi có 2 trục đối xứng và 1 tâm đối xứng.'
-      },
-      {
-        id: 'q6-3-6',
-        text: 'Hình tròn có:',
-        options: [
-          'Vô số trục đối xứng và 1 tâm đối xứng',
-          '1 trục đối xứng',
-          'Không có tâm đối xứng',
-          '2 trục đối xứng'
-        ],
+        text: 'Điểm nào sau đây thuộc đồ thị hàm số $y = 2x^2$?',
+        options: ['$\\left(1;2\\right)$', '$\\left(2;2\\right)$', '$\\left(-1;-2\\right)$', '$\\left(0;1\\right)$'],
         correctAnswerIndex: 0,
-        explanation: 'Hình tròn có vô số trục đối xứng và có tâm đối xứng là tâm hình tròn.'
-      },
-      {
-        id: 'q6-3-7',
-        text: 'Tam giác đều có:',
-        options: [
-          '3 trục đối xứng và không có tâm đối xứng',
-          '1 trục đối xứng và 1 tâm đối xứng',
-          'Không có trục đối xứng',
-          'Chỉ có tâm đối xứng'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Tam giác đều có 3 trục đối xứng nhưng không có tâm đối xứng.'
-      },
-      {
-        id: 'q6-3-8',
-        text: 'Hình nào sau đây chỉ có tâm đối xứng mà không có trục đối xứng?',
-        options: ['Hình bình hành', 'Hình vuông', 'Hình chữ nhật', 'Hình tròn'],
-        correctAnswerIndex: 0,
-        explanation: 'Hình bình hành thường chỉ có tâm đối xứng.'
-      },
-      {
-        id: 'q6-3-9',
-        text: 'Hình nào sau đây có trục đối xứng nhưng không có tâm đối xứng?',
-        options: ['Tam giác cân', 'Hình chữ nhật', 'Hình bình hành', 'Hình tròn'],
-        correctAnswerIndex: 0,
-        explanation: 'Tam giác cân có trục đối xứng nhưng không có tâm đối xứng.'
-      },
-      {
-        id: 'q6-3-10',
-        text: 'Hình nào sau đây có cả trục đối xứng và tâm đối xứng?',
-        options: ['Hình vuông', 'Tam giác thường', 'Tam giác cân', 'Hình thang thường'],
-        correctAnswerIndex: 0,
-        explanation: 'Hình vuông có cả trục đối xứng và tâm đối xứng.'
+        explanation:
+          'Với $x = 1$ thì $y = 2 \\cdot 1^2 = 2$.'
       }
     ]
   },
   {
     id: 'c6-t4',
-    title: 'Đối xứng trong tự nhiên và nghệ thuật',
-    description: 'Nhận biết tính đối xứng trong các vật thể, họa tiết và hình ảnh gần gũi trong thực tế.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 20: Định lí Viète và ứng dụng',
+    description:
+      'Nhận biết hệ thức Viète và vận dụng để tính tổng, tích các nghiệm trong những trường hợp đơn giản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter6-4',
     questions: [
       {
         id: 'q6-4-1',
-        text: 'Hình ảnh con bướm thường gợi ra loại đối xứng nào?',
-        options: ['Đối xứng trục', 'Đối xứng tâm', 'Không đối xứng', 'Đối xứng quay 90°'],
-        correctAnswerIndex: 0,
-        explanation: 'Con bướm thường có hai cánh đối xứng qua một trục.'
+        text: 'Nếu phương trình $ax^2 + bx + c = 0$ $(a \\ne 0)$ có hai nghiệm $x_1, x_2$ thì theo Viète, tổng hai nghiệm bằng:',
+        options: [
+          '$\\dfrac{b}{a}$',
+          '$-\\dfrac{b}{a}$',
+          '$\\dfrac{c}{a}$',
+          '$-\\dfrac{c}{a}$'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Theo định lí Viète: $x_1 + x_2 = -\\dfrac{b}{a}$.'
       },
       {
         id: 'q6-4-2',
-        text: 'Bông hoa cúc nhìn từ trên xuống thường gợi ra:',
-        options: ['Tính đối xứng', 'Không có đối xứng', 'Chỉ có cạnh', 'Chỉ có góc'],
-        correctAnswerIndex: 0,
-        explanation: 'Nhiều bông hoa có hình dạng đối xứng.'
+        text: 'Nếu phương trình $ax^2 + bx + c = 0$ $(a \\ne 0)$ có hai nghiệm $x_1, x_2$ thì tích hai nghiệm bằng:',
+        options: [
+          '$-\\dfrac{b}{a}$',
+          '$\\dfrac{b}{a}$',
+          '$\\dfrac{c}{a}$',
+          '$-\\dfrac{c}{a}$'
+        ],
+        correctAnswerIndex: 2,
+        explanation:
+          'Theo định lí Viète: $x_1x_2 = \\dfrac{c}{a}$.'
       },
       {
         id: 'q6-4-3',
-        text: 'Một hoa văn lặp lại đều quanh một điểm thường gợi ra:',
-        options: ['Tâm đối xứng hoặc đối xứng quay', 'Không đối xứng', 'Chỉ là đoạn thẳng', 'Chỉ là phép cộng'],
+        text: 'Với phương trình $x^2 - 5x + 6 = 0$, tổng hai nghiệm là:',
+        options: ['$5$', '$-5$', '$6$', '$-6$'],
         correctAnswerIndex: 0,
-        explanation: 'Hoa văn quanh một điểm thường gợi ra tính đối xứng quanh tâm.'
+        explanation:
+          'Ở đây $a = 1, b = -5$, nên $x_1 + x_2 = -\\dfrac{-5}{1} = 5$.'
       },
       {
         id: 'q6-4-4',
-        text: 'Mặt người nhìn thẳng thường gần đúng có:',
-        options: ['Trục đối xứng', 'Tâm đối xứng', 'Không đối xứng nào', 'Chỉ có góc vuông'],
-        correctAnswerIndex: 0,
-        explanation: 'Khuôn mặt người nhìn thẳng thường gần đúng đối xứng qua một trục dọc.'
+        text: 'Với phương trình $x^2 - 5x + 6 = 0$, tích hai nghiệm là:',
+        options: ['$5$', '$6$', '$-5$', '$-6$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ở đây $a = 1, c = 6$, nên $x_1x_2 = \\dfrac{6}{1} = 6$.'
       },
       {
         id: 'q6-4-5',
-        text: 'Biển báo hình tròn thường có:',
-        options: ['Tâm đối xứng', 'Không có đối xứng', 'Chỉ có một cạnh', 'Chỉ có một góc'],
+        text: 'Với phương trình $2x^2 - 3x + 1 = 0$, tổng hai nghiệm là:',
+        options: ['$\\dfrac{3}{2}$', '$-\\dfrac{3}{2}$', '$\\dfrac{1}{2}$', '$-\\dfrac{1}{2}$'],
         correctAnswerIndex: 0,
-        explanation: 'Hình tròn có tâm đối xứng.'
+        explanation:
+          'Ta có $x_1 + x_2 = -\\dfrac{b}{a} = -\\dfrac{-3}{2} = \\dfrac{3}{2}$.'
       },
       {
         id: 'q6-4-6',
-        text: 'Một cánh cửa hai bên giống nhau qua đường giữa thường thể hiện:',
-        options: ['Đối xứng trục', 'Đối xứng tâm', 'Không đối xứng', 'Đối xứng qua góc'],
+        text: 'Với phương trình $2x^2 - 3x + 1 = 0$, tích hai nghiệm là:',
+        options: ['$\\dfrac{1}{2}$', '$\\dfrac{3}{2}$', ['$-\\dfrac{1}{2}$'] as any, '$1$'],
         correctAnswerIndex: 0,
-        explanation: 'Hai bên giống nhau qua đường giữa là đối xứng trục.'
+        explanation:
+          'Ta có $x_1x_2 = \\dfrac{c}{a} = \\dfrac{1}{2}$.'
       },
       {
         id: 'q6-4-7',
-        text: 'Một số họa tiết trang trí trên gạch lát nền thường có:',
-        options: ['Tính đối xứng', 'Chỉ có phép cộng', 'Không có quy luật', 'Chỉ có số tự nhiên'],
+        text: 'Phương trình nào sau đây có tổng hai nghiệm bằng $4$?',
+        options: [
+          '$x^2 - 4x + 3 = 0$',
+          '$x^2 + 4x + 3 = 0$',
+          '$2x^2 - 4x - 1 = 0$',
+          '$x^2 - 2x + 4 = 0$'
+        ],
         correctAnswerIndex: 0,
+        explanation:
+          'Với $x^2 - 4x + 3 = 0$, tổng hai nghiệm là $-\\dfrac{-4}{1} = 4$.'
       },
       {
         id: 'q6-4-8',
-        text: 'Ý nghĩa của tính đối xứng trong nghệ thuật là:',
+        text: 'Phương trình nào sau đây có tích hai nghiệm bằng $-2$?',
         options: [
-          'Tạo sự cân đối, hài hòa',
-          'Làm hình bị méo',
-          'Làm hình ngắn hơn',
-          'Không có ý nghĩa'
+          '$x^2 - x - 2 = 0$',
+          '$x^2 - 2x + 2 = 0$',
+          '$2x^2 - x + 2 = 0$',
+          '$x^2 + x + 2 = 0$'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Tính đối xứng tạo cảm giác cân đối và đẹp mắt.'
+        explanation:
+          'Với $x^2 - x - 2 = 0$, tích hai nghiệm bằng $\\dfrac{-2}{1} = -2$.'
       },
       {
         id: 'q6-4-9',
-        text: 'Một chiếc lá nhìn gần đúng có thể có:',
-        options: ['Trục đối xứng', 'Tâm đối xứng chắc chắn', 'Không thể có đối xứng', 'Chỉ có đường tròn'],
-        correctAnswerIndex: 0,
-        explanation: 'Nhiều chiếc lá có dạng gần đúng đối xứng qua gân chính.'
+        text: 'Nếu phương trình $x^2 + mx + 6 = 0$ có tổng hai nghiệm bằng $-2$ thì $m$ bằng:',
+        options: ['$-2$', '$2$', '$6$', '$-6$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Theo Viète, tổng hai nghiệm bằng $-m$. Do đó $-m = -2 \\Rightarrow m = 2$.'
       },
       {
         id: 'q6-4-10',
-        text: 'Việc nhận biết đối xứng trong tự nhiên giúp ta:',
-        options: [
-          'Quan sát và mô tả sự vật tốt hơn',
-          'Chỉ để tính toán số học',
-          'Không giúp ích gì',
-          'Chỉ dùng trong môn Vật lí'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Nhận biết đối xứng giúp ta quan sát và hiểu hình dạng sự vật tốt hơn.'
+        text: 'Nếu phương trình $x^2 - 7x + p = 0$ có tích hai nghiệm bằng $10$ thì $p$ bằng:',
+        options: ['$7$', '$-7$', '$10$', '$-10$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Theo Viète, tích hai nghiệm bằng $p$, nên $p = 10$.'
       }
     ]
   },
   {
     id: 'c6-t5',
-    title: 'Ôn tập chương Tính đối xứng của hình phẳng',
-    description: 'Củng cố kiến thức về trục đối xứng, tâm đối xứng và ứng dụng trong thực tiễn.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 21: Giải bài toán bằng cách lập phương trình',
+    description:
+      'Giải các bài toán thực tế đơn giản bằng cách lập phương trình bậc hai một ẩn.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter6-5',
     questions: [
       {
         id: 'q6-5-1',
-        text: 'Hình vuông có bao nhiêu trục đối xứng?',
-        options: ['1', '2', '3', '4'],
-        correctAnswerIndex: 3,
-        explanation: 'Hình vuông có 4 trục đối xứng.'
+        text: 'Khi giải bài toán bằng cách lập phương trình, bước đầu tiên thường là:',
+        options: [
+          'Giải ngay phương trình',
+          'Chọn ẩn và đặt điều kiện thích hợp',
+          'Tính biệt thức',
+          'Chuyển vế'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Trước hết cần chọn ẩn và đặt điều kiện thích hợp cho ẩn.'
       },
       {
         id: 'q6-5-2',
-        text: 'Hình chữ nhật có bao nhiêu trục đối xứng?',
-        options: ['1', '2', '3', '4'],
+        text: 'Một số tự nhiên có hai chữ số, chữ số hàng chục là $x$, chữ số hàng đơn vị là $y$. Số đó được viết là:',
+        options: ['$x + y$', '$10x + y$', '$x + 10y$', '$xy$'],
         correctAnswerIndex: 1,
-        explanation: 'Hình chữ nhật có 2 trục đối xứng.'
+        explanation:
+          'Số có hai chữ số được viết dưới dạng $10x + y$.'
       },
       {
         id: 'q6-5-3',
-        text: 'Hình bình hành có:',
-        options: ['1 tâm đối xứng', '2 tâm đối xứng', 'Không có tâm đối xứng', '4 tâm đối xứng'],
+        text: 'Trong bài toán chuyển động, công thức thường dùng là:',
+        options: [
+          '$s = vt$',
+          '$v = s + t$',
+          '$t = sv$',
+          '$s = v - t$'
+        ],
         correctAnswerIndex: 0,
-        explanation: 'Hình bình hành có 1 tâm đối xứng.'
+        explanation:
+          'Công thức cơ bản trong bài toán chuyển động là $s = vt$.'
       },
       {
         id: 'q6-5-4',
-        text: 'Tam giác cân có:',
-        options: ['1 trục đối xứng', '2 trục đối xứng', '1 tâm đối xứng', 'Không có đối xứng'],
-        correctAnswerIndex: 0,
-        explanation: 'Tam giác cân có 1 trục đối xứng.'
+        text: 'Nếu chiều dài hình chữ nhật hơn chiều rộng $3\\text{ cm}$, gọi chiều rộng là $x\\text{ cm}$ thì chiều dài là:',
+        options: ['$x$', '$x + 3$', '$3x$', '$x - 3$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Chiều dài hơn chiều rộng $3\\text{ cm}$ nên bằng $x + 3$.'
       },
       {
         id: 'q6-5-5',
-        text: 'Hình tròn có:',
-        options: ['1 trục đối xứng', '2 trục đối xứng', 'Vô số trục đối xứng', 'Không có trục đối xứng'],
-        correctAnswerIndex: 2,
-        explanation: 'Hình tròn có vô số trục đối xứng.'
-      },
-      {
-        id: 'q6-5-6',
-        text: 'Tâm đối xứng của hình chữ nhật là:',
-        options: ['Giao điểm hai đường chéo', 'Một đỉnh', 'Trung điểm một cạnh', 'Không có'],
-        correctAnswerIndex: 0,
-        explanation: 'Giao điểm hai đường chéo là tâm đối xứng của hình chữ nhật.'
-      },
-      {
-        id: 'q6-5-7',
-        text: 'Hình nào sau đây chỉ có trục đối xứng mà không có tâm đối xứng?',
-        options: ['Tam giác cân', 'Hình bình hành', 'Hình chữ nhật', 'Hình vuông'],
-        correctAnswerIndex: 0,
-        explanation: 'Tam giác cân có trục đối xứng nhưng không có tâm đối xứng.'
-      },
-      {
-        id: 'q6-5-8',
-        text: 'Hình nào sau đây có cả trục đối xứng và tâm đối xứng?',
-        options: ['Hình vuông', 'Tam giác thường', 'Hình thang thường', 'Tam giác cân'],
-        correctAnswerIndex: 0,
-        explanation: 'Hình vuông có cả trục đối xứng và tâm đối xứng.'
-      },
-      {
-        id: 'q6-5-9',
-        text: 'Một ví dụ gần gũi về đối xứng trục là:',
-        options: ['Con bướm', 'Viên sỏi bất kì', 'Một đám mây', 'Một nét vẽ ngẫu nhiên'],
-        correctAnswerIndex: 0,
-        explanation: 'Con bướm là ví dụ quen thuộc của đối xứng trục.'
-      },
-      {
-        id: 'q6-5-10',
-        text: 'Nội dung trọng tâm của chương này là:',
+        text: 'Một hình chữ nhật có chiều rộng là $x$, chiều dài là $x + 2$. Diện tích của hình chữ nhật là:',
         options: [
-          'Nhận biết trục đối xứng, tâm đối xứng và tính đối xứng trong thực tế',
-          'Cộng trừ số nguyên',
-          'Phân số và số thập phân',
-          'Tính xác suất'
+          '$2x$',
+          '$x(x + 2)$',
+          '$x + 2$',
+          '$2(x + 2)$'
         ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Diện tích hình chữ nhật bằng chiều rộng nhân chiều dài: $x(x + 2)$.'
+      }
+    ]
+  },
+  {
+    id: 'c6-t6',
+    title: 'Luyện tập chung',
+    description:
+      'Ôn tập tổng hợp về hàm số $y = ax^2$, phương trình bậc hai, định lí Viète và lập phương trình.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter6-6',
+    questions: [
+      {
+        id: 'q6-6-1',
+        text: 'Với hàm số $y = -3x^2$, giá trị của $y$ khi $x = 2$ là:',
+        options: ['$-12$', '$12$', '$-6$', '$6$'],
         correctAnswerIndex: 0,
-        explanation: 'Chương này tập trung vào tính đối xứng của hình phẳng trong toán học và thực tiễn.'
+        explanation:
+          'Ta có $y = -3 \\cdot 2^2 = -12$.'
+      },
+      {
+        id: 'q6-6-2',
+        text: 'Nghiệm của phương trình $x^2 - 25 = 0$ là:',
+        options: ['$x = \\pm 5$', '$x = 5$', '$x = -5$', '$x = 25$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $x^2 = 25 \\Rightarrow x = \\pm 5$.'
+      },
+      {
+        id: 'q6-6-3',
+        text: 'Với phương trình $x^2 - 6x + 8 = 0$, tổng hai nghiệm là:',
+        options: ['$6$', '$8$', '$-6$', '$-8$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Theo Viète: $x_1 + x_2 = -\\dfrac{-6}{1} = 6$.'
+      },
+      {
+        id: 'q6-6-4',
+        text: 'Với phương trình $x^2 - 6x + 8 = 0$, tích hai nghiệm là:',
+        options: ['$6$', '$8$', '$-6$', '$-8$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Theo Viète: $x_1x_2 = \\dfrac{8}{1} = 8$.'
+      },
+      {
+        id: 'q6-6-5',
+        text: 'Nếu một hình chữ nhật có chiều rộng là $x$ và chiều dài là $x + 4$ thì chu vi là:',
+        options: [
+          '$2x + 4$',
+          '$2(x + 4)$',
+          '$4x + 8$',
+          '$2[x + (x + 4)]$'
+        ],
+        correctAnswerIndex: 3,
+        explanation:
+          'Chu vi hình chữ nhật là $2(\\text{dài} + \\text{rộng}) = 2[x + (x + 4)]$.'
+      }
+    ]
+  },
+  {
+    id: 'c6-t7',
+    title: 'Bài tập cuối chương 6',
+    description:
+      'Tổng hợp câu hỏi ôn tập toàn bộ chương 6 về hàm số $y = ax^2$, phương trình bậc hai một ẩn và định lí Viète.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter6-7',
+    questions: [
+      {
+        id: 'q6-7-1',
+        text: 'Đồ thị của hàm số $y = 4x^2$ là:',
+        options: ['Đường thẳng', 'Parabol mở lên', 'Parabol mở xuống', 'Đường tròn'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Vì $a = 4 > 0$ nên đồ thị là parabol mở lên.'
+      },
+      {
+        id: 'q6-7-2',
+        text: 'Nghiệm của phương trình $x^2 - 1 = 0$ là:',
+        options: ['$x = \\pm 1$', '$x = 1$', '$x = -1$', '$x = 0$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $x^2 = 1 \\Rightarrow x = \\pm 1$.'
+      },
+      {
+        id: 'q6-7-3',
+        text: 'Với phương trình $x^2 - 3x + 2 = 0$, tổng hai nghiệm là:',
+        options: ['$3$', '$2$', '$-3$', '$-2$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Theo Viète: $x_1 + x_2 = -\\dfrac{-3}{1} = 3$.'
+      },
+      {
+        id: 'q6-7-4',
+        text: 'Với phương trình $x^2 - 3x + 2 = 0$, tích hai nghiệm là:',
+        options: ['$3$', '$2$', '$-3$', '$-2$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Theo Viète: $x_1x_2 = \\dfrac{2}{1} = 2$.'
+      },
+      {
+        id: 'q6-7-5',
+        text: 'Một số có bình phương bằng $49$ thì số đó là:',
+        options: ['$7$', '$-7$', '$\\pm 7$', '$49$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Nếu $x^2 = 49$ thì $x = \\pm 7$.'
       }
     ]
   }

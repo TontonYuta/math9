@@ -4,471 +4,441 @@ import { chapter7ExamTopics } from './chapter7-exams';
 export const chapter7CoreTopics: Topic[] = [
   {
     id: 'c7-t1',
-    title: 'Điểm và đường thẳng',
-    description: 'Nhận biết điểm, đường thẳng và các quan hệ cơ bản giữa điểm với đường thẳng.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 22: Bảng tần số và biểu đồ tần số',
+    description:
+      'Nhận biết bảng tần số, xác định tần số của các giá trị và đọc biểu đồ tần số.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter7-1',
     questions: [
       {
         id: 'q7-1-1',
-        text: 'Trong hình học, điểm được kí hiệu bằng:',
-        options: ['Chữ cái in hoa', 'Chữ cái in thường', 'Số tự nhiên', 'Dấu cộng'],
-        correctAnswerIndex: 0,
-        explanation: 'Điểm thường được kí hiệu bằng chữ cái in hoa như A, B, C.'
+        text: 'Trong thống kê, tần số của một giá trị là:',
+        options: [
+          'Giá trị lớn nhất của dấu hiệu',
+          'Số lần giá trị đó xuất hiện',
+          'Tổng các giá trị quan sát',
+          'Hiệu giữa hai giá trị liên tiếp'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Tần số của một giá trị là số lần giá trị đó xuất hiện trong dãy số liệu.'
       },
       {
         id: 'q7-1-2',
-        text: 'Đường thẳng thường được kí hiệu bằng:',
-        options: ['Chữ cái in hoa', 'Chữ cái in thường', 'Số nguyên', 'Phân số'],
+        text: 'Cho dãy số liệu: $2, 3, 2, 4, 2, 5, 3$. Tần số của giá trị $2$ là:',
+        options: ['$2$', '$3$', '$4$', '$5$'],
         correctAnswerIndex: 1,
-        explanation: 'Đường thẳng thường được kí hiệu bằng chữ cái in thường như a, b, c.'
+        explanation:
+          'Giá trị $2$ xuất hiện $3$ lần nên tần số của $2$ là $3$.'
       },
       {
         id: 'q7-1-3',
-        text: 'Qua hai điểm phân biệt, ta vẽ được:',
-        options: ['Một đường thẳng duy nhất', 'Hai đường thẳng', 'Vô số đường thẳng', 'Không vẽ được đường thẳng nào'],
-        correctAnswerIndex: 0,
-        explanation: 'Qua hai điểm phân biệt chỉ vẽ được một đường thẳng duy nhất.'
+        text: 'Cho dãy số liệu: $1, 1, 2, 3, 3, 3, 4$. Tần số của giá trị $3$ là:',
+        options: ['$1$', '$2$', '$3$', '$4$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Giá trị $3$ xuất hiện $3$ lần.'
       },
       {
         id: 'q7-1-4',
-        text: 'Nếu điểm A nằm trên đường thẳng d thì ta viết:',
-        options: ['$A \\in d$', '$A \\notin d$', '$d \\in A$', '$d \\notin A$'],
-        correctAnswerIndex: 0,
-        explanation: 'Nếu điểm A nằm trên đường thẳng d thì ta viết $A \\in d$.'
+        text: 'Tổng các tần số trong một bảng tần số bằng:',
+        options: [
+          'Số giá trị khác nhau',
+          'Số giá trị lớn nhất',
+          'Số các số liệu quan sát',
+          'Hiệu của giá trị lớn nhất và nhỏ nhất'
+        ],
+        correctAnswerIndex: 2,
+        explanation:
+          'Tổng các tần số chính bằng số lượng số liệu đã quan sát.'
       },
       {
         id: 'q7-1-5',
-        text: 'Nếu điểm B không nằm trên đường thẳng m thì ta viết:',
-        options: ['$B \\in m$', '$B \\notin m$', '$m \\in B$', '$m = B$'],
-        correctAnswerIndex: 1,
-        explanation: 'Nếu B không thuộc đường thẳng m thì viết $B \\notin m$.'
+        text: 'Cho dãy số liệu: $4, 5, 4, 6, 5, 4$. Tổng các tần số là:',
+        options: ['$3$', '$4$', '$5$', '$6$'],
+        correctAnswerIndex: 3,
+        explanation:
+          'Có tất cả $6$ số liệu nên tổng các tần số là $6$.'
       },
       {
         id: 'q7-1-6',
-        text: 'Một đường thẳng có:',
-        options: ['Một đầu mút', 'Hai đầu mút', 'Không có đầu mút', 'Ba đầu mút'],
-        correctAnswerIndex: 2,
-        explanation: 'Đường thẳng kéo dài mãi về hai phía nên không có đầu mút.'
+        text: 'Trong biểu đồ cột biểu diễn tần số, chiều cao cột biểu thị:',
+        options: [
+          'Giá trị của dấu hiệu',
+          'Tần số của giá trị',
+          'Tần số tương đối',
+          'Số trung bình'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Trong biểu đồ cột tần số, chiều cao cột biểu thị tần số của từng giá trị.'
       },
       {
         id: 'q7-1-7',
-        text: 'Trong ba điểm A, B, C thẳng hàng thì:',
-        options: [
-          'Ba điểm cùng nằm trên một đường thẳng',
-          'Ba điểm cùng nằm trên ba đường thẳng khác nhau',
-          'Chỉ có hai điểm nằm trên một đường thẳng',
-          'Không có điểm nào chung đường thẳng'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Ba điểm thẳng hàng là ba điểm cùng nằm trên một đường thẳng.'
+        text: 'Cho bảng tần số có các giá trị $1, 2, 3$ với các tần số tương ứng là $2, 3, 5$. Giá trị có tần số lớn nhất là:',
+        options: ['$1$', '$2$', '$3$', 'Không xác định'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Tần số lớn nhất là $5$, ứng với giá trị $3$.'
       },
       {
         id: 'q7-1-8',
-        text: 'Trong các bộ ba điểm sau, bộ ba điểm nào có thể thẳng hàng?',
-        options: [
-          'Ba điểm cùng nằm trên một cạnh thước',
-          'Ba đỉnh của một tam giác',
-          'Ba góc của một hình vuông',
-          'Ba điểm bất kì không xác định'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Ba điểm cùng nằm trên một cạnh thước có thể thẳng hàng.'
+        text: 'Cho dãy số liệu: $7, 8, 7, 9, 8, 7$. Số giá trị khác nhau là:',
+        options: ['$2$', '$3$', '$4$', '$6$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Các giá trị khác nhau là $7, 8, 9$, nên có $3$ giá trị khác nhau.'
       },
       {
         id: 'q7-1-9',
-        text: 'Điểm nào sau đây luôn thuộc đường thẳng a?',
-        options: ['Điểm được cho nằm trên a', 'Mọi điểm trong hình', 'Mọi đỉnh của tam giác', 'Điểm bất kì'],
+        text: 'Một bảng tần số thường gồm:',
+        options: [
+          'Một hàng ghi giá trị và một hàng ghi tần số',
+          'Chỉ gồm các giá trị',
+          'Chỉ gồm các tần số',
+          'Chỉ gồm biểu đồ'
+        ],
         correctAnswerIndex: 0,
-        explanation: 'Chỉ điểm được xác định là nằm trên a mới chắc chắn thuộc đường thẳng a.'
+        explanation:
+          'Bảng tần số thường gồm hàng ghi các giá trị và hàng ghi tần số tương ứng.'
       },
       {
         id: 'q7-1-10',
-        text: 'Hình ảnh gần đúng của đường thẳng trong thực tế là:',
-        options: ['Mép thước kẻ', 'Quả bóng', 'Mặt đồng hồ', 'Chiếc lá'],
-        correctAnswerIndex: 0,
-        explanation: 'Mép thước kẻ là hình ảnh gần đúng của đường thẳng.'
+        text: 'Cho dãy số liệu: $3, 4, 4, 5, 5, 5$. Tần số của giá trị $4$ là:',
+        options: ['$1$', '$2$', '$3$', '$4$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Giá trị $4$ xuất hiện $2$ lần.'
       }
     ]
   },
   {
     id: 'c7-t2',
-    title: 'Tia',
-    description: 'Nhận biết tia, gốc của tia và phân biệt tia với đường thẳng, đoạn thẳng.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 23: Bảng tần số tương đối và biểu đồ tần số tương đối',
+    description:
+      'Tính tần số tương đối, lập bảng tần số tương đối và đọc biểu đồ tần số tương đối.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter7-2',
     questions: [
       {
         id: 'q7-2-1',
-        text: 'Tia là hình gồm:',
+        text: 'Tần số tương đối của một giá trị được tính bằng:',
         options: [
-          'Một điểm gốc và kéo dài mãi về một phía',
-          'Hai điểm mút',
-          'Không có điểm gốc',
-          'Ba điểm phân biệt'
+          '$\\dfrac{\\text{tần số}}{\\text{tổng số liệu}}$',
+          '$\\text{tần số} \\cdot \\text{tổng số liệu}$',
+          '$\\text{tổng số liệu} - \\text{tần số}$',
+          '$\\dfrac{\\text{tổng số liệu}}{\\text{tần số}}$'
         ],
         correctAnswerIndex: 0,
-        explanation: 'Tia có một điểm gốc và kéo dài mãi về một phía.'
+        explanation:
+          'Tần số tương đối bằng tần số chia cho tổng số liệu.'
       },
       {
         id: 'q7-2-2',
-        text: 'Tia AB có gốc là:',
-        options: ['A', 'B', 'C', 'Không có gốc'],
-        correctAnswerIndex: 0,
-        explanation: 'Tia AB có gốc là A.'
+        text: 'Cho một giá trị có tần số là $5$ trong tổng số $20$ số liệu. Tần số tương đối của giá trị đó là:',
+        options: ['$0{,}2$', '$0{,}25$', '$0{,}3$', '$0{,}4$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có tần số tương đối bằng $\\dfrac{5}{20} = 0{,}25$.'
       },
       {
         id: 'q7-2-3',
-        text: 'Tia BA có gốc là:',
-        options: ['A', 'B', 'AB', 'Không xác định'],
-        correctAnswerIndex: 1,
-        explanation: 'Tia BA có gốc là B.'
+        text: 'Tần số tương đối thường được viết dưới dạng:',
+        options: [
+          'Phân số, số thập phân hoặc phần trăm',
+          'Chỉ số nguyên',
+          'Chỉ số thập phân âm',
+          'Chỉ đơn vị đo'
+        ],
+        correctAnswerIndex: 0,
+        explanation:
+          'Tần số tương đối có thể biểu diễn dưới dạng phân số, số thập phân hoặc phần trăm.'
       },
       {
         id: 'q7-2-4',
-        text: 'Hai tia đối nhau là hai tia:',
-        options: [
-          'Chung gốc và tạo thành một đường thẳng',
-          'Khác gốc và chung phương',
-          'Có cùng chiều',
-          'Không có điểm chung'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Hai tia đối nhau phải chung gốc và nằm trên cùng một đường thẳng.'
+        text: 'Tổng các tần số tương đối trong một bảng bằng:',
+        options: ['$0$', '$1$', '$10$', '$100$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Tổng các tần số tương đối luôn bằng $1$ hay $100\\%$.'
       },
       {
         id: 'q7-2-5',
-        text: 'Hai tia trùng nhau là hai tia:',
-        options: [
-          'Chung gốc và cùng hướng',
-          'Không chung gốc',
-          'Đối nhau',
-          'Vuông góc nhau'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Hai tia trùng nhau nếu có cùng gốc và cùng hướng.'
+        text: 'Nếu một giá trị có tần số tương đối là $0{,}4$ thì dưới dạng phần trăm là:',
+        options: ['$4\\%$', '$40\\%$', '$0{,}4\\%$', '$400\\%$'],
+        correctAnswerIndex: 1,
+        explanation:
+          '$0{,}4 = 40\\%$.'
       },
       {
         id: 'q7-2-6',
-        text: 'Tia khác đường thẳng ở chỗ:',
-        options: [
-          'Tia có một gốc còn đường thẳng không có đầu mút',
-          'Tia có hai đầu mút',
-          'Đường thẳng có một đầu mút',
-          'Không có điểm nào khác nhau'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Tia có một gốc, còn đường thẳng không có đầu mút.'
+        text: 'Cho dãy số liệu có $10$ phần tử, trong đó giá trị $x$ xuất hiện $2$ lần. Tần số tương đối của $x$ là:',
+        options: ['$0{,}1$', '$0{,}2$', '$0{,}25$', '$0{,}5$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có $\\dfrac{2}{10} = 0{,}2$.'
       },
       {
         id: 'q7-2-7',
-        text: 'Hình ảnh gần đúng của tia trong thực tế là:',
-        options: ['Tia nắng mặt trời', 'Viên bi', 'Cái đĩa tròn', 'Mặt bàn'],
-        correctAnswerIndex: 0,
-        explanation: 'Tia nắng mặt trời là hình ảnh gần đúng của tia.'
+        text: 'Trong biểu đồ cột tần số tương đối, chiều cao cột biểu thị:',
+        options: [
+          'Giá trị của dấu hiệu',
+          'Tần số tương đối của giá trị',
+          'Tổng số liệu',
+          'Tần số cộng dồn'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Biểu đồ cột tần số tương đối dùng chiều cao cột để biểu thị tần số tương đối.'
       },
       {
         id: 'q7-2-8',
-        text: 'Nếu điểm B nằm trên tia Ax thì:',
-        options: [
-          'B thuộc tia Ax',
-          'B không thuộc tia Ax',
-          'A không là gốc của tia',
-          'Tia Ax không tồn tại'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Nếu B nằm trên tia Ax thì B thuộc tia Ax.'
+        text: 'Một giá trị có tần số tương đối $\\dfrac{1}{5}$ thì bằng:',
+        options: ['$10\\%$', '$20\\%$', '$25\\%$', '$50\\%$'],
+        correctAnswerIndex: 1,
+        explanation:
+          '$\\dfrac{1}{5} = 0{,}2 = 20\\%$.'
       },
       {
         id: 'q7-2-9',
-        text: 'Trong một đường thẳng, một điểm chia đường thẳng thành:',
-        options: ['Hai tia đối nhau', 'Hai đoạn thẳng', 'Một tia và một đoạn thẳng', 'Ba tia'],
-        correctAnswerIndex: 0,
-        explanation: 'Một điểm trên đường thẳng chia nó thành hai tia đối nhau.'
+        text: 'Nếu tổng số liệu là $50$ và tần số của một giá trị là $15$ thì tần số tương đối là:',
+        options: ['$0{,}15$', '$0{,}2$', '$0{,}3$', '$0{,}35$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Ta có $\\dfrac{15}{50} = 0{,}3$.'
       },
       {
         id: 'q7-2-10',
-        text: 'Muốn gọi tên một tia ta cần:',
-        options: [
-          'Một điểm gốc và một điểm thuộc tia',
-          'Hai điểm mút',
-          'Ba điểm phân biệt',
-          'Một đoạn thẳng'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Tên tia thường được gọi bằng gốc và một điểm thuộc tia.'
+        text: 'Tổng các tần số tương đối viết dưới dạng phần trăm bằng:',
+        options: ['$1\\%$', '$10\\%$', '$100\\%$', '$1000\\%$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Tổng các tần số tương đối bằng $100\\%$.'
       }
     ]
   },
   {
     id: 'c7-t3',
-    title: 'Đoạn thẳng',
-    description: 'Nhận biết đoạn thẳng, hai đầu mút, độ dài đoạn thẳng và các quan hệ cơ bản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Luyện tập chung',
+    description:
+      'Ôn tập về bảng tần số, bảng tần số tương đối và các biểu đồ biểu diễn dữ liệu.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter7-3',
     questions: [
       {
         id: 'q7-3-1',
-        text: 'Đoạn thẳng AB là hình gồm:',
-        options: [
-          'Hai điểm A, B và các điểm nằm giữa A, B',
-          'Chỉ hai điểm A và B',
-          'Một điểm A và kéo dài mãi',
-          'Một đường tròn qua A và B'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Đoạn thẳng AB gồm hai điểm mút A, B và các điểm nằm giữa chúng.'
+        text: 'Cho dãy số liệu: $1, 2, 2, 3, 3, 3$. Tần số của giá trị $3$ là:',
+        options: ['$1$', '$2$', '$3$', '$6$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Giá trị $3$ xuất hiện $3$ lần.'
       },
       {
         id: 'q7-3-2',
-        text: 'Đoạn thẳng có:',
-        options: ['Một đầu mút', 'Hai đầu mút', 'Không có đầu mút', 'Ba đầu mút'],
+        text: 'Cho dãy số liệu gồm $8$ phần tử, trong đó một giá trị xuất hiện $2$ lần. Tần số tương đối của giá trị đó là:',
+        options: ['$0{,}2$', '$0{,}25$', '$0{,}3$', '$0{,}5$'],
         correctAnswerIndex: 1,
-        explanation: 'Đoạn thẳng có hai đầu mút.'
+        explanation:
+          'Ta có $\\dfrac{2}{8} = 0{,}25$.'
       },
       {
         id: 'q7-3-3',
-        text: 'Độ dài đoạn thẳng luôn là:',
-        options: ['Một số âm', 'Một số không âm', 'Luôn bằng 0', 'Luôn là số lẻ'],
+        text: 'Tổng các tần số trong một bảng là:',
+        options: [
+          'Số các giá trị khác nhau',
+          'Tổng số liệu quan sát',
+          'Giá trị lớn nhất',
+          'Tần số tương đối'
+        ],
         correctAnswerIndex: 1,
-        explanation: 'Độ dài đoạn thẳng luôn không âm.'
+        explanation:
+          'Tổng các tần số chính là tổng số liệu quan sát.'
       },
       {
         id: 'q7-3-4',
-        text: 'Nếu hai điểm A và B trùng nhau thì độ dài AB bằng:',
-        options: ['1', '0', '2', 'Không xác định'],
+        text: 'Tổng các tần số tương đối trong một bảng là:',
+        options: ['$0$', '$1$', '$2$', '$10$'],
         correctAnswerIndex: 1,
-        explanation: 'Khoảng cách giữa hai điểm trùng nhau bằng 0.'
+        explanation:
+          'Tổng các tần số tương đối bằng $1$.'
       },
       {
         id: 'q7-3-5',
-        text: 'Để đo độ dài đoạn thẳng, ta thường dùng:',
-        options: ['Thước thẳng', 'Compa', 'Êke', 'Bút chì'],
-        correctAnswerIndex: 0,
-        explanation: 'Thước thẳng là dụng cụ thường dùng để đo độ dài đoạn thẳng.'
-      },
-      {
-        id: 'q7-3-6',
-        text: 'Nếu điểm M nằm giữa A và B thì:',
-        options: [
-          '$AM + MB = AB$',
-          '$AM = AB + MB$',
-          '$AB + MB = AM$',
-          '$AM = MB = 0$'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Nếu M nằm giữa A và B thì tổng hai đoạn AM và MB bằng AB.'
-      },
-      {
-        id: 'q7-3-7',
-        text: 'Một đoạn dây dài 12 cm bị cắt thành hai đoạn 5 cm và 7 cm. Điều này cho thấy:',
-        options: [
-          '$5 + 7 = 12$',
-          '$5 - 7 = 12$',
-          '$5 \\times 7 = 12$',
-          '$12 : 5 = 7$'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Tổng độ dài hai đoạn sau khi cắt bằng độ dài đoạn ban đầu.'
-      },
-      {
-        id: 'q7-3-8',
-        text: 'Trong các hình sau, hình nào gần đúng là đoạn thẳng?',
-        options: ['Cạnh của quyển sách', 'Tia nắng', 'Mặt đồng hồ', 'Bánh xe'],
-        correctAnswerIndex: 0,
-        explanation: 'Cạnh của quyển sách là hình ảnh gần đúng của đoạn thẳng.'
-      },
-      {
-        id: 'q7-3-9',
-        text: 'Đoạn thẳng khác tia ở chỗ:',
-        options: [
-          'Đoạn thẳng có hai đầu mút',
-          'Đoạn thẳng không có đầu mút',
-          'Tia có hai đầu mút',
-          'Tia ngắn hơn đoạn thẳng'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Đoạn thẳng có hai đầu mút, còn tia chỉ có một gốc.'
-      },
-      {
-        id: 'q7-3-10',
-        text: 'Nếu AB = 8 cm, AC = 3 cm và C nằm giữa A và B thì CB bằng:',
-        options: ['5 cm', '11 cm', '24 cm', '3 cm'],
-        correctAnswerIndex: 0,
-        explanation: 'Vì C nằm giữa A và B nên $AC + CB = AB$, do đó $CB = 8 - 3 = 5$ cm.'
+        text: 'Nếu tần số tương đối của một giá trị là $0{,}6$ thì dưới dạng phần trăm là:',
+        options: ['$6\\%$', '$60\\%$', '$0{,}6\\%$', '$600\\%$'],
+        correctAnswerIndex: 1,
+        explanation:
+          '$0{,}6 = 60\\%$.'
       }
     ]
   },
   {
     id: 'c7-t4',
-    title: 'Góc',
-    description: 'Nhận biết góc, đỉnh góc, cạnh góc và phân loại một số góc cơ bản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 24: Bảng tần số, tần số tương đối ghép nhóm và biểu đồ',
+    description:
+      'Làm quen với bảng ghép nhóm, tần số ghép nhóm, tần số tương đối ghép nhóm và biểu đồ tương ứng.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter7-4',
     questions: [
       {
         id: 'q7-4-1',
-        text: 'Góc là hình gồm:',
+        text: 'Ghép nhóm số liệu thường dùng khi:',
         options: [
-          'Hai tia chung gốc',
-          'Hai đoạn thẳng song song',
-          'Hai điểm phân biệt',
-          'Một đường thẳng và một đoạn thẳng'
+          'Số liệu ít và đơn giản',
+          'Số liệu nhiều, phân bố trên một khoảng rộng',
+          'Chỉ có một giá trị',
+          'Không cần thống kê'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Góc là hình gồm hai tia chung gốc.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Khi số liệu nhiều và trải trên một khoảng rộng, ta thường ghép nhóm để dễ quan sát.'
       },
       {
         id: 'q7-4-2',
-        text: 'Trong góc xOy, điểm O là:',
-        options: ['Đỉnh góc', 'Một cạnh góc', 'Điểm ngoài góc', 'Tâm đối xứng'],
+        text: 'Trong bảng ghép nhóm, mỗi nhóm thường được cho bởi:',
+        options: [
+          'Một khoảng giá trị',
+          'Một điểm duy nhất',
+          'Một công thức',
+          'Một tỉ số lượng giác'
+        ],
         correctAnswerIndex: 0,
-        explanation: 'Trong góc xOy, O là đỉnh góc.'
+        explanation:
+          'Mỗi nhóm thường được biểu diễn bằng một khoảng giá trị.'
       },
       {
         id: 'q7-4-3',
-        text: 'Trong góc xOy, hai tia Ox và Oy là:',
-        options: ['Hai cạnh của góc', 'Hai đường tròn', 'Hai đoạn thẳng bằng nhau', 'Hai trung điểm'],
+        text: 'Tần số của một nhóm là:',
+        options: [
+          'Số giá trị thuộc nhóm đó',
+          'Giá trị lớn nhất trong nhóm',
+          'Giá trị nhỏ nhất trong nhóm',
+          'Trung bình cộng của nhóm'
+        ],
         correctAnswerIndex: 0,
-        explanation: 'Hai tia Ox và Oy là hai cạnh của góc.'
+        explanation:
+          'Tần số của nhóm là số số liệu rơi vào nhóm đó.'
       },
       {
         id: 'q7-4-4',
-        text: 'Góc vuông có số đo là:',
-        options: ['45°', '60°', '90°', '180°'],
-        correctAnswerIndex: 2,
-        explanation: 'Góc vuông có số đo 90°.'
+        text: 'Tần số tương đối của một nhóm được tính bằng:',
+        options: [
+          '$\\dfrac{\\text{tần số nhóm}}{\\text{tổng số liệu}}$',
+          '$\\dfrac{\\text{tổng số liệu}}{\\text{tần số nhóm}}$',
+          '$\\text{tần số nhóm} + \\text{tổng số liệu}$',
+          '$\\text{tần số nhóm} - \\text{tổng số liệu}$'
+        ],
+        correctAnswerIndex: 0,
+        explanation:
+          'Đây là công thức hoàn toàn tương tự tần số tương đối của giá trị riêng lẻ.'
       },
       {
         id: 'q7-4-5',
-        text: 'Góc bẹt có số đo là:',
-        options: ['90°', '120°', '180°', '360°'],
-        correctAnswerIndex: 2,
-        explanation: 'Góc bẹt có số đo 180°.'
+        text: 'Biểu đồ thường dùng để biểu diễn bảng ghép nhóm là:',
+        options: ['Biểu đồ đoạn thẳng', 'Biểu đồ cột', 'Biểu đồ hình quạt', 'Biểu đồ tròn đồng tâm'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Bảng ghép nhóm thường được biểu diễn bằng biểu đồ cột.'
       },
       {
         id: 'q7-4-6',
-        text: 'Góc nhọn là góc có số đo:',
-        options: [
-          'Nhỏ hơn 90°',
-          'Bằng 90°',
-          'Lớn hơn 90° và nhỏ hơn 180°',
-          'Bằng 180°'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Góc nhọn là góc có số đo nhỏ hơn 90°.'
+        text: 'Nếu một nhóm có tần số là $8$ trong tổng số $40$ số liệu thì tần số tương đối của nhóm là:',
+        options: ['$0{,}1$', '$0{,}2$', '$0{,}25$', '$0{,}4$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có $\\dfrac{8}{40} = 0{,}2$.'
       },
       {
         id: 'q7-4-7',
-        text: 'Góc tù là góc có số đo:',
+        text: 'Tổng các tần số ghép nhóm bằng:',
         options: [
-          'Nhỏ hơn 90°',
-          'Bằng 90°',
-          'Lớn hơn 90° và nhỏ hơn 180°',
-          'Bằng 180°'
+          'Tổng số liệu quan sát',
+          'Số nhóm',
+          'Giá trị lớn nhất',
+          'Giá trị nhỏ nhất'
         ],
-        correctAnswerIndex: 2,
-        explanation: 'Góc tù có số đo lớn hơn 90° và nhỏ hơn 180°.'
+        correctAnswerIndex: 0,
+        explanation:
+          'Tổng các tần số ghép nhóm bằng tổng số liệu quan sát.'
       },
       {
         id: 'q7-4-8',
-        text: 'Dụng cụ thường dùng để đo góc là:',
-        options: ['Thước đo góc', 'Compa', 'Thước thẳng', 'Máy tính'],
-        correctAnswerIndex: 0,
-        explanation: 'Thước đo góc dùng để đo số đo góc.'
+        text: 'Tổng các tần số tương đối ghép nhóm bằng:',
+        options: ['$0$', '$1$', '$10$', '$100$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Tổng các tần số tương đối luôn bằng $1$.'
       },
       {
         id: 'q7-4-9',
-        text: 'Một góc 90° là:',
-        options: ['Góc nhọn', 'Góc vuông', 'Góc tù', 'Góc bẹt'],
+        text: 'Nếu một nhóm có tần số tương đối là $25\\%$ thì dưới dạng số thập phân là:',
+        options: ['$0{,}025$', '$0{,}25$', '$2{,}5$', '$25$'],
         correctAnswerIndex: 1,
-        explanation: 'Góc có số đo 90° là góc vuông.'
+        explanation:
+          '$25\\% = 0{,}25$.'
       },
       {
         id: 'q7-4-10',
-        text: 'Một góc 150° là:',
-        options: ['Góc nhọn', 'Góc vuông', 'Góc tù', 'Góc bẹt'],
-        correctAnswerIndex: 2,
-        explanation: '150° lớn hơn 90° và nhỏ hơn 180° nên là góc tù.'
+        text: 'Mục đích chính của việc ghép nhóm là:',
+        options: [
+          'Làm mất dữ liệu',
+          'Giảm số lượng số liệu để tiện quan sát và phân tích',
+          'Thay đổi kết quả thống kê',
+          'Chỉ để vẽ cho đẹp'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ghép nhóm giúp trình bày và phân tích dữ liệu thuận tiện hơn.'
       }
     ]
   },
   {
     id: 'c7-t5',
-    title: 'Ôn tập chương Hình học cơ bản',
-    description: 'Củng cố kiến thức về điểm, đường thẳng, tia, đoạn thẳng và góc.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài tập cuối chương 7',
+    description:
+      'Tổng hợp câu hỏi ôn tập toàn bộ chương 7 về tần số, tần số tương đối và biểu đồ.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter7-5',
     questions: [
       {
         id: 'q7-5-1',
-        text: 'Qua hai điểm phân biệt, ta vẽ được:',
-        options: ['Một đường thẳng duy nhất', 'Hai đường thẳng', 'Ba đường thẳng', 'Vô số đường thẳng'],
-        correctAnswerIndex: 0,
-        explanation: 'Qua hai điểm phân biệt chỉ có một đường thẳng duy nhất.'
+        text: 'Cho dãy số liệu: $2, 2, 3, 4, 4, 4$. Tần số của giá trị $4$ là:',
+        options: ['$1$', '$2$', '$3$', '$4$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Giá trị $4$ xuất hiện $3$ lần.'
       },
       {
         id: 'q7-5-2',
-        text: 'Tia AB có gốc là:',
-        options: ['A', 'B', 'AB', 'Không có'],
-        correctAnswerIndex: 0,
-        explanation: 'Tia AB có gốc là A.'
+        text: 'Cho một giá trị xuất hiện $6$ lần trong tổng số $24$ số liệu. Tần số tương đối của giá trị đó là:',
+        options: ['$0{,}2$', '$0{,}25$', '$0{,}3$', '$0{,}4$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có $\\dfrac{6}{24} = 0{,}25$.'
       },
       {
         id: 'q7-5-3',
-        text: 'Đoạn thẳng AB có:',
-        options: ['Một đầu mút', 'Hai đầu mút', 'Không có đầu mút', 'Ba đầu mút'],
+        text: 'Tổng các tần số tương đối bằng:',
+        options: ['$0$', '$1$', '$2$', '$10$'],
         correctAnswerIndex: 1,
-        explanation: 'Đoạn thẳng có hai đầu mút là A và B.'
+        explanation:
+          'Tổng các tần số tương đối luôn bằng $1$.'
       },
       {
         id: 'q7-5-4',
-        text: 'Nếu M nằm giữa A và B thì:',
-        options: ['$AM + MB = AB$', '$AM = AB + MB$', '$AB + MB = AM$', '$AM = 0$'],
-        correctAnswerIndex: 0,
-        explanation: 'Nếu M nằm giữa A và B thì tổng độ dài AM và MB bằng AB.'
+        text: 'Nếu tần số tương đối là $0{,}75$ thì dưới dạng phần trăm là:',
+        options: ['$7{,}5\\%$', '$75\\%$', '$0{,}75\\%$', '$750\\%$'],
+        correctAnswerIndex: 1,
+        explanation:
+          '$0{,}75 = 75\\%$.'
       },
       {
         id: 'q7-5-5',
-        text: 'Góc là hình gồm:',
-        options: ['Hai tia chung gốc', 'Hai đường thẳng song song', 'Một đoạn thẳng', 'Ba điểm'],
-        correctAnswerIndex: 0,
-        explanation: 'Góc là hình gồm hai tia chung gốc.'
-      },
-      {
-        id: 'q7-5-6',
-        text: 'Góc vuông có số đo:',
-        options: ['45°', '60°', '90°', '180°'],
-        correctAnswerIndex: 2,
-        explanation: 'Góc vuông có số đo 90°.'
-      },
-      {
-        id: 'q7-5-7',
-        text: 'Góc bẹt có số đo:',
-        options: ['90°', '120°', '180°', '360°'],
-        correctAnswerIndex: 2,
-        explanation: 'Góc bẹt có số đo 180°.'
-      },
-      {
-        id: 'q7-5-8',
-        text: 'Một góc 40° là:',
-        options: ['Góc nhọn', 'Góc vuông', 'Góc tù', 'Góc bẹt'],
-        correctAnswerIndex: 0,
-        explanation: '40° nhỏ hơn 90° nên là góc nhọn.'
-      },
-      {
-        id: 'q7-5-9',
-        text: 'Một góc 120° là:',
-        options: ['Góc nhọn', 'Góc vuông', 'Góc tù', 'Góc bẹt'],
-        correctAnswerIndex: 2,
-        explanation: '120° lớn hơn 90° và nhỏ hơn 180° nên là góc tù.'
-      },
-      {
-        id: 'q7-5-10',
-        text: 'Nội dung trọng tâm của chương này là:',
+        text: 'Ghép nhóm số liệu thường áp dụng khi:',
         options: [
-          'Điểm, đường thẳng, tia, đoạn thẳng và góc',
-          'Số nguyên và số thập phân',
-          'Phân số và tỉ số phần trăm',
-          'Biểu đồ và xác suất'
+          'Số liệu ít',
+          'Số liệu nhiều và phân tán',
+          'Không có số liệu',
+          'Chỉ có một giá trị'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Chương này tập trung vào các khái niệm hình học cơ bản.'
+        correctAnswerIndex: 1,
+        explanation:
+          'Ghép nhóm giúp xử lí số liệu nhiều và phân tán hiệu quả hơn.'
       }
     ]
   }

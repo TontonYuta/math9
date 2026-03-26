@@ -4,406 +4,322 @@ import { chapter4ExamTopics } from './chapter4-exams';
 export const chapter4CoreTopics: Topic[] = [
   {
     id: 'c4-t1',
-    title: 'Khái niệm số thập phân',
-    description: 'Nhận biết số thập phân, phần nguyên, phần thập phân và cách đọc, viết số thập phân.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 11: Tỉ số lượng giác của góc nhọn',
+    description:
+      'Nhận biết các tỉ số lượng giác của góc nhọn trong tam giác vuông và vận dụng vào các bài toán cơ bản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter4-1',
     questions: [
       {
         id: 'q4-1-1',
-        text: 'Số nào sau đây là số thập phân?',
-        options: ['12', '3,5', '-7', '25'],
+        text: 'Trong tam giác vuông, $\\sin \\alpha$ bằng:',
+        options: [
+          '$\\dfrac{\\text{cạnh kề}}{\\text{cạnh huyền}}$',
+          '$\\dfrac{\\text{cạnh đối}}{\\text{cạnh huyền}}$',
+          '$\\dfrac{\\text{cạnh đối}}{\\text{cạnh kề}}$',
+          '$\\dfrac{\\text{cạnh kề}}{\\text{cạnh đối}}$'
+        ],
         correctAnswerIndex: 1,
-        explanation: 'Số 3,5 là số thập phân.'
+        explanation:
+          'Trong tam giác vuông, $\\sin \\alpha = \\dfrac{\\text{cạnh đối}}{\\text{cạnh huyền}}$.'
       },
       {
         id: 'q4-1-2',
-        text: 'Trong số thập phân 12,34, phần nguyên là:',
-        options: ['12', '34', '1', '2'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong số 12,34 thì phần nguyên là 12.'
+        text: 'Trong tam giác vuông, $\\cos \\alpha$ bằng:',
+        options: [
+          '$\\dfrac{\\text{cạnh đối}}{\\text{cạnh huyền}}$',
+          '$\\dfrac{\\text{cạnh đối}}{\\text{cạnh kề}}$',
+          '$\\dfrac{\\text{cạnh kề}}{\\text{cạnh huyền}}$',
+          '$\\dfrac{\\text{cạnh huyền}}{\\text{cạnh kề}}$'
+        ],
+        correctAnswerIndex: 2,
+        explanation:
+          'Trong tam giác vuông, $\\cos \\alpha = \\dfrac{\\text{cạnh kề}}{\\text{cạnh huyền}}$.'
       },
       {
         id: 'q4-1-3',
-        text: 'Trong số thập phân 12,34, phần thập phân là:',
-        options: ['12', '34', '3', '4'],
-        correctAnswerIndex: 1,
-        explanation: 'Trong số 12,34 thì phần thập phân là 34.'
+        text: 'Trong tam giác vuông, $\\tan \\alpha$ bằng:',
+        options: [
+          '$\\dfrac{\\text{cạnh đối}}{\\text{cạnh kề}}$',
+          '$\\dfrac{\\text{cạnh kề}}{\\text{cạnh đối}}$',
+          '$\\dfrac{\\text{cạnh đối}}{\\text{cạnh huyền}}$',
+          '$\\dfrac{\\text{cạnh huyền}}{\\text{cạnh kề}}$'
+        ],
+        correctAnswerIndex: 0,
+        explanation:
+          'Trong tam giác vuông, $\\tan \\alpha = \\dfrac{\\text{cạnh đối}}{\\text{cạnh kề}}$.'
       },
       {
         id: 'q4-1-4',
-        text: 'Cách đọc đúng của số 4,08 là:',
-        options: ['Bốn phẩy tám', 'Bốn phẩy không tám', 'Bốn phẩy tám mươi', 'Bốn trăm linh tám'],
+        text: 'Trong tam giác vuông, $\\cot \\alpha$ bằng:',
+        options: [
+          '$\\dfrac{\\text{cạnh đối}}{\\text{cạnh kề}}$',
+          '$\\dfrac{\\text{cạnh kề}}{\\text{cạnh đối}}$',
+          '$\\dfrac{\\text{cạnh huyền}}{\\text{cạnh đối}}$',
+          '$\\dfrac{\\text{cạnh huyền}}{\\text{cạnh kề}}$'
+        ],
         correctAnswerIndex: 1,
-        explanation: 'Số 4,08 được đọc là bốn phẩy không tám.'
+        explanation:
+          'Trong tam giác vuông, $\\cot \\alpha = \\dfrac{\\text{cạnh kề}}{\\text{cạnh đối}}$.'
       },
       {
         id: 'q4-1-5',
-        text: 'Số 7,5 được viết dưới dạng phân số thập phân là:',
-        options: ['$\\dfrac{75}{10}$', '$\\dfrac{7}{5}$', '$\\dfrac{5}{7}$', '$\\dfrac{75}{100}$'],
+        text: 'Cho tam giác vuông có một góc nhọn $\\alpha$, cạnh đối bằng $3$, cạnh huyền bằng $5$. Khi đó $\\sin \\alpha =$',
+        options: ['$\\dfrac{3}{5}$', '$\\dfrac{5}{3}$', '$\\dfrac{4}{5}$', '$\\dfrac{3}{4}$'],
         correctAnswerIndex: 0,
-        explanation: 'Ta có $7,5=\\dfrac{75}{10}$.'
+        explanation:
+          'Ta có $\\sin \\alpha = \\dfrac{\\text{cạnh đối}}{\\text{cạnh huyền}} = \\dfrac{3}{5}$.'
       },
       {
         id: 'q4-1-6',
-        text: 'Số 0,25 có bao nhiêu chữ số ở phần thập phân?',
-        options: ['0', '1', '2', '3'],
-        correctAnswerIndex: 2,
-        explanation: 'Phần thập phân của 0,25 có hai chữ số là 2 và 5.'
+        text: 'Cho tam giác vuông có một góc nhọn $\\alpha$, cạnh kề bằng $4$, cạnh huyền bằng $5$. Khi đó $\\cos \\alpha =$',
+        options: ['$\\dfrac{4}{5}$', '$\\dfrac{5}{4}$', '$\\dfrac{3}{5}$', '$\\dfrac{4}{3}$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $\\cos \\alpha = \\dfrac{\\text{cạnh kề}}{\\text{cạnh huyền}} = \\dfrac{4}{5}$.'
       },
       {
         id: 'q4-1-7',
-        text: 'Số thập phân nào bằng với phân số $\\dfrac{3}{10}$?',
-        options: ['0,03', '0,3', '3,0', '30,0'],
-        correctAnswerIndex: 1,
-        explanation: '$\\dfrac{3}{10}=0,3$.'
+        text: 'Cho tam giác vuông có một góc nhọn $\\alpha$, cạnh đối bằng $3$, cạnh kề bằng $4$. Khi đó $\\tan \\alpha =$',
+        options: ['$\\dfrac{3}{4}$', '$\\dfrac{4}{3}$', '$\\dfrac{3}{5}$', '$\\dfrac{4}{5}$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $\\tan \\alpha = \\dfrac{\\text{cạnh đối}}{\\text{cạnh kề}} = \\dfrac{3}{4}$.'
       },
       {
         id: 'q4-1-8',
-        text: 'Số thập phân nào bằng với phân số $\\dfrac{27}{100}$?',
-        options: ['2,7', '0,27', '27,0', '0,027'],
+        text: 'Cho tam giác vuông có một góc nhọn $\\alpha$, cạnh đối bằng $4$, cạnh kề bằng $3$. Khi đó $\\cot \\alpha =$',
+        options: ['$\\dfrac{4}{3}$', '$\\dfrac{3}{4}$', '$\\dfrac{5}{4}$', '$\\dfrac{5}{3}$'],
         correctAnswerIndex: 1,
-        explanation: '$\\dfrac{27}{100}=0,27$.'
+        explanation:
+          'Ta có $\\cot \\alpha = \\dfrac{\\text{cạnh kề}}{\\text{cạnh đối}} = \\dfrac{3}{4}$.'
       },
       {
         id: 'q4-1-9',
-        text: 'Viết số “mười hai phẩy không năm” ta được:',
-        options: ['12,5', '12,05', '12,50', '120,5'],
+        text: 'Giá trị đúng là:',
+        options: ['$\\sin 45^\\circ = 1$', '$\\cos 60^\\circ = \\dfrac{1}{2}$', '$\\tan 30^\\circ = 1$', '$\\cot 45^\\circ = 2$'],
         correctAnswerIndex: 1,
-        explanation: '“Mười hai phẩy không năm” được viết là 12,05.'
+        explanation:
+          'Ta có $\\cos 60^\\circ = \\dfrac{1}{2}$.'
       },
       {
         id: 'q4-1-10',
-        text: 'Số 5,0 có giá trị bằng:',
-        options: ['0,5', '50', '5', '5,00 chỉ lớn hơn 5'],
+        text: 'Trong các khẳng định sau, khẳng định nào đúng?',
+        options: [
+          '$\\sin \\alpha < 0$ với mọi góc nhọn $\\alpha$',
+          '$\\cos \\alpha < 0$ với mọi góc nhọn $\\alpha$',
+          '$\\tan \\alpha > 0$ với mọi góc nhọn $\\alpha$',
+          '$\\cot \\alpha < 0$ với mọi góc nhọn $\\alpha$'
+        ],
         correctAnswerIndex: 2,
-        explanation: 'Số 5,0 bằng 5.'
+        explanation:
+          'Với mọi góc nhọn $\\alpha$, các tỉ số lượng giác đều dương, nên $\\tan \\alpha > 0$.'
       }
     ]
   },
   {
     id: 'c4-t2',
-    title: 'So sánh và sắp xếp số thập phân',
-    description: 'So sánh số thập phân và sắp xếp theo thứ tự tăng dần hoặc giảm dần.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 12: Một số hệ thức giữa cạnh, góc trong tam giác vuông và ứng dụng',
+    description:
+      'Vận dụng các hệ thức lượng trong tam giác vuông để tính cạnh, góc và giải các bài toán thực tế đơn giản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter4-2',
     questions: [
       {
         id: 'q4-2-1',
-        text: 'Trong hai số 3,5 và 3,8, số lớn hơn là:',
-        options: ['3,5', '3,8', 'Hai số bằng nhau', 'Không so sánh được'],
+        text: 'Trong tam giác vuông, nếu biết cạnh huyền $a$ và góc nhọn $\\alpha$, cạnh đối với góc $\\alpha$ bằng:',
+        options: ['$a\\cos \\alpha$', '$a\\sin \\alpha$', '$a\\tan \\alpha$', '$a\\cot \\alpha$'],
         correctAnswerIndex: 1,
-        explanation: 'Hai số có cùng phần nguyên, so sánh phần thập phân: 8 > 5 nên 3,8 > 3,5.'
+        explanation:
+          'Vì $\\sin \\alpha = \\dfrac{\\text{cạnh đối}}{\\text{cạnh huyền}}$, nên cạnh đối bằng $a\\sin \\alpha$.'
       },
       {
         id: 'q4-2-2',
-        text: 'Trong hai số 4,09 và 4,9, số lớn hơn là:',
-        options: ['4,09', '4,9', 'Hai số bằng nhau', 'Không so sánh được'],
-        correctAnswerIndex: 1,
-        explanation: 'Ta có 4,09 = 4,090 nên 4,9 > 4,09.'
+        text: 'Trong tam giác vuông, nếu biết cạnh huyền $a$ và góc nhọn $\\alpha$, cạnh kề với góc $\\alpha$ bằng:',
+        options: ['$a\\sin \\alpha$', '$a\\tan \\alpha$', '$a\\cos \\alpha$', '$a\\cot \\alpha$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Vì $\\cos \\alpha = \\dfrac{\\text{cạnh kề}}{\\text{cạnh huyền}}$, nên cạnh kề bằng $a\\cos \\alpha$.'
       },
       {
         id: 'q4-2-3',
-        text: 'Khẳng định nào đúng?',
-        options: ['2,45 > 2,5', '2,45 < 2,5', '2,45 = 2,5', '2,45 > 3,5'],
-        correctAnswerIndex: 1,
-        explanation: 'Ta có 2,45 < 2,50 nên 2,45 < 2,5.'
+        text: 'Trong tam giác vuông, nếu biết cạnh kề $b$ và góc nhọn $\\alpha$, cạnh đối với góc $\\alpha$ bằng:',
+        options: ['$b\\sin \\alpha$', '$b\\cos \\alpha$', '$b\\tan \\alpha$', '$b\\cot \\alpha$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Vì $\\tan \\alpha = \\dfrac{\\text{cạnh đối}}{\\text{cạnh kề}}$, nên cạnh đối bằng $b\\tan \\alpha$.'
       },
       {
         id: 'q4-2-4',
-        text: 'Số lớn nhất trong các số 1,2; 1,02; 1,22; 1,202 là:',
-        options: ['1,2', '1,02', '1,22', '1,202'],
-        correctAnswerIndex: 2,
-        explanation: 'So sánh các số thập phân cho thấy 1,22 là lớn nhất.'
+        text: 'Trong tam giác vuông, nếu biết cạnh đối $c$ và góc nhọn $\\alpha$, cạnh kề với góc $\\alpha$ bằng:',
+        options: ['$c\\tan \\alpha$', '$c\\cot \\alpha$', '$\\dfrac{c}{\\cos \\alpha}$', '$c\\sin \\alpha$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Vì $\\cot \\alpha = \\dfrac{\\text{cạnh kề}}{\\text{cạnh đối}}$, nên cạnh kề bằng $c\\cot \\alpha$.'
       },
       {
         id: 'q4-2-5',
-        text: 'Số nhỏ nhất trong các số 0,7; 0,07; 0,17; 0,707 là:',
-        options: ['0,7', '0,07', '0,17', '0,707'],
-        correctAnswerIndex: 1,
-        explanation: '0,07 là số nhỏ nhất.'
+        text: 'Cho tam giác vuông có cạnh huyền bằng $10$ và một góc nhọn bằng $30^\\circ$. Cạnh đối với góc $30^\\circ$ bằng:',
+        options: ['$5$', '$5\\sqrt{3}$', '$10\\sqrt{3}$', '$10$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $\\sin 30^\\circ = \\dfrac{1}{2}$, nên cạnh đối bằng $10 \\cdot \\dfrac{1}{2} = 5$.'
       },
       {
         id: 'q4-2-6',
-        text: 'Sắp xếp các số 2,3; 2,03; 2,13 theo thứ tự tăng dần:',
-        options: [
-          '2,03; 2,13; 2,3',
-          '2,3; 2,13; 2,03',
-          '2,13; 2,03; 2,3',
-          '2,03; 2,3; 2,13'
-        ],
+        text: 'Cho tam giác vuông có cạnh huyền bằng $8$ và một góc nhọn bằng $60^\\circ$. Cạnh kề với góc $60^\\circ$ bằng:',
+        options: ['$4$', '$4\\sqrt{3}$', '$8$', '$2$'],
         correctAnswerIndex: 0,
-        explanation: 'Ta có 2,03 < 2,13 < 2,30.'
+        explanation:
+          'Ta có $\\cos 60^\\circ = \\dfrac{1}{2}$, nên cạnh kề bằng $8 \\cdot \\dfrac{1}{2} = 4$.'
       },
       {
         id: 'q4-2-7',
-        text: 'Điền dấu thích hợp: 5,6 ... 5,60',
-        options: ['>', '<', '=', 'Không xác định'],
-        correctAnswerIndex: 2,
-        explanation: 'Thêm chữ số 0 vào bên phải phần thập phân không làm thay đổi giá trị số.'
+        text: 'Cho tam giác vuông có cạnh kề với góc $45^\\circ$ bằng $6$. Cạnh đối với góc đó bằng:',
+        options: ['$3$', '$6$', '$6\\sqrt{2}$', '$12$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Vì $\\tan 45^\\circ = 1$, nên cạnh đối bằng cạnh kề, tức là bằng $6$.'
       },
       {
         id: 'q4-2-8',
-        text: 'Điền dấu thích hợp: 7,08 ... 7,8',
-        options: ['>', '<', '=', '≤'],
+        text: 'Một chiếc thang dài $5\\text{ m}$ tựa vào tường và tạo với mặt đất một góc $53^\\circ$. Chiều cao gần đúng mà thang chạm vào tường là:',
+        options: ['$3\\text{ m}$', '$4\\text{ m}$', '$5\\text{ m}$', '$2\\text{ m}$'],
         correctAnswerIndex: 1,
-        explanation: 'Ta có 7,08 = 7,080 < 7,800 = 7,8.'
+        explanation:
+          'Chiều cao là cạnh đối với góc $53^\\circ$, nên xấp xỉ bằng $5\\sin 53^\\circ \\approx 5 \\cdot 0{,}8 = 4\\text{ m}$.'
       },
       {
         id: 'q4-2-9',
-        text: 'Trong các số 9,1; 9,01; 9,11; 9,001, số lớn nhất là:',
-        options: ['9,1', '9,01', '9,11', '9,001'],
-        correctAnswerIndex: 2,
-        explanation: 'So sánh các phần thập phân, ta được 9,11 là lớn nhất.'
+        text: 'Một cây cao $12\\text{ m}$ đổ bóng dài $12\\text{ m}$. Góc nâng của tia nắng với mặt đất xấp xỉ bằng:',
+        options: ['$30^\\circ$', '$45^\\circ$', '$60^\\circ$', '$90^\\circ$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có $\\tan \\alpha = \\dfrac{12}{12} = 1$, nên $\\alpha = 45^\\circ$.'
       },
       {
         id: 'q4-2-10',
-        text: 'Muốn so sánh hai số thập phân, trước hết ta so sánh:',
+        text: 'Nếu trong tam giác vuông, hai góc nhọn phụ nhau thì:',
         options: [
-          'Phần nguyên',
-          'Phần thập phân',
-          'Số chữ số',
-          'Chữ số tận cùng'
+          '$\\sin \\alpha = \\sin \\beta$',
+          '$\\cos \\alpha = \\cos \\beta$',
+          '$\\sin \\alpha = \\cos \\beta$',
+          '$\\tan \\alpha = \\tan \\beta$'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Muốn so sánh hai số thập phân, trước hết ta so sánh phần nguyên.'
+        correctAnswerIndex: 2,
+        explanation:
+          'Nếu $\\alpha + \\beta = 90^\\circ$ thì $\\sin \\alpha = \\cos \\beta$.'
       }
     ]
   },
   {
     id: 'c4-t3',
-    title: 'Các phép tính với số thập phân',
-    description: 'Thực hiện phép cộng, trừ, nhân, chia số thập phân trong các tình huống cơ bản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Luyện tập chung',
+    description:
+      'Ôn tập về tỉ số lượng giác của góc nhọn và các hệ thức giữa cạnh, góc trong tam giác vuông.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter4-3',
     questions: [
       {
         id: 'q4-3-1',
-        text: 'Kết quả của phép tính 2,5 + 1,3 là:',
-        options: ['3,8', '3,7', '2,8', '4,8'],
-        correctAnswerIndex: 0,
-        explanation: '2,5 + 1,3 = 3,8.'
+        text: 'Trong tam giác vuông, $\\sin \\alpha$ là tỉ số giữa:',
+        options: [
+          'Cạnh kề và cạnh huyền',
+          'Cạnh đối và cạnh huyền',
+          'Cạnh đối và cạnh kề',
+          'Cạnh huyền và cạnh đối'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          '$\\sin \\alpha = \\dfrac{\\text{cạnh đối}}{\\text{cạnh huyền}}$.'
       },
       {
         id: 'q4-3-2',
-        text: 'Kết quả của phép tính 7,2 - 3,1 là:',
-        options: ['4,1', '4,3', '3,1', '10,3'],
-        correctAnswerIndex: 0,
-        explanation: '7,2 - 3,1 = 4,1.'
+        text: 'Giá trị của $\\tan 45^\\circ$ là:',
+        options: ['$0$', '$1$', '$\\dfrac{1}{2}$', '$\\sqrt{2}$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có $\\tan 45^\\circ = 1$.'
       },
       {
         id: 'q4-3-3',
-        text: 'Kết quả của phép tính 1,5 × 2 là:',
-        options: ['2,5', '3,0', '3,5', '1,0'],
-        correctAnswerIndex: 1,
-        explanation: '1,5 × 2 = 3,0.'
+        text: 'Giá trị của $\\cos 60^\\circ$ là:',
+        options: ['$\\dfrac{1}{2}$', '$\\dfrac{\\sqrt{3}}{2}$', '$1$', '$0$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $\\cos 60^\\circ = \\dfrac{1}{2}$.'
       },
       {
         id: 'q4-3-4',
-        text: 'Kết quả của phép tính 4,8 : 2 là:',
-        options: ['2,4', '2,8', '24', '0,24'],
-        correctAnswerIndex: 0,
-        explanation: '4,8 : 2 = 2,4.'
+        text: 'Nếu cạnh huyền của một tam giác vuông bằng $10$ và $\\sin \\alpha = \\dfrac{3}{5}$ thì cạnh đối với góc $\\alpha$ bằng:',
+        options: ['$4$', '$5$', '$6$', '$8$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Cạnh đối bằng $10 \\cdot \\dfrac{3}{5} = 6$.'
       },
       {
         id: 'q4-3-5',
-        text: 'Giá trị của biểu thức 3,2 + 1,8 là:',
-        options: ['4,0', '5,0', '4,8', '3,0'],
-        correctAnswerIndex: 1,
-        explanation: '3,2 + 1,8 = 5,0.'
-      },
-      {
-        id: 'q4-3-6',
-        text: 'Giá trị của biểu thức 6,5 - 2,5 là:',
-        options: ['3,0', '4,0', '5,0', '4,5'],
-        correctAnswerIndex: 1,
-        explanation: '6,5 - 2,5 = 4,0.'
-      },
-      {
-        id: 'q4-3-7',
-        text: 'Kết quả của phép tính 0,4 × 10 là:',
-        options: ['0,04', '4', '40', '0,4'],
-        correctAnswerIndex: 1,
-        explanation: '0,4 × 10 = 4.'
-      },
-      {
-        id: 'q4-3-8',
-        text: 'Kết quả của phép tính 8,4 : 4 là:',
-        options: ['2,1', '2,4', '21', '0,21'],
-        correctAnswerIndex: 0,
-        explanation: '8,4 : 4 = 2,1.'
-      },
-      {
-        id: 'q4-3-9',
-        text: 'Giá trị của biểu thức 2,5 + 3,5 - 1 là:',
-        options: ['5', '6', '4', '7'],
-        correctAnswerIndex: 0,
-        explanation: '2,5 + 3,5 = 6, rồi 6 - 1 = 5.'
-      },
-      {
-        id: 'q4-3-10',
-        text: 'Một sợi dây dài 3,5 m, cắt đi 1,2 m. Độ dài còn lại là:',
-        options: ['2,3 m', '2,5 m', '1,3 m', '4,7 m'],
-        correctAnswerIndex: 0,
-        explanation: '3,5 - 1,2 = 2,3 (m).'
+        text: 'Nếu $\\alpha$ là góc nhọn thì khẳng định nào đúng?',
+        options: [
+          '$\\sin \\alpha < 0$',
+          '$\\cos \\alpha < 0$',
+          '$\\tan \\alpha > 0$',
+          '$\\cot \\alpha < 0$'
+        ],
+        correctAnswerIndex: 2,
+        explanation:
+          'Với góc nhọn, các tỉ số lượng giác đều dương.'
       }
     ]
   },
   {
     id: 'c4-t4',
-    title: 'Tỉ số phần trăm',
-    description: 'Nhận biết tỉ số phần trăm, cách viết và vận dụng trong các bài toán đơn giản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài tập cuối chương 4',
+    description:
+      'Tổng hợp câu hỏi ôn tập toàn bộ chương 4 về hệ thức lượng trong tam giác vuông.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter4-4',
     questions: [
       {
         id: 'q4-4-1',
-        text: '50% được viết dưới dạng phân số là:',
-        options: ['$\\dfrac{1}{2}$', '$\\dfrac{1}{5}$', '$\\dfrac{5}{2}$', '$\\dfrac{50}{1}$'],
+        text: 'Giá trị của $\\sin 30^\\circ$ là:',
+        options: ['$\\dfrac{1}{2}$', '$\\dfrac{\\sqrt{3}}{2}$', '$1$', '$0$'],
         correctAnswerIndex: 0,
-        explanation: '50% = $\\dfrac{50}{100}=\\dfrac{1}{2}$.'
+        explanation:
+          'Ta có $\\sin 30^\\circ = \\dfrac{1}{2}$.'
       },
       {
         id: 'q4-4-2',
-        text: '25% được viết dưới dạng số thập phân là:',
-        options: ['0,25', '2,5', '25,0', '0,025'],
-        correctAnswerIndex: 0,
-        explanation: '25% = $\\dfrac{25}{100}=0,25$.'
+        text: 'Giá trị của $\\cos 45^\\circ$ là:',
+        options: ['$\\dfrac{1}{2}$', '$\\dfrac{\\sqrt{2}}{2}$', '$\\dfrac{\\sqrt{3}}{2}$', '$1$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có $\\cos 45^\\circ = \\dfrac{\\sqrt{2}}{2}$.'
       },
       {
         id: 'q4-4-3',
-        text: '0,5 được viết dưới dạng phần trăm là:',
-        options: ['5%', '50%', '500%', '0,5%'],
-        correctAnswerIndex: 1,
-        explanation: '0,5 = 50%.'
+        text: 'Giá trị của $\\tan 60^\\circ$ là:',
+        options: ['$\\sqrt{3}$', '$\\dfrac{1}{\\sqrt{3}}$', '$1$', '$2$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $\\tan 60^\\circ = \\sqrt{3}$.'
       },
       {
         id: 'q4-4-4',
-        text: '1% bằng:',
-        options: ['$\\dfrac{1}{10}$', '$\\dfrac{1}{100}$', '$\\dfrac{10}{100}$', '$\\dfrac{1}{1000}$'],
-        correctAnswerIndex: 1,
-        explanation: '1% = $\\dfrac{1}{100}$.'
+        text: 'Nếu cạnh huyền bằng $12$ và góc nhọn $\\alpha = 30^\\circ$ thì cạnh đối với góc $\\alpha$ bằng:',
+        options: ['$6$', '$6\\sqrt{3}$', '$12\\sqrt{3}$', '$4$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Cạnh đối bằng $12\\sin 30^\\circ = 12 \\cdot \\dfrac{1}{2} = 6$.'
       },
       {
         id: 'q4-4-5',
-        text: 'Trong 100 học sinh có 60 học sinh nữ. Tỉ số phần trăm học sinh nữ là:',
-        options: ['6%', '60%', '0,6%', '600%'],
-        correctAnswerIndex: 1,
-        explanation: '$\\dfrac{60}{100}=60\\%$.'
-      },
-      {
-        id: 'q4-4-6',
-        text: '75% được viết dưới dạng phân số tối giản là:',
-        options: ['$\\dfrac{3}{4}$', '$\\dfrac{4}{3}$', '$\\dfrac{75}{10}$', '$\\dfrac{7}{5}$'],
-        correctAnswerIndex: 0,
-        explanation: '75% = $\\dfrac{75}{100}=\\dfrac{3}{4}$.'
-      },
-      {
-        id: 'q4-4-7',
-        text: '0,2 được viết dưới dạng phần trăm là:',
-        options: ['2%', '20%', '200%', '0,2%'],
-        correctAnswerIndex: 1,
-        explanation: '0,2 = 20%.'
-      },
-      {
-        id: 'q4-4-8',
-        text: '40% của 50 là:',
-        options: ['20', '25', '40', '10'],
-        correctAnswerIndex: 0,
-        explanation: '40% của 50 là $0,4\\times50=20$.'
-      },
-      {
-        id: 'q4-4-9',
-        text: 'Một lớp có 20 học sinh, trong đó 5 học sinh đạt điểm 10. Tỉ số phần trăm học sinh đạt điểm 10 là:',
-        options: ['20%', '25%', '30%', '15%'],
-        correctAnswerIndex: 1,
-        explanation: '$\\dfrac{5}{20}=\\dfrac{1}{4}=25\\%$.'
-      },
-      {
-        id: 'q4-4-10',
-        text: '100% biểu thị:',
-        options: ['Một nửa', 'Toàn bộ', 'Một phần tư', 'Không có gì'],
-        correctAnswerIndex: 1,
-        explanation: '100% biểu thị toàn bộ.'
-      }
-    ]
-  },
-  {
-    id: 'c4-t5',
-    title: 'Ôn tập chương Số thập phân',
-    description: 'Củng cố kiến thức về số thập phân, phép tính với số thập phân và tỉ số phần trăm.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
-    questions: [
-      {
-        id: 'q4-5-1',
-        text: 'Số nào sau đây là số thập phân?',
-        options: ['8', '0,8', '-3', '12'],
-        correctAnswerIndex: 1,
-        explanation: '0,8 là số thập phân.'
-      },
-      {
-        id: 'q4-5-2',
-        text: 'Trong số 15,27, phần nguyên là:',
-        options: ['15', '27', '1', '5'],
-        correctAnswerIndex: 0,
-        explanation: 'Phần nguyên của 15,27 là 15.'
-      },
-      {
-        id: 'q4-5-3',
-        text: 'Số lớn hơn trong hai số 6,04 và 6,4 là:',
-        options: ['6,04', '6,4', 'Hai số bằng nhau', 'Không xác định'],
-        correctAnswerIndex: 1,
-        explanation: 'Ta có 6,04 = 6,040 < 6,400 = 6,4.'
-      },
-      {
-        id: 'q4-5-4',
-        text: 'Tính 2,7 + 1,2',
-        options: ['3,9', '3,8', '4,9', '2,9'],
-        correctAnswerIndex: 0,
-        explanation: '2,7 + 1,2 = 3,9.'
-      },
-      {
-        id: 'q4-5-5',
-        text: 'Tính 5,6 - 2,1',
-        options: ['3,5', '3,7', '4,5', '2,5'],
-        correctAnswerIndex: 0,
-        explanation: '5,6 - 2,1 = 3,5.'
-      },
-      {
-        id: 'q4-5-6',
-        text: 'Tính 1,5 × 4',
-        options: ['4,5', '5', '6', '7'],
-        correctAnswerIndex: 2,
-        explanation: '1,5 × 4 = 6.'
-      },
-      {
-        id: 'q4-5-7',
-        text: 'Tính 7,2 : 3',
-        options: ['2,4', '2,1', '24', '0,24'],
-        correctAnswerIndex: 0,
-        explanation: '7,2 : 3 = 2,4.'
-      },
-      {
-        id: 'q4-5-8',
-        text: '0,75 viết dưới dạng phần trăm là:',
-        options: ['7,5%', '75%', '750%', '0,75%'],
-        correctAnswerIndex: 1,
-        explanation: '0,75 = 75%.'
-      },
-      {
-        id: 'q4-5-9',
-        text: '50% của 80 là:',
-        options: ['20', '30', '40', '50'],
-        correctAnswerIndex: 2,
-        explanation: '50% của 80 là $0,5\\times80=40$.'
-      },
-      {
-        id: 'q4-5-10',
-        text: 'Nội dung trọng tâm của chương này là:',
+        text: 'Nếu hai góc nhọn $\\alpha$ và $\\beta$ phụ nhau thì hệ thức nào đúng?',
         options: [
-          'Số thập phân, các phép tính và tỉ số phần trăm',
-          'Số nguyên và trục số',
-          'Phân số và quy đồng mẫu',
-          'Điểm, tia, đoạn thẳng'
+          '$\\sin \\alpha = \\sin \\beta$',
+          '$\\cos \\alpha = \\cos \\beta$',
+          '$\\sin \\alpha = \\cos \\beta$',
+          '$\\tan \\alpha = \\cos \\beta$'
         ],
-        correctAnswerIndex: 0,
-        explanation: 'Chương này tập trung vào số thập phân, phép tính với số thập phân và tỉ số phần trăm.'
+        correctAnswerIndex: 2,
+        explanation:
+          'Nếu $\\alpha + \\beta = 90^\\circ$ thì $\\sin \\alpha = \\cos \\beta$.'
       }
     ]
   }
