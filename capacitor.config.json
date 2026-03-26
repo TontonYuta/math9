@@ -1,0 +1,11 @@
+﻿{
+  "appId": "com.tontonyuta.math9",
+  "appName": "math9",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "CapacitorUpdater": {
+      "autoUpdate": false
+    }
+  }
+}
