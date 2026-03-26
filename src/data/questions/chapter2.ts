@@ -4,401 +4,371 @@ import { chapter2ExamTopics } from './chapter2-exams';
 export const chapter2CoreTopics: Topic[] = [
   {
     id: 'c2-t1',
-    title: 'Tập hợp các số nguyên',
-    description: 'Nhận biết số nguyên dương, số nguyên âm, số 0 và biểu diễn trên trục số.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 4: Phương trình quy về phương trình bậc nhất một ẩn',
+    description:
+      'Nhận biết và giải các phương trình có thể biến đổi về dạng phương trình bậc nhất một ẩn.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter2-1',
     questions: [
       {
         id: 'q2-1-1',
-        text: 'Tập hợp số nguyên được kí hiệu là:',
-        options: ['$\\mathbb{N}$', '$\\mathbb{Z}$', '$\\mathbb{Q}$', '$\\mathbb{R}$'],
-        correctAnswerIndex: 1,
-        explanation: 'Tập hợp số nguyên được kí hiệu là $\\mathbb{Z}$.'
+        text: 'Phương trình bậc nhất một ẩn có dạng:',
+        options: ['$ax + b = 0$', '$ax^2 + b = 0$', '$\\dfrac{a}{x} + b = 0$', '$ax + by = c$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Phương trình bậc nhất một ẩn có dạng $ax + b = 0$ với $a \\ne 0$.'
       },
       {
         id: 'q2-1-2',
-        text: 'Số nào sau đây là số nguyên âm?',
-        options: ['0', '5', '-3', '8'],
-        correctAnswerIndex: 2,
-        explanation: 'Số -3 là số nguyên âm.'
+        text: 'Nghiệm của phương trình $2x - 6 = 0$ là:',
+        options: ['$x = 2$', '$x = 3$', '$x = -3$', '$x = -2$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có $2x - 6 = 0 \\Rightarrow 2x = 6 \\Rightarrow x = 3$.'
       },
       {
         id: 'q2-1-3',
-        text: 'Số nào sau đây không phải là số nguyên?',
-        options: ['-5', '0', '7', '1,5'],
-        correctAnswerIndex: 3,
-        explanation: 'Số 1,5 không phải là số nguyên.'
+        text: 'Nghiệm của phương trình $3(x - 1) = 6$ là:',
+        options: ['$x = 1$', '$x = 2$', '$x = 3$', '$x = 4$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Ta có $3(x - 1) = 6 \\Rightarrow x - 1 = 2 \\Rightarrow x = 3$.'
       },
       {
         id: 'q2-1-4',
-        text: 'Trong các số sau, số nào lớn hơn 0?',
-        options: ['-7', '-1', '0', '4'],
-        correctAnswerIndex: 3,
-        explanation: 'Số 4 là số nguyên dương nên lớn hơn 0.'
+        text: 'Nghiệm của phương trình $\\dfrac{x}{2} + 3 = 5$ là:',
+        options: ['$x = 2$', '$x = 3$', '$x = 4$', '$x = 5$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Ta có $\\dfrac{x}{2} + 3 = 5 \\Rightarrow \\dfrac{x}{2} = 2 \\Rightarrow x = 4$.'
       },
       {
         id: 'q2-1-5',
-        text: 'Trên trục số, điểm biểu diễn số -2 nằm:',
-        options: ['Bên phải số 0', 'Trùng với số 0', 'Bên trái số 0', 'Không xác định'],
+        text: 'Phương trình $2(x + 1) = x + 5$ có nghiệm là:',
+        options: ['$x = 1$', '$x = 2$', '$x = 3$', '$x = 4$'],
         correctAnswerIndex: 2,
-        explanation: 'Các số âm nằm bên trái số 0 trên trục số.'
+        explanation:
+          'Ta có $2x + 2 = x + 5 \\Rightarrow x = 3$.'
       },
       {
         id: 'q2-1-6',
-        text: 'Số đối của 6 là:',
-        options: ['-6', '6', '0', '1/6'],
+        text: 'Phương trình $5 - 2x = 9$ có nghiệm là:',
+        options: ['$x = -2$', '$x = 2$', '$x = -1$', '$x = 1$'],
         correctAnswerIndex: 0,
-        explanation: 'Số đối của 6 là -6.'
+        explanation:
+          'Ta có $5 - 2x = 9 \\Rightarrow -2x = 4 \\Rightarrow x = -2$.'
       },
       {
         id: 'q2-1-7',
-        text: 'Số đối của -9 là:',
-        options: ['9', '-9', '0', '1'],
-        correctAnswerIndex: 0,
-        explanation: 'Số đối của -9 là 9.'
+        text: 'Phương trình $\\dfrac{x - 1}{3} = 2$ có nghiệm là:',
+        options: ['$x = 5$', '$x = 6$', '$x = 7$', '$x = 8$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Ta có $\\dfrac{x - 1}{3} = 2 \\Rightarrow x - 1 = 6 \\Rightarrow x = 7$.'
       },
       {
         id: 'q2-1-8',
-        text: 'Giá trị tuyệt đối của -8 là:',
-        options: ['-8', '8', '0', '16'],
-        correctAnswerIndex: 1,
-        explanation: 'Giá trị tuyệt đối của -8 là 8.'
+        text: 'Phương trình $4x + 1 = 4x + 3$ là:',
+        options: ['Có một nghiệm', 'Có hai nghiệm', 'Vô nghiệm', 'Có vô số nghiệm'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Trừ $4x$ ở hai vế, ta được $1 = 3$, là điều vô lí nên phương trình vô nghiệm.'
       },
       {
         id: 'q2-1-9',
-        text: 'Giá trị tuyệt đối của 0 là:',
-        options: ['0', '1', '-1', 'Không xác định'],
-        correctAnswerIndex: 0,
-        explanation: 'Giá trị tuyệt đối của 0 bằng 0.'
+        text: 'Phương trình $2(x - 1) = 2x - 2$ là:',
+        options: ['Có một nghiệm', 'Vô nghiệm', 'Có vô số nghiệm', 'Không xác định'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Khai triển hai vế đều được $2x - 2$, nên phương trình đúng với mọi $x$.'
       },
       {
         id: 'q2-1-10',
-        text: 'Sắp xếp đúng theo thứ tự tăng dần:',
-        options: ['-5, -2, 0, 3', '3, 0, -2, -5', '-2, -5, 0, 3', '0, -5, -2, 3'],
-        correctAnswerIndex: 0,
-        explanation: 'Theo thứ tự tăng dần: -5 < -2 < 0 < 3.'
+        text: 'Giá trị của $x$ thỏa mãn phương trình $7x - 14 = 0$ là:',
+        options: ['$x = 1$', '$x = 2$', '$x = -2$', '$x = -1$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có $7x - 14 = 0 \\Rightarrow 7x = 14 \\Rightarrow x = 2$.'
       }
     ]
   },
   {
     id: 'c2-t2',
-    title: 'So sánh các số nguyên',
-    description: 'So sánh số nguyên trên trục số và vận dụng dấu lớn hơn, nhỏ hơn.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 5: Bất đẳng thức và tính chất',
+    description:
+      'Nhận biết bất đẳng thức và vận dụng các tính chất cơ bản của bất đẳng thức.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter2-2',
     questions: [
       {
         id: 'q2-2-1',
-        text: 'Trong hai số -3 và 2, số lớn hơn là:',
-        options: ['-3', '2', 'Hai số bằng nhau', 'Không so sánh được'],
+        text: 'Trong các khẳng định sau, khẳng định nào là một bất đẳng thức?',
+        options: ['$2 + 3 = 5$', '$x + 1 > 0$', '$3x - 1 = 2$', '$x = 5$'],
         correctAnswerIndex: 1,
-        explanation: 'Số 2 nằm bên phải số -3 trên trục số nên lớn hơn.'
+        explanation:
+          'Biểu thức $x + 1 > 0$ là một bất đẳng thức vì có dấu $>$.'
       },
       {
         id: 'q2-2-2',
-        text: 'Khẳng định nào đúng?',
-        options: ['-7 > -5', '-7 < -5', '-7 = -5', '-7 > 5'],
-        correctAnswerIndex: 1,
-        explanation: 'Trong các số âm, số nào có giá trị tuyệt đối lớn hơn thì bé hơn.'
+        text: 'Nếu $a > b$ thì khi cộng cùng một số $c$ vào hai vế, ta được:',
+        options: ['$a + c > b + c$', '$a + c < b + c$', '$a + c = b + c$', 'Không so sánh được'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Cộng cùng một số vào hai vế của bất đẳng thức thì chiều bất đẳng thức không đổi.'
       },
       {
         id: 'q2-2-3',
-        text: 'Số nào nhỏ nhất trong các số: 0, -4, 3, -2?',
-        options: ['0', '-4', '3', '-2'],
-        correctAnswerIndex: 1,
-        explanation: 'Số -4 là số nhỏ nhất.'
+        text: 'Nếu $a > b$ thì khi nhân cả hai vế với số dương $c$, ta được:',
+        options: ['$ac > bc$', '$ac < bc$', '$ac = bc$', 'Không xác định'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Nhân hai vế của bất đẳng thức với một số dương thì chiều bất đẳng thức không đổi.'
       },
       {
         id: 'q2-2-4',
-        text: 'Số nào lớn nhất trong các số: -1, -8, 0, -3?',
-        options: ['-1', '-8', '0', '-3'],
-        correctAnswerIndex: 2,
-        explanation: 'Số 0 lớn hơn mọi số âm.'
+        text: 'Nếu $a > b$ thì khi nhân cả hai vế với số âm $c$, ta được:',
+        options: ['$ac > bc$', '$ac < bc$', '$ac = bc$', 'Không xác định'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Nhân hai vế của bất đẳng thức với một số âm thì chiều bất đẳng thức đổi chiều.'
       },
       {
         id: 'q2-2-5',
-        text: 'Điền dấu thích hợp: $-6 \\; ... \\; -9$',
-        options: ['>', '<', '=', '≤'],
-        correctAnswerIndex: 0,
-        explanation: 'Vì -6 nằm bên phải -9 trên trục số nên -6 > -9.'
+        text: 'Trong các số sau, số nào thỏa mãn bất đẳng thức $x > 3$?',
+        options: ['$1$', '$2$', '$3$', '$4$'],
+        correctAnswerIndex: 3,
+        explanation:
+          'Chỉ có $4 > 3$.'
       },
       {
         id: 'q2-2-6',
-        text: 'Điền dấu thích hợp: $-2 \\; ... \\; 0$',
-        options: ['>', '<', '=', '≥'],
-        correctAnswerIndex: 1,
-        explanation: 'Mọi số âm đều nhỏ hơn 0.'
+        text: 'Trong các số sau, số nào thỏa mãn bất đẳng thức $x \\le 2$?',
+        options: ['$3$', '$4$', '$2$', '$5$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Số $2$ thỏa mãn $x \\le 2$.'
       },
       {
         id: 'q2-2-7',
-        text: 'Điền dấu thích hợp: $5 \\; ... \\; -1$',
-        options: ['>', '<', '=', '≤'],
+        text: 'Nếu $a < b$ thì kết luận nào sau đây đúng?',
+        options: ['$a + 5 < b + 5$', '$a + 5 > b + 5$', '$a + 5 = b + 5$', 'Không xác định'],
         correctAnswerIndex: 0,
-        explanation: 'Mọi số dương đều lớn hơn số âm.'
+        explanation:
+          'Cộng cùng một số vào hai vế thì chiều bất đẳng thức không đổi.'
       },
       {
         id: 'q2-2-8',
-        text: 'Trong hai số âm, số nào lớn hơn?',
-        options: [
-          'Số có giá trị tuyệt đối lớn hơn',
-          'Số có giá trị tuyệt đối nhỏ hơn',
-          'Luôn là số đứng bên trái',
-          'Không có quy tắc'
-        ],
+        text: 'Nếu $a < b$ thì khi nhân hai vế với $-2$, ta được:',
+        options: ['$-2a < -2b$', '$-2a > -2b$', '$-2a = -2b$', 'Không xác định'],
         correctAnswerIndex: 1,
-        explanation: 'Trong hai số âm, số có giá trị tuyệt đối nhỏ hơn thì lớn hơn.'
+        explanation:
+          'Nhân với số âm thì phải đổi chiều bất đẳng thức.'
       },
       {
         id: 'q2-2-9',
-        text: 'Khẳng định nào sau đây đúng?',
-        options: ['-10 > -2', '-10 < -2', '-10 = -2', '-2 < -10'],
+        text: 'Bất đẳng thức nào sau đây đúng?',
+        options: ['$5 < 2$', '$3 \\le 3$', '$7 > 9$', '$1 \\ge 4$'],
         correctAnswerIndex: 1,
-        explanation: '-10 nằm bên trái -2 trên trục số nên -10 < -2.'
+        explanation:
+          'Ta có $3 \\le 3$ là đúng.'
       },
       {
         id: 'q2-2-10',
-        text: 'Sắp xếp các số -1, 4, -7, 0 theo thứ tự giảm dần:',
-        options: ['4, 0, -1, -7', '-7, -1, 0, 4', '0, 4, -1, -7', '4, -1, -7, 0'],
+        text: 'Nếu $x > 1$ thì khẳng định nào sau đây đúng?',
+        options: ['$x + 2 > 3$', '$x + 2 < 3$', '$x + 2 = 3$', '$x - 2 > 3$'],
         correctAnswerIndex: 0,
-        explanation: 'Thứ tự giảm dần là từ lớn đến bé: 4, 0, -1, -7.'
+        explanation:
+          'Cộng $2$ vào hai vế của $x > 1$ ta được $x + 2 > 3$.'
       }
     ]
   },
   {
     id: 'c2-t3',
-    title: 'Phép cộng và phép trừ số nguyên',
-    description: 'Thực hiện phép cộng, trừ số nguyên và vận dụng trong các tình huống thực tế.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Luyện tập chung',
+    description:
+      'Ôn tập về phương trình quy về bậc nhất một ẩn, bất đẳng thức và các tính chất cơ bản.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter2-3',
     questions: [
       {
         id: 'q2-3-1',
-        text: 'Kết quả của phép tính $(-3)+(-5)$ là:',
-        options: ['8', '-8', '2', '-2'],
+        text: 'Nghiệm của phương trình $4x - 8 = 0$ là:',
+        options: ['$x = 1$', '$x = 2$', '$x = -2$', '$x = 4$'],
         correctAnswerIndex: 1,
-        explanation: 'Tổng của hai số âm là một số âm có giá trị tuyệt đối bằng tổng các giá trị tuyệt đối.'
+        explanation:
+          'Ta có $4x - 8 = 0 \\Rightarrow 4x = 8 \\Rightarrow x = 2$.'
       },
       {
         id: 'q2-3-2',
-        text: 'Kết quả của phép tính $7+(-4)$ là:',
-        options: ['11', '-11', '3', '-3'],
-        correctAnswerIndex: 2,
-        explanation: '$7+(-4)=7-4=3$.'
+        text: 'Nghiệm của phương trình $2(x + 3) = 10$ là:',
+        options: ['$x = 1$', '$x = 2$', '$x = 3$', '$x = 4$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có $2(x + 3) = 10 \\Rightarrow x + 3 = 5 \\Rightarrow x = 2$.'
       },
       {
         id: 'q2-3-3',
-        text: 'Kết quả của phép tính $(-6)+9$ là:',
-        options: ['15', '3', '-3', '-15'],
+        text: 'Bất đẳng thức nào sau đây đúng?',
+        options: ['$4 > 7$', '$6 \\ge 6$', '$3 < 1$', '$2 \\le -1$'],
         correctAnswerIndex: 1,
-        explanation: '$(-6)+9=9-6=3$.'
+        explanation:
+          'Ta có $6 \\ge 6$ là đúng.'
       },
       {
         id: 'q2-3-4',
-        text: 'Kết quả của phép tính $(-8)-(-2)$ là:',
-        options: ['-10', '-6', '6', '10'],
-        correctAnswerIndex: 1,
-        explanation: '$(-8)-(-2)=(-8)+2=-6$.'
+        text: 'Nếu $a > b$ thì khi trừ cả hai vế cho $3$, ta được:',
+        options: ['$a - 3 > b - 3$', '$a - 3 < b - 3$', '$a - 3 = b - 3$', 'Không xác định'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Trừ cùng một số vào hai vế thì chiều bất đẳng thức không đổi.'
       },
       {
         id: 'q2-3-5',
-        text: 'Kết quả của phép tính $5-9$ là:',
-        options: ['4', '-4', '14', '-14'],
-        correctAnswerIndex: 1,
-        explanation: '$5-9=5+(-9)=-4$.'
-      },
-      {
-        id: 'q2-3-6',
-        text: 'Kết quả của phép tính $(-7)-3$ là:',
-        options: ['-10', '10', '-4', '4'],
+        text: 'Nếu $a < b$ thì khi nhân cả hai vế với $5$, ta được:',
+        options: ['$5a < 5b$', '$5a > 5b$', '$5a = 5b$', 'Không xác định'],
         correctAnswerIndex: 0,
-        explanation: '$(-7)-3=(-7)+(-3)=-10$.'
-      },
-      {
-        id: 'q2-3-7',
-        text: 'Tính $12+(-12)$',
-        options: ['24', '0', '12', '-24'],
-        correctAnswerIndex: 1,
-        explanation: 'Một số cộng với số đối của nó bằng 0.'
-      },
-      {
-        id: 'q2-3-8',
-        text: 'Tính $(-15)+7$',
-        options: ['8', '-8', '22', '-22'],
-        correctAnswerIndex: 1,
-        explanation: '$(-15)+7=-(15-7)=-8$.'
-      },
-      {
-        id: 'q2-3-9',
-        text: 'Kết quả của phép tính $3-[5+(-2)]$ là:',
-        options: ['0', '-6', '-2', '4'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong ngoặc: $5+(-2)=3$, nên $3-3=0$.'
-      },
-      {
-        id: 'q2-3-10',
-        text: 'Nhiệt độ buổi sáng là $-2^\\circ C$, buổi trưa tăng thêm $5^\\circ C$. Nhiệt độ buổi trưa là:',
-        options: ['$3^\\circ C$', '$-3^\\circ C$', '$7^\\circ C$', '$-7^\\circ C$'],
-        correctAnswerIndex: 0,
-        explanation: '$-2+5=3$, nên nhiệt độ buổi trưa là $3^\\circ C$.'
+        explanation:
+          'Nhân với số dương thì chiều bất đẳng thức giữ nguyên.'
       }
     ]
   },
   {
     id: 'c2-t4',
-    title: 'Phép nhân và phép chia số nguyên',
-    description: 'Thực hiện phép nhân, chia số nguyên và vận dụng quy tắc dấu.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 6: Bất phương trình bậc nhất một ẩn',
+    description:
+      'Nhận biết, giải và biểu diễn nghiệm của bất phương trình bậc nhất một ẩn.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter2-4',
     questions: [
       {
         id: 'q2-4-1',
-        text: 'Kết quả của phép tính $(-3)\\times4$ là:',
-        options: ['12', '-12', '7', '-7'],
-        correctAnswerIndex: 1,
-        explanation: 'Âm nhân dương bằng âm.'
+        text: 'Nghiệm của bất phương trình $x + 3 > 5$ là:',
+        options: ['$x > 2$', '$x < 2$', '$x \\ge 2$', '$x \\le 2$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $x + 3 > 5 \\Rightarrow x > 2$.'
       },
       {
         id: 'q2-4-2',
-        text: 'Kết quả của phép tính $(-5)\\times(-2)$ là:',
-        options: ['-10', '10', '7', '-7'],
-        correctAnswerIndex: 1,
-        explanation: 'Âm nhân âm bằng dương.'
+        text: 'Nghiệm của bất phương trình $2x \\le 8$ là:',
+        options: ['$x \\le 4$', '$x \\ge 4$', '$x < 4$', '$x > 4$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Chia cả hai vế cho $2 > 0$, ta được $x \\le 4$.'
       },
       {
         id: 'q2-4-3',
-        text: 'Kết quả của phép tính $6\\times(-3)$ là:',
-        options: ['18', '-18', '9', '-9'],
+        text: 'Nghiệm của bất phương trình $-3x > 6$ là:',
+        options: ['$x > -2$', '$x < -2$', '$x > 2$', '$x < 2$'],
         correctAnswerIndex: 1,
-        explanation: 'Dương nhân âm bằng âm.'
+        explanation:
+          'Chia cả hai vế cho $-3$ thì đổi chiều: $x < -2$.'
       },
       {
         id: 'q2-4-4',
-        text: 'Kết quả của phép tính $(-24):6$ là:',
-        options: ['4', '-4', '6', '-6'],
-        correctAnswerIndex: 1,
-        explanation: 'Âm chia dương bằng âm.'
+        text: 'Nghiệm của bất phương trình $5 - x \\ge 2$ là:',
+        options: ['$x \\le 3$', '$x \\ge 3$', '$x < 3$', '$x > 3$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $5 - x \\ge 2 \\Rightarrow -x \\ge -3 \\Rightarrow x \\le 3$.'
       },
       {
         id: 'q2-4-5',
-        text: 'Kết quả của phép tính $(-24):(-6)$ là:',
-        options: ['4', '-4', '6', '-6'],
+        text: 'Nghiệm của bất phương trình $2(x - 1) < 6$ là:',
+        options: ['$x < 4$', '$x > 4$', '$x \\le 4$', '$x \\ge 4$'],
         correctAnswerIndex: 0,
-        explanation: 'Âm chia âm bằng dương.'
+        explanation:
+          'Ta có $2(x - 1) < 6 \\Rightarrow x - 1 < 3 \\Rightarrow x < 4$.'
       },
       {
         id: 'q2-4-6',
-        text: 'Kết quả của phép tính $0\\times(-15)$ là:',
-        options: ['0', '-15', '15', 'Không xác định'],
-        correctAnswerIndex: 0,
-        explanation: 'Số 0 nhân với bất kì số nào cũng bằng 0.'
+        text: 'Tập nghiệm của bất phương trình $x \\ge -1$ là:',
+        options: [
+          'Các số nhỏ hơn $-1$',
+          'Các số lớn hơn hoặc bằng $-1$',
+          'Các số lớn hơn $-1$',
+          'Chỉ có số $-1$'
+        ],
+        correctAnswerIndex: 1,
+        explanation:
+          'Bất phương trình $x \\ge -1$ có tập nghiệm là tất cả các số lớn hơn hoặc bằng $-1$.'
       },
       {
         id: 'q2-4-7',
-        text: 'Kết quả của phép tính $(-2)\\times3\\times(-4)$ là:',
-        options: ['24', '-24', '12', '-12'],
-        correctAnswerIndex: 0,
-        explanation: '$(-2)\\times3=-6$, rồi $-6\\times(-4)=24$.'
+        text: 'Nghiệm của bất phương trình $\\dfrac{x}{2} > 3$ là:',
+        options: ['$x > 5$', '$x > 6$', '$x < 6$', '$x \\ge 6$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Nhân cả hai vế với $2 > 0$, ta được $x > 6$.'
       },
       {
         id: 'q2-4-8',
-        text: 'Dấu của tích $(-a)\\times(-b)$ với $a,b>0$ là:',
-        options: ['Dương', 'Âm', 'Bằng 0', 'Không xác định'],
-        correctAnswerIndex: 0,
-        explanation: 'Âm nhân âm bằng dương.'
+        text: 'Nghiệm của bất phương trình $-2x \\le 4$ là:',
+        options: ['$x \\le -2$', '$x \\ge -2$', '$x < -2$', '$x > -2$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Chia cả hai vế cho $-2$ thì đổi chiều, được $x \\ge -2$.'
       },
       {
         id: 'q2-4-9',
-        text: 'Kết quả của phép tính $18:(-3)$ là:',
-        options: ['6', '-6', '9', '-9'],
+        text: 'Bất phương trình nào sau đây có nghiệm là $x > 1$?',
+        options: ['$x + 1 > 0$', '$x - 1 > 0$', '$2x < 2$', '$-x > -1$'],
         correctAnswerIndex: 1,
-        explanation: 'Dương chia âm bằng âm.'
+        explanation:
+          '$x - 1 > 0 \\Rightarrow x > 1$.'
       },
       {
         id: 'q2-4-10',
-        text: 'Một tàu ngầm đang ở độ sâu 20 m dưới mực nước biển, rồi lặn thêm 5 m nữa. Độ sâu mới được biểu diễn bởi số:',
-        options: ['-15', '-25', '25', '15'],
-        correctAnswerIndex: 1,
-        explanation: 'Ban đầu là -20, lặn thêm 5 m tức là cộng -5, được -25.'
+        text: 'Giá trị nào sau đây là nghiệm của bất phương trình $x < 3$?',
+        options: ['$3$', '$4$', '$2$', '$5$'],
+        correctAnswerIndex: 2,
+        explanation:
+          'Ta có $2 < 3$, nên $2$ là một nghiệm của bất phương trình.'
       }
     ]
   },
   {
     id: 'c2-t5',
-    title: 'Ôn tập chương Số nguyên',
-    description: 'Củng cố kiến thức về số nguyên, so sánh số nguyên và các phép tính với số nguyên.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài tập cuối chương 2',
+    description:
+      'Tổng hợp câu hỏi ôn tập toàn bộ chương 2 về phương trình và bất phương trình bậc nhất một ẩn.',
+    youtubeUrl: 'https://www.youtube.com/watch?v=example-chapter2-5',
     questions: [
       {
         id: 'q2-5-1',
-        text: 'Số nào sau đây là số nguyên?',
-        options: ['-4', '2,5', '1/2', '3,7'],
+        text: 'Nghiệm của phương trình $3x + 6 = 0$ là:',
+        options: ['$x = -2$', '$x = 2$', '$x = -3$', '$x = 3$'],
         correctAnswerIndex: 0,
-        explanation: 'Số -4 là số nguyên.'
+        explanation:
+          'Ta có $3x + 6 = 0 \\Rightarrow 3x = -6 \\Rightarrow x = -2$.'
       },
       {
         id: 'q2-5-2',
-        text: 'Số đối của -11 là:',
-        options: ['11', '-11', '0', '1'],
-        correctAnswerIndex: 0,
-        explanation: 'Số đối của -11 là 11.'
+        text: 'Nghiệm của phương trình $2(x + 2) = x + 7$ là:',
+        options: ['$x = 2$', '$x = 3$', '$x = 4$', '$x = 5$'],
+        correctAnswerIndex: 1,
+        explanation:
+          'Ta có $2x + 4 = x + 7 \\Rightarrow x = 3$.'
       },
       {
         id: 'q2-5-3',
-        text: 'Giá trị tuyệt đối của -13 là:',
-        options: ['-13', '13', '0', '26'],
-        correctAnswerIndex: 1,
-        explanation: 'Giá trị tuyệt đối của -13 là 13.'
+        text: 'Nếu $a < b$ thì khẳng định nào sau đây đúng?',
+        options: ['$a - 1 < b - 1$', '$a - 1 > b - 1$', '$a - 1 = b - 1$', 'Không xác định'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Trừ cùng một số vào hai vế thì chiều bất đẳng thức không đổi.'
       },
       {
         id: 'q2-5-4',
-        text: 'Trong hai số -9 và -4, số lớn hơn là:',
-        options: ['-9', '-4', 'Hai số bằng nhau', 'Không xác định'],
-        correctAnswerIndex: 1,
-        explanation: 'Trong hai số âm, số có giá trị tuyệt đối nhỏ hơn thì lớn hơn.'
+        text: 'Nghiệm của bất phương trình $x - 4 \\le 0$ là:',
+        options: ['$x \\le 4$', '$x < 4$', '$x \\ge 4$', '$x > 4$'],
+        correctAnswerIndex: 0,
+        explanation:
+          'Ta có $x - 4 \\le 0 \\Rightarrow x \\le 4$.'
       },
       {
         id: 'q2-5-5',
-        text: 'Tính $(-7)+12$',
-        options: ['5', '-5', '19', '-19'],
-        correctAnswerIndex: 0,
-        explanation: '$(-7)+12=12-7=5$.'
-      },
-      {
-        id: 'q2-5-6',
-        text: 'Tính $(-8)-(-3)$',
-        options: ['-11', '-5', '5', '11'],
+        text: 'Nghiệm của bất phương trình $-x < 2$ là:',
+        options: ['$x < -2$', '$x > -2$', '$x \\le -2$', '$x \\ge -2$'],
         correctAnswerIndex: 1,
-        explanation: '$(-8)-(-3)=(-8)+3=-5$.'
-      },
-      {
-        id: 'q2-5-7',
-        text: 'Tính $(-4)\\times(-6)$',
-        options: ['-24', '24', '10', '-10'],
-        correctAnswerIndex: 1,
-        explanation: 'Âm nhân âm bằng dương, nên kết quả là 24.'
-      },
-      {
-        id: 'q2-5-8',
-        text: 'Tính $21:(-7)$',
-        options: ['3', '-3', '14', '-14'],
-        correctAnswerIndex: 1,
-        explanation: 'Dương chia âm bằng âm, nên kết quả là -3.'
-      },
-      {
-        id: 'q2-5-9',
-        text: 'Tính $(-2)\\times5+6$',
-        options: ['-4', '4', '-16', '16'],
-        correctAnswerIndex: 0,
-        explanation: '$(-2)\\times5=-10$, rồi $-10+6=-4$.'
-      },
-      {
-        id: 'q2-5-10',
-        text: 'Nội dung trọng tâm của chương này là:',
-        options: [
-          'Số nguyên và các phép tính với số nguyên',
-          'Phân số và số thập phân',
-          'Biểu đồ và xác suất',
-          'Chu vi và diện tích'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Chương này tập trung vào tập hợp số nguyên, so sánh và các phép tính với số nguyên.'
+        explanation:
+          'Nhân cả hai vế với $-1$ thì đổi chiều, được $x > -2$.'
       }
     ]
   }
